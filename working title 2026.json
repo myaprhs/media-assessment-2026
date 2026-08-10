@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 276,
+    "build": 277,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -357,6 +357,62 @@
         "name": "Normal",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Screen Shot 2026-08-10 at 9.55.32 PM.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Screen Shot 2026-08-10 at 9.55.32 PM.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Screen Shot 2026-08-06 at 9.56.07 AM2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Screen Shot 2026-08-06 at 9.56.07 AM2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Screen Shot 2026-08-10 at 9.58.56 PM.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Screen Shot 2026-08-10 at 9.58.56 PM.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Screen Shot 2026-08-10 at 9.58.56 PM.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Screen Shot 2026-08-10 at 9.58.56 PM",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Screen Shot 2026-08-10 at 9.59.07 PM.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Screen Shot 2026-08-10 at 9.59.07 PM.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Screen Shot 2026-08-10 at 9.59.12 PM.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Screen Shot 2026-08-10 at 9.59.12 PM.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hovered2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hovered2",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -389,7 +445,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210174,
+        "zoomFactor": 0.4950840073748891,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -406,8 +462,8 @@
           "layer": "",
           "name": "Background",
           "persistentUuid": "46aed166-595e-46d9-a0d2-48fb6f88f064",
-          "width": 969,
-          "x": 325,
+          "width": 2087,
+          "x": -945,
           "y": -14,
           "zOrder": 1,
           "numberProperties": [],
@@ -420,7 +476,7 @@
           "depth": 1,
           "height": 100,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Title",
           "name": "Start_Button",
           "persistentUuid": "a510f956-1558-4b9c-9efb-b8fa526f3565",
           "width": 483,
@@ -435,14 +491,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 129,
+          "height": 117,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Title",
           "name": "Settings_Button",
           "persistentUuid": "3e90c43c-9931-4f3c-83c9-339bfec35c9a",
           "width": 688,
           "x": 553,
-          "y": 536,
+          "y": 548,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -454,13 +510,77 @@
           "depth": 4,
           "height": 216,
           "keepRatio": true,
-          "layer": "",
-          "name": "Title",
+          "layer": "Title",
+          "name": "Game_Title",
           "persistentUuid": "e774d269-aacc-42e3-971f-4f85e99edeb3",
           "width": 403,
           "x": 827,
           "y": 126,
           "zOrder": 4,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Settings",
+          "name": "Music_Placeholder",
+          "persistentUuid": "90994c6d-f783-4bc1-994e-5afca769f960",
+          "width": 0,
+          "x": 54,
+          "y": 368,
+          "zOrder": 5,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Settings",
+          "name": "Back_Button",
+          "persistentUuid": "d14d5820-b605-4105-9626-90bb5b661c1c",
+          "width": 0,
+          "x": 1141,
+          "y": 575,
+          "zOrder": 7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Settings",
+          "name": "Brightness_PlaceHolder",
+          "persistentUuid": "a73a76ad-3787-4b21-82ee-4466451b6ec2",
+          "width": 0,
+          "x": 51,
+          "y": 210,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "Settings",
+          "name": "Settings_Title",
+          "persistentUuid": "d5d5b0ce-f5e2-4fee-843c-97ef79814a4e",
+          "width": 0,
+          "x": 63,
+          "y": 59,
+          "zOrder": 9,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -476,7 +596,12 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "Screen Shot 2026-08-06 at 9.56.07 AM",
@@ -489,7 +614,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Screen Shot 2026-08-06 at 9.56.07 AM",
+                      "image": "Screen Shot 2026-08-06 at 9.56.07 AM2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -509,16 +634,16 @@
                             "y": 0
                           },
                           {
-                            "x": 607,
+                            "x": 1252,
                             "y": 0
                           },
                           {
-                            "x": 607,
-                            "y": 454
+                            "x": 1252,
+                            "y": 451
                           },
                           {
                             "x": 0,
-                            "y": 454
+                            "y": 451
                           }
                         ]
                       ]
@@ -777,7 +902,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "Title",
+          "name": "Game_Title",
           "persistentUuid": "784e3446-eaac-4823-a336-95d7fdda36d6",
           "smoothed": true,
           "type": "TextObject::Text",
@@ -816,6 +941,294 @@
             "lineHeight": 0,
             "color": "0;0;0"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Back_Button",
+          "persistentUuid": "aa966ae8-a495-462a-bd5e-b72e74ed8aa4",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Normal",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Screen Shot 2026-08-10 at 9.58.56 PM",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 95,
+                            "y": 0
+                          },
+                          {
+                            "x": 95,
+                            "y": 97
+                          },
+                          {
+                            "x": 0,
+                            "y": 97
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Hovered2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 95,
+                            "y": 0
+                          },
+                          {
+                            "x": 95,
+                            "y": 97
+                          },
+                          {
+                            "x": 0,
+                            "y": 97
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Brightness_PlaceHolder",
+          "persistentUuid": "089a9551-bc7a-453b-99fb-6b1136b03190",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Screen Shot 2026-08-10 at 9.59.07 PM.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 574,
+                            "y": 0
+                          },
+                          {
+                            "x": 574,
+                            "y": 119
+                          },
+                          {
+                            "x": 0,
+                            "y": 119
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "Music_Placeholder",
+          "persistentUuid": "e5b4c073-4d39-4fa5-97cd-676233b85197",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Screen Shot 2026-08-10 at 9.59.12 PM.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 573,
+                            "y": 0
+                          },
+                          {
+                            "x": 573,
+                            "y": 103
+                          },
+                          {
+                            "x": 0,
+                            "y": 103
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Settings_Title",
+          "persistentUuid": "2362f8ea-ca7a-4655-bfbb-378b753891a9",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "SETTINGS",
+          "font": "",
+          "textAlignment": "right",
+          "characterSize": 100,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "SETTINGS",
+            "font": "",
+            "textAlignment": "right",
+            "verticalTextAlignment": "top",
+            "characterSize": 100,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -831,151 +1244,584 @@
             "objectName": "Start_Button"
           },
           {
-            "objectName": "Title"
+            "objectName": "Game_Title"
+          },
+          {
+            "objectName": "Settings_Title"
+          },
+          {
+            "objectName": "Back_Button"
+          },
+          {
+            "objectName": "Brightness_PlaceHolder"
+          },
+          {
+            "objectName": "Music_Placeholder"
           }
         ]
       },
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "SET UP",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "inverted": true,
-                "value": "ButtonStates::ButtonFSM::IsHovered"
-              },
-              "parameters": [
-                "Settings_Button",
-                "ButtonFSM",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneJustBegins"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetXY"
+                  },
+                  "parameters": [
+                    "Background",
+                    "=",
+                    "334",
+                    "=",
+                    "-14"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "HideLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Settings\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ShowLayer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Title\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Start_Button",
+                        "ButtonFSM",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Settings_Button",
+                        "ButtonFSM",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ActivateBehavior"
+                      },
+                      "parameters": [
+                        "Back_Button",
+                        "ButtonFSM",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Settings_Button",
-                "Animation",
-                "=",
-                "\"Normal\""
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Start Button",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "ButtonStates::ButtonFSM::IsHovered"
-              },
-              "parameters": [
-                "Settings_Button",
-                "ButtonFSM",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "ButtonStates::ButtonFSM::IsHovered"
+                  },
+                  "parameters": [
+                    "Start_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Start_Button",
+                    "Animation",
+                    "=",
+                    "\"Normal\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsHovered"
+                  },
+                  "parameters": [
+                    "Start_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Start_Button",
+                    "Animation",
+                    "=",
+                    "\"Hovered\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsPressed"
+                  },
+                  "parameters": [
+                    "Start_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"ESCAPE\"",
+                    "yes"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Settings_Button",
-                "Animation",
-                "=",
-                "\"Hovered\""
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Settings Button",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "inverted": true,
-                "value": "ButtonStates::ButtonFSM::IsHovered"
-              },
-              "parameters": [
-                "Start_Button",
-                "ButtonFSM",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "ButtonStates::ButtonFSM::IsHovered"
+                  },
+                  "parameters": [
+                    "Settings_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Settings_Button",
+                    "Animation",
+                    "=",
+                    "\"Normal\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsHovered"
+                  },
+                  "parameters": [
+                    "Settings_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Settings_Button",
+                    "Animation",
+                    "=",
+                    "\"Hovered\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsPressed"
+                  },
+                  "parameters": [
+                    "Settings_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Title\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Background",
+                    "Tween",
+                    "\"slide to Settings\"",
+                    "-945",
+                    "-14",
+                    "\"easeOutQuint\"",
+                    "1",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Background",
+                    "Tween",
+                    "\"slide to Settings\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Settings\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Start_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Settings_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Back_Button",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Start_Button",
-                "Animation",
-                "=",
-                "\"Normal\""
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Back Button",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "ButtonStates::ButtonFSM::IsHovered"
-              },
-              "parameters": [
-                "Start_Button",
-                "ButtonFSM",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "ButtonStates::ButtonFSM::IsHovered"
+                  },
+                  "parameters": [
+                    "Back_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Back_Button",
+                    "Animation",
+                    "=",
+                    "\"Normal\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsHovered"
+                  },
+                  "parameters": [
+                    "Back_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Back_Button",
+                    "Animation",
+                    "=",
+                    "\"Hovered\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonFSM::IsPressed"
+                  },
+                  "parameters": [
+                    "Back_Button",
+                    "ButtonFSM",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Settings\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+                  },
+                  "parameters": [
+                    "Background",
+                    "Tween",
+                    "\"slide to Title\"",
+                    "334",
+                    "-14",
+                    "\"easeOutQuint\"",
+                    "1",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "Background",
+                    "Tween",
+                    "\"slide to Title\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Title\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Start_Button",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Settings_Button",
+                    "ButtonFSM",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ActivateBehavior"
+                  },
+                  "parameters": [
+                    "Back_Button",
+                    "ButtonFSM",
+                    "no"
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Start_Button",
-                "Animation",
-                "=",
-                "\"Hovered\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "ButtonStates::ButtonFSM::IsPressed"
-              },
-              "parameters": [
-                "Start_Button",
-                "ButtonFSM",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"ESCAPE\"",
-                "yes"
-              ]
-            }
-          ]
+          "parameters": []
         }
       ],
       "layers": [
@@ -1006,6 +1852,114 @@
               "width": 0
             }
           ],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Title",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Settings",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
           "effects": [
             {
               "effectType": "Scene3D::HemisphereLight",
@@ -1077,6 +2031,10 @@
         {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     },
