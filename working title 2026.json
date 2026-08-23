@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 277,
+    "build": 280,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -413,6 +413,93 @@
         "name": "Hovered2",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "Screen Shot 2026-08-20 at 10.19.54 AM.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Screen Shot 2026-08-20 at 10.19.54 AM.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Screen Shot 2026-08-20 at 10.19.54 AM.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Screen Shot 2026-08-20 at 10.19.54 AM",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "Screen Shot 2026-08-20 at 10.20.05 AM.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"Screen Shot 2026-08-20 at 10.20.05 AM.png\",\"extension\":\".png\"}",
+        "name": "Screen Shot 2026-08-20 at 10.20.05 AM.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "normal_timer.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "normal_timer.glb",
+        "userAdded": false
+      },
+      {
+        "file": "oxygenpumpbase.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "oxygenpumpbase.glb",
+        "userAdded": false
+      },
+      {
+        "file": "oxygenpumpcase.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "oxygenpumpcase.glb",
+        "userAdded": false
+      },
+      {
+        "file": "starfish1.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "starfish1.glb",
+        "userAdded": false
+      },
+      {
+        "file": "starfish2.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "starfish2.glb",
+        "userAdded": false
+      },
+      {
+        "file": "starfish3.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "starfish3.glb",
+        "userAdded": false
+      },
+      {
+        "file": "starfishlock.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "starfishlock.glb",
+        "userAdded": false
+      },
+      {
+        "file": "broken_timer_base.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "broken_timer_base.glb",
+        "userAdded": false
+      },
+      {
+        "file": "broken_timer_liddisplay.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "broken_timer_liddisplay.glb",
+        "userAdded": false
       }
     ]
   },
@@ -445,7 +532,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4950840073748891,
+        "zoomFactor": 0.5290357402156842,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -523,13 +610,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 110,
           "keepRatio": true,
           "layer": "Settings",
           "name": "Music_Placeholder",
           "persistentUuid": "90994c6d-f783-4bc1-994e-5afca769f960",
-          "width": 0,
+          "width": 573,
           "x": 54,
           "y": 368,
           "zOrder": 5,
@@ -2060,7 +2148,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5290357402157071,
+        "zoomFactor": 0.2308918338522592,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2097,123 +2185,10 @@
           "angle": 0,
           "customSize": true,
           "depth": 64,
-          "height": 128,
-          "layer": "",
-          "name": "Obstacle",
-          "persistentUuid": "ca0783fc-909c-418e-8ce1-00021a50eb13",
-          "width": 128,
-          "x": 320,
-          "y": 448,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 192,
-          "height": 320,
-          "layer": "",
-          "name": "Obstacle",
-          "persistentUuid": "6b301c71-6326-4b68-8e68-9bb7cd5a43fc",
-          "width": 128,
-          "x": 832,
-          "y": 0,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 448,
-          "height": 128,
-          "layer": "",
-          "name": "PushableBox",
-          "persistentUuid": "23eef725-fc64-4eec-8627-4bfb97898d8a",
-          "width": 16,
-          "x": 412,
-          "y": 320,
-          "z": 128,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 192,
-          "height": 320,
-          "layer": "",
-          "name": "Obstacle",
-          "persistentUuid": "7d546d65-52a7-420f-a48c-4781e86cfe51",
-          "width": 128,
-          "x": 320,
-          "y": 0,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 128,
-          "height": 128,
-          "layer": "",
-          "name": "Obstacle",
-          "persistentUuid": "380775e6-26ee-476b-bd88-4f7960166508",
-          "width": 128,
-          "x": 320,
-          "y": 320,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 128,
-          "height": 128,
-          "layer": "",
-          "name": "Obstacle",
-          "persistentUuid": "03fa04af-e8bd-45a9-a0c1-016a54c0e109",
-          "width": 128,
-          "x": 832,
-          "y": 320,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 128,
-          "layer": "",
-          "name": "Obstacle",
-          "persistentUuid": "5178807c-226a-4d1a-88d2-31682c13160c",
-          "width": 128,
-          "x": 832,
-          "y": 448,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
           "height": 64,
           "keepRatio": true,
           "layer": "",
-          "name": "Obstacle",
+          "name": "Wall",
           "persistentUuid": "15c4e0e3-be52-4e6b-bb16-37ddbbbd9296",
           "width": 2048,
           "x": -384,
@@ -2230,7 +2205,7 @@
           "height": 64,
           "keepRatio": true,
           "layer": "",
-          "name": "Obstacle",
+          "name": "Wall",
           "persistentUuid": "4955705b-f0d4-4f50-8427-c923662f0094",
           "width": 2048,
           "x": -384,
@@ -2247,7 +2222,7 @@
           "height": 1728,
           "keepRatio": true,
           "layer": "",
-          "name": "Obstacle",
+          "name": "Wall",
           "persistentUuid": "40d29e05-0f28-4401-a44d-07125589520f",
           "width": 64,
           "x": -384,
@@ -2264,7 +2239,7 @@
           "height": 1728,
           "keepRatio": true,
           "layer": "",
-          "name": "Obstacle",
+          "name": "Wall",
           "persistentUuid": "4970e918-6973-4699-8a02-0d0b0aade12a",
           "width": 64,
           "x": 1600,
@@ -2292,22 +2267,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "CoralBlock",
-          "persistentUuid": "55a75728-58d3-4a8e-8990-5ebb869aa03f",
-          "width": 0,
-          "x": 580,
-          "y": -51,
-          "zOrder": 19,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "depth": 1,
           "height": 136,
@@ -2319,6 +2278,169 @@
           "x": 565,
           "y": 280,
           "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 3,
+          "height": 108,
+          "keepRatio": true,
+          "layer": "Inventory",
+          "name": "InventoryButton",
+          "persistentUuid": "95c36dac-8120-4101-9250-3d0c026bb1e6",
+          "width": 109,
+          "x": 33,
+          "y": 593,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 179,
+          "height": 376,
+          "keepRatio": true,
+          "layer": "",
+          "name": "NormalTimer",
+          "persistentUuid": "0be767ea-d7e1-4812-be92-5d4f4211f0fd",
+          "width": 94,
+          "x": 1034,
+          "y": -411,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "OxygenPumpBase",
+          "persistentUuid": "1f3b1b06-4b3f-4dc9-9865-de581f5791f4",
+          "width": 0,
+          "x": 856,
+          "y": -283,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "OxygenPumpCase",
+          "persistentUuid": "97e34b8e-b55b-4518-9f98-82f1775c32ea",
+          "width": 0,
+          "x": 745,
+          "y": -294,
+          "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Starfish1_CORRECT",
+          "persistentUuid": "2c3cbd02-89e6-4ff4-b7d7-34593f3a7bc0",
+          "width": 0,
+          "x": 1117,
+          "y": -22,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Starfish2",
+          "persistentUuid": "66fd6bb0-b38e-4357-8441-d308fcc761dc",
+          "width": 0,
+          "x": 1142,
+          "y": 117,
+          "zOrder": 26,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 8.419413920031854,
+          "height": 33.14180896862645,
+          "keepRatio": true,
+          "layer": "",
+          "name": "Starfish3",
+          "persistentUuid": "fcbaa987-ec91-4e92-b693-887348d5a9e2",
+          "width": 100,
+          "x": 1311,
+          "y": -24,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "StarfishLock",
+          "persistentUuid": "26fc33dd-96a6-476c-9934-f0e274c8aa0b",
+          "width": 0,
+          "x": 819,
+          "y": -129,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "BrokenTimerBase",
+          "persistentUuid": "cbdbe62b-9620-4b7d-a042-9641d2fab564",
+          "width": 0,
+          "x": 1349,
+          "y": -331,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "BrokenTimerLidDisplay",
+          "persistentUuid": "804eb63b-8f74-461d-a496-49b48cec2329",
+          "width": 0,
+          "x": 1287,
+          "y": -322,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2394,7 +2516,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "Obstacle",
+          "name": "Wall",
           "persistentUuid": "d8251101-8e7e-48ec-8293-47aafa7fb87b",
           "type": "Scene3D::Cube3DObject",
           "variables": [],
@@ -2450,73 +2572,6 @@
             "bottomFaceVisible": true,
             "frontFaceResourceRepeat": true,
             "backFaceResourceRepeat": false,
-            "leftFaceResourceRepeat": true,
-            "rightFaceResourceRepeat": true,
-            "topFaceResourceRepeat": true,
-            "bottomFaceResourceRepeat": true,
-            "materialType": "StandardWithoutMetalness",
-            "isCastingShadow": true,
-            "isReceivingShadow": true
-          }
-        },
-        {
-          "assetStoreId": "",
-          "name": "PushableBox",
-          "persistentUuid": "eafdf16e-8851-4f96-9bf0-578ef83c65ba",
-          "type": "Scene3D::Cube3DObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics3D",
-              "type": "Physics3D::Physics3DBehavior",
-              "object3D": "Object3D",
-              "bodyType": "Dynamic",
-              "bullet": false,
-              "fixedRotation": false,
-              "shape": "Box",
-              "shapeOrientation": "Z",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeDimensionC": 0,
-              "density": 10,
-              "friction": 3,
-              "restitution": 0.1,
-              "linearDamping": 4,
-              "angularDamping": 5,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "shapeOffsetZ": 0,
-              "massCenterOffsetX": 0,
-              "massCenterOffsetY": 0,
-              "massCenterOffsetZ": 0,
-              "massOverride": 0
-            }
-          ],
-          "content": {
-            "width": 128,
-            "height": 128,
-            "depth": 128,
-            "enableTextureTransparency": false,
-            "facesOrientation": "Y",
-            "frontFaceResourceName": "assets\\StarterPushable.png",
-            "backFaceResourceName": "assets\\StarterPushable.png",
-            "backFaceUpThroughWhichAxisRotation": "X",
-            "leftFaceResourceName": "assets\\StarterPushable.png",
-            "rightFaceResourceName": "assets\\StarterPushable.png",
-            "topFaceResourceName": "assets\\StarterPushable.png",
-            "bottomFaceResourceName": "assets\\StarterPushable.png",
-            "frontFaceVisible": true,
-            "backFaceVisible": true,
-            "leftFaceVisible": true,
-            "rightFaceVisible": true,
-            "topFaceVisible": true,
-            "bottomFaceVisible": true,
-            "frontFaceResourceRepeat": true,
-            "backFaceResourceRepeat": true,
             "leftFaceResourceRepeat": true,
             "rightFaceResourceRepeat": true,
             "topFaceResourceRepeat": true,
@@ -2667,19 +2722,326 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "InventoryButton",
+          "persistentUuid": "213c484d-d605-4974-8a1c-d8d9cf73dd2f",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Normal",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Screen Shot 2026-08-20 at 10.20.05 AM.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 5,
+                            "y": 3
+                          },
+                          {
+                            "x": 82,
+                            "y": 3
+                          },
+                          {
+                            "x": 82,
+                            "y": 82
+                          },
+                          {
+                            "x": 5,
+                            "y": 82
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "NormalTimer",
+          "persistentUuid": "07e8b4d9-aebb-4061-b24c-dc062ee0ecc9",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "normal_timer.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "OxygenPumpBase",
+          "persistentUuid": "7c2828f0-e135-420c-88cf-80ff1114315f",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "oxygenpumpbase.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "OxygenPumpCase",
+          "persistentUuid": "c1408b0b-23a6-45d7-8e77-fb02ccc12257",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "oxygenpumpcase.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Starfish1_CORRECT",
+          "persistentUuid": "5a0da833-c01a-4e85-905f-de9c4d33099c",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "starfish1.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Starfish2",
+          "persistentUuid": "ac77f2a6-cdc4-45b0-b6d7-dee40b6a1b45",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "starfish2.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Starfish3",
+          "persistentUuid": "bad2246d-7070-4a36-b7d8-31ce4fb9a1ce",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "starfish3.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 50,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "StarfishLock",
+          "persistentUuid": "5ca39fa4-f591-438f-9906-e8f79ef76522",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "starfishlock.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "BrokenTimerBase",
+          "persistentUuid": "828de2ac-e1c1-4b52-9b17-be1ff3060109",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100.00000000000003,
+            "height": 100.00000000000003,
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "broken_timer_base.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100.00000000000004,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "BrokenTimerLidDisplay",
+          "persistentUuid": "9678f65f-21ab-457f-9fa3-9cbdd4fdd840",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "broken_timer_liddisplay.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "PushableBox"
-          },
-          {
-            "objectName": "Obstacle"
+            "objectName": "Wall"
           },
           {
             "objectName": "Ground"
+          },
+          {
+            "objectName": "InventoryButton"
           },
           {
             "objectName": "BlueBlock"
@@ -2689,6 +3051,33 @@
           },
           {
             "objectName": "cursor"
+          },
+          {
+            "objectName": "NormalTimer"
+          },
+          {
+            "objectName": "OxygenPumpBase"
+          },
+          {
+            "objectName": "OxygenPumpCase"
+          },
+          {
+            "objectName": "Starfish1_CORRECT"
+          },
+          {
+            "objectName": "Starfish2"
+          },
+          {
+            "objectName": "Starfish3"
+          },
+          {
+            "objectName": "StarfishLock"
+          },
+          {
+            "objectName": "BrokenTimerBase"
+          },
+          {
+            "objectName": "BrokenTimerLidDisplay"
           }
         ]
       },
@@ -2714,44 +3103,49 @@
                   ]
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "CenterCameraOnObject"
-                      },
-                      "parameters": [
-                        "",
-                        "BlueBlock",
-                        "no",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Scene3D::SetCameraRotationX"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "50",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "HideCursor"
-                      },
-                      "parameters": [
-                        "cursor"
-                      ]
-                    }
+                  "type": {
+                    "value": "CenterCameraOnObject"
+                  },
+                  "parameters": [
+                    "",
+                    "BlueBlock",
+                    "no",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::SetCameraRotationX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "90",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::SetCameraZ"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "200",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideCursor"
+                  },
+                  "parameters": [
+                    "cursor"
                   ]
                 }
               ]
@@ -2806,7 +3200,7 @@
               },
               "parameters": [
                 "",
-                "CoralBlock",
+                "Starfish1_CORRECT",
                 "\"UI\"",
                 "10000",
                 ""
@@ -2826,7 +3220,7 @@
               },
               "parameters": [
                 "",
-                "CoralBlock",
+                "Starfish1_CORRECT",
                 "no",
                 "",
                 ""
@@ -2834,24 +3228,16 @@
             },
             {
               "type": {
-                "value": "Scene3D::SetCameraRotationX"
+                "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
               },
               "parameters": [
                 "",
-                "=",
-                "220",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene3D::SetCameraRotationY"
-              },
-              "parameters": [
-                "",
-                "=",
+                "Starfish1_CORRECT.CenterX()",
+                "Starfish1_CORRECT.CenterY()",
+                "Starfish1_CORRECT.Object3D::UpZ()",
+                "200",
                 "180",
+                "90",
                 "",
                 ""
               ]
@@ -2929,28 +3315,27 @@
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextPressed"
+                "value": "KeyFromTextJustPressed"
               },
               "parameters": [
                 "",
-                "\"a\""
+                "\"Left\""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Scene3D::SetCameraRotationX"
+                "value": "SetCameraAngle"
               },
               "parameters": [
                 "",
                 "+",
-                "5",
+                "90",
                 "",
                 ""
               ]
@@ -2958,28 +3343,27 @@
           ]
         },
         {
-          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextPressed"
+                "value": "KeyFromTextJustPressed"
               },
               "parameters": [
                 "",
-                "\"d\""
+                "\"Right\""
               ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Scene3D::SetCameraRotationX"
+                "value": "SetCameraAngle"
               },
               "parameters": [
                 "",
                 "-",
-                "5",
+                "90",
                 "",
                 ""
               ]
@@ -3074,11 +3458,47 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "MobileControls",
+          "name": "Inventory",
           "renderingType": "",
           "visibility": false,
           "cameras": [],
-          "effects": []
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
         },
         {
           "ambientLightColorB": 200,
@@ -3139,6 +3559,10 @@
         {
           "name": "Animation",
           "type": "AnimatableCapability::AnimatableBehavior"
+        },
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM"
         },
         {
           "name": "Effect",
