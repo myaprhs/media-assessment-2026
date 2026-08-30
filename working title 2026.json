@@ -2225,7 +2225,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2090255622833641,
+        "zoomFactor": 0.2233600589381267,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2239,13 +2239,65 @@
           "value": "Keyboard"
         },
         {
-          "name": "DefaultCameraPosition",
+          "name": "CameraView",
           "persistentUuid": "6d605f90-ba98-4eb3-a8a6-93538629e9a6",
+          "type": "array",
+          "children": [
+            {
+              "persistentUuid": "658ee3a3-272e-4b18-aa0d-2284e898901f",
+              "type": "number",
+              "value": 270
+            },
+            {
+              "persistentUuid": "efea16bb-0cfd-447c-bb37-2290e3e0b4f7",
+              "type": "number",
+              "value": 180
+            },
+            {
+              "persistentUuid": "138f4e25-6fe0-463d-9f6a-5d5611bcecb6",
+              "type": "number",
+              "value": 90
+            },
+            {
+              "persistentUuid": "331d8776-b06f-462c-bad3-1a96919a9e67",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "name": "CameraViewNum",
+          "persistentUuid": "d2b3db0f-aced-4a67-a01f-0723c341431a",
           "type": "number",
           "value": 0
         },
         {
-          "name": "LastSavedCameraPosition",
+          "name": "CameraNum",
+          "persistentUuid": "0326af9f-010b-4182-b033-15b78a1db59b",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Camera1",
+              "persistentUuid": "75e23f4a-65de-4c4e-8c09-674bc2fd12f8",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Camera2",
+              "persistentUuid": "96b5d03f-8728-47d1-b063-fcc526875047",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "LastCameraPosition",
+              "persistentUuid": "12b221d2-a5ca-4a5e-8e7f-c1466b881159",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "name": "ObjectFocus",
           "persistentUuid": "9f6b3060-a337-4769-b4e9-4e65e20259ef",
           "type": "structure",
           "children": [
@@ -2275,8 +2327,8 @@
           "name": "cursor",
           "persistentUuid": "9b79c9f7-cc6e-4362-918f-7fdef865fc1e",
           "width": 142,
-          "x": 706,
-          "y": 236,
+          "x": 547,
+          "y": 409,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -2357,8 +2409,8 @@
           "name": "Starfish1_CORRECT",
           "persistentUuid": "2c3cbd02-89e6-4ff4-b7d7-34593f3a7bc0",
           "width": 0,
-          "x": 1229,
-          "y": 907,
+          "x": 1425,
+          "y": 1549,
           "z": 50,
           "zOrder": 25,
           "numberProperties": [],
@@ -2374,8 +2426,8 @@
           "name": "Starfish2",
           "persistentUuid": "66fd6bb0-b38e-4357-8441-d308fcc761dc",
           "width": 0,
-          "x": 1142,
-          "y": 117,
+          "x": 1444,
+          "y": 493,
           "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
@@ -2509,8 +2561,10 @@
           "depth": 200,
           "height": 1689,
           "layer": "",
+          "locked": true,
           "name": "SandPit",
           "persistentUuid": "d287065e-3cee-478a-aef1-83b2d3b1a87f",
+          "sealed": true,
           "width": 2531,
           "x": 815,
           "y": 876,
@@ -2533,6 +2587,39 @@
           "y": 963,
           "z": 30,
           "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 61,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "cam1",
+          "persistentUuid": "28f4b7c8-ed8e-46e6-a08b-9dd8774f114f",
+          "width": 116,
+          "x": 28,
+          "y": 25,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "cam2",
+          "persistentUuid": "efbcc658-b334-467b-82e1-313d93c02b27",
+          "width": 0,
+          "x": 35,
+          "y": 139,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3162,6 +3249,94 @@
             "width": 100,
             "animations": []
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "cam1",
+          "persistentUuid": "4510cb53-7960-46b1-8843-3f3ff0cc9909",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "cam2",
+          "persistentUuid": "9a4d3360-4f2a-4c12-89dc-c5c00ca17965",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Text",
+            "font": "",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -3217,6 +3392,12 @@
           },
           {
             "objectName": "SandPit"
+          },
+          {
+            "objectName": "cam1"
+          },
+          {
+            "objectName": "cam2"
           }
         ]
       },
@@ -3226,7 +3407,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "GAME SETTINGS",
+          "name": "GAME SETUP",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -3243,6 +3424,46 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraFocused",
+                    "False",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera1",
+                    "True",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera2",
+                    "False",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CameraViewNum",
+                    "=",
+                    "2"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Scene3D::SetCameraRotationX"
@@ -3278,40 +3499,6 @@
                     "",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SetCameraCenterX"
-                  },
-                  "parameters": [
-                    "",
-                    "=",
-                    "CameraPosition2.CenterX()",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetCameraCenterY"
-                  },
-                  "parameters": [
-                    "",
-                    "=",
-                    "CameraPosition2.CenterY()",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraFocused",
-                    "False",
-                    "="
-                  ]
                 }
               ]
             },
@@ -3340,7 +3527,19 @@
                   ]
                 }
               ]
-            },
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "CAMERA",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
@@ -3352,25 +3551,115 @@
                   "parameters": [
                     "",
                     "=",
-                    "DefaultCameraPosition",
+                    "CameraView[CameraViewNum]",
                     "",
                     ""
                   ]
                 }
               ]
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "CAMERA CONTROLS",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera1",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.LastCameraPosition",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "CameraPosition1.CenterX()",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "CameraPosition1.CenterY()",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera2",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.LastCameraPosition",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "CameraPosition2.CenterX()",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "CameraPosition2.CenterY()",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -3392,6 +3681,60 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CameraViewNum",
+                        "<",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CameraViewNum",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "CameraViewNum",
+                        ">",
+                        "3"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "CameraViewNum",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "KeyFromTextJustPressed"
                       },
                       "parameters": [
@@ -3406,9 +3749,9 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "DefaultCameraPosition",
+                        "CameraViewNum",
                         "+",
-                        "90"
+                        "1"
                       ]
                     }
                   ]
@@ -3432,9 +3775,100 @@
                         "value": "SetNumberVariable"
                       },
                       "parameters": [
-                        "DefaultCameraPosition",
+                        "CameraViewNum",
                         "-",
-                        "90"
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Up\""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.Camera1",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.Camera1",
+                            "False",
+                            "90"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.Camera2",
+                            "True",
+                            "90"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Else",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BooleanVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.Camera2",
+                            "True",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.Camera1",
+                            "True",
+                            "90"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.Camera2",
+                            "False",
+                            "90"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -3471,6 +3905,36 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraFocused",
+                        "False",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera1",
+                        "False",
+                        "90"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera2",
+                        "False",
+                        "90"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "Scene3D::SetCameraRotationX"
@@ -3518,15 +3982,81 @@
                         "",
                         ""
                       ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.LastCameraPosition",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.Camera1",
+                            "True",
+                            "90"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.Camera2",
+                            "False",
+                            "90"
+                          ]
+                        }
+                      ]
                     },
                     {
-                      "type": {
-                        "value": "SetBooleanVariable"
-                      },
-                      "parameters": [
-                        "CameraFocused",
-                        "False",
-                        "="
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.LastCameraPosition",
+                            "=",
+                            "2"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.Camera1",
+                            "False",
+                            "90"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "SetBooleanVariable"
+                          },
+                          "parameters": [
+                            "CameraNum.Camera2",
+                            "True",
+                            "90"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -3574,29 +4104,41 @@
                     "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "LastSavedCameraPosition.Starfish",
-                    "=",
+                    "CameraFocused",
+                    "False",
                     ""
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "CenterCameraOnObject"
+                    "value": "SetBooleanVariable"
                   },
                   "parameters": [
-                    "",
-                    "Starfish1_CORRECT",
-                    "no",
-                    "",
-                    ""
+                    "CameraNum.Camera2",
+                    "False",
+                    "90"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraFocused",
+                    "True",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera1",
+                    "False",
+                    "90"
                   ]
                 },
                 {
@@ -3614,31 +4156,64 @@
                     "",
                     ""
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
                 {
                   "type": {
-                    "value": "SetBooleanVariable"
+                    "value": "CenterCameraOnObject"
                   },
                   "parameters": [
-                    "LastSavedCameraPosition.Starfish",
-                    "True",
-                    "="
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraFocused",
-                    "True",
-                    "="
+                    "",
+                    "Starfish1_CORRECT",
+                    "no",
+                    "",
+                    ""
                   ]
                 }
               ]
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "cam1",
+                "Text",
+                "=",
+                "CameraViewNum"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "cam2",
+                "Text",
+                "=",
+                "CameraNum.Camera2"
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -3865,6 +4440,10 @@
         {
           "name": "Scale",
           "type": "ScalableCapability::ScalableBehavior"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         }
       ]
     }
