@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 280,
+    "build": 281,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -499,6 +499,83 @@
         "kind": "model3D",
         "metadata": "",
         "name": "broken_timer_liddisplay.glb",
+        "userAdded": false
+      },
+      {
+        "file": "tank1.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "tank1.glb",
+        "userAdded": false
+      },
+      {
+        "file": "tank2.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "tank2.glb",
+        "userAdded": false
+      },
+      {
+        "file": "tank3.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "tank3.glb",
+        "userAdded": false
+      },
+      {
+        "file": "tank4.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "tank4.glb",
+        "userAdded": false
+      },
+      {
+        "file": "tankceiling1.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "tankceiling1.glb",
+        "userAdded": false
+      },
+      {
+        "file": "tankceiling2.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "tankceiling2.glb",
+        "userAdded": false
+      },
+      {
+        "file": "tankwtexture2.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "tankwtexture2.glb",
+        "userAdded": false
+      },
+      {
+        "file": "ceilingwtexture3.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "ceilingwtexture3.glb",
+        "userAdded": false
+      },
+      {
+        "file": "sand3.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "sand3.glb",
+        "userAdded": false
+      },
+      {
+        "file": "ceilingwtexture4.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "ceilingwtexture4.glb",
+        "userAdded": false
+      },
+      {
+        "file": "tankwtexture3.glb",
+        "kind": "model3D",
+        "metadata": "",
+        "name": "tankwtexture3.glb",
         "userAdded": false
       }
     ]
@@ -2148,7 +2225,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.2308918338522592,
+        "zoomFactor": 0.2090255622833641,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2160,111 +2237,34 @@
           "persistentUuid": "7d3cb27a-eea2-4449-872e-09f4d5250ba3",
           "type": "string",
           "value": "Keyboard"
+        },
+        {
+          "name": "DefaultCameraPosition",
+          "persistentUuid": "6d605f90-ba98-4eb3-a8a6-93538629e9a6",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "LastSavedCameraPosition",
+          "persistentUuid": "9f6b3060-a337-4769-b4e9-4e65e20259ef",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Starfish",
+              "persistentUuid": "647aab2d-0dc3-442d-8c14-0497f4090ffd",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "CameraFocused",
+          "persistentUuid": "03d07b78-480d-4bed-8fb2-2957bec36f17",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 30,
-          "height": 1728,
-          "layer": "",
-          "locked": true,
-          "name": "Ground",
-          "persistentUuid": "6a14e5ab-5c31-4692-8cd5-c50937fd60c6",
-          "width": 1920,
-          "x": -320,
-          "y": -576,
-          "z": -30,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Wall",
-          "persistentUuid": "15c4e0e3-be52-4e6b-bb16-37ddbbbd9296",
-          "width": 2048,
-          "x": -384,
-          "y": -640,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 64,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Wall",
-          "persistentUuid": "4955705b-f0d4-4f50-8427-c923662f0094",
-          "width": 2048,
-          "x": -384,
-          "y": 1152,
-          "zOrder": 16,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 1728,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Wall",
-          "persistentUuid": "40d29e05-0f28-4401-a44d-07125589520f",
-          "width": 64,
-          "x": -384,
-          "y": -576,
-          "zOrder": 17,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 64,
-          "height": 1728,
-          "keepRatio": true,
-          "layer": "",
-          "name": "Wall",
-          "persistentUuid": "4970e918-6973-4699-8a02-0d0b0aade12a",
-          "width": 64,
-          "x": 1600,
-          "y": -576,
-          "zOrder": 17,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "keepRatio": true,
-          "layer": "",
-          "name": "BlueBlock",
-          "persistentUuid": "9be648b5-34c7-41d8-bbfa-201bccb83a63",
-          "width": 0,
-          "x": 581,
-          "y": 595,
-          "zOrder": 18,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
         {
           "angle": 0,
           "customSize": true,
@@ -2275,8 +2275,8 @@
           "name": "cursor",
           "persistentUuid": "9b79c9f7-cc6e-4362-918f-7fdef865fc1e",
           "width": 142,
-          "x": 565,
-          "y": 280,
+          "x": 706,
+          "y": 236,
           "zOrder": 20,
           "numberProperties": [],
           "stringProperties": [],
@@ -2309,8 +2309,8 @@
           "name": "NormalTimer",
           "persistentUuid": "0be767ea-d7e1-4812-be92-5d4f4211f0fd",
           "width": 94,
-          "x": 1034,
-          "y": -411,
+          "x": 872,
+          "y": 78,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -2357,8 +2357,9 @@
           "name": "Starfish1_CORRECT",
           "persistentUuid": "2c3cbd02-89e6-4ff4-b7d7-34593f3a7bc0",
           "width": 0,
-          "x": 1117,
-          "y": -22,
+          "x": 1229,
+          "y": 907,
+          "z": 50,
           "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
@@ -2390,8 +2391,8 @@
           "name": "Starfish3",
           "persistentUuid": "fcbaa987-ec91-4e92-b693-887348d5a9e2",
           "width": 100,
-          "x": 1311,
-          "y": -24,
+          "x": 1285,
+          "y": 80,
           "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
@@ -2444,76 +2445,100 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "CameraPosition2",
+          "persistentUuid": "a6324609-eef7-43c6-bd29-0ddea7992c84",
+          "width": 0,
+          "x": 1361,
+          "y": 963,
+          "z": 30,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1314,
+          "height": 1912,
+          "keepRatio": true,
+          "layer": "",
+          "locked": true,
+          "name": "Tank",
+          "persistentUuid": "09a6ac62-4451-42f4-a69f-17d73c0c0413",
+          "sealed": true,
+          "width": 2721,
+          "x": 815,
+          "y": 876,
+          "z": -50,
+          "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 984.6610588817424,
+          "height": 1672.439386442356,
+          "keepRatio": true,
+          "layer": "",
+          "locked": true,
+          "name": "TankCeiling",
+          "persistentUuid": "0cd80d98-6f78-474b-9d11-e4a0511260e1",
+          "sealed": true,
+          "width": 2500,
+          "x": -2000,
+          "y": 876,
+          "z": -60,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 200,
+          "height": 1689,
+          "layer": "",
+          "name": "SandPit",
+          "persistentUuid": "d287065e-3cee-478a-aef1-83b2d3b1a87f",
+          "width": 2531,
+          "x": 815,
+          "y": 876,
+          "z": -100,
+          "zOrder": 34,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "CameraPosition1",
+          "persistentUuid": "af618974-e439-4086-a3c8-9743e79da411",
+          "width": 0,
+          "x": 150,
+          "y": 963,
+          "z": 30,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
-        {
-          "assetStoreId": "",
-          "name": "Ground",
-          "persistentUuid": "e50356d8-e24c-4e12-8435-9684026b40ef",
-          "type": "Scene3D::Cube3DObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Physics3D",
-              "type": "Physics3D::Physics3DBehavior",
-              "object3D": "Object3D",
-              "bodyType": "Static",
-              "bullet": false,
-              "fixedRotation": false,
-              "shape": "Box",
-              "shapeOrientation": "Z",
-              "shapeDimensionA": 0,
-              "shapeDimensionB": 0,
-              "shapeDimensionC": 0,
-              "density": 1,
-              "friction": 0.3,
-              "restitution": 0.1,
-              "linearDamping": 0.1,
-              "angularDamping": 0.1,
-              "gravityScale": 1,
-              "layers": 17,
-              "masks": 17,
-              "shapeOffsetX": 0,
-              "shapeOffsetY": 0,
-              "shapeOffsetZ": 0,
-              "massCenterOffsetX": 0,
-              "massCenterOffsetY": 0,
-              "massCenterOffsetZ": 0,
-              "massOverride": 0
-            }
-          ],
-          "content": {
-            "width": 1000,
-            "height": 1000,
-            "depth": 40,
-            "enableTextureTransparency": false,
-            "facesOrientation": "Y",
-            "frontFaceResourceName": "assets\\StartingGround.png",
-            "backFaceResourceName": "",
-            "backFaceUpThroughWhichAxisRotation": "X",
-            "leftFaceResourceName": "assets\\StartingWall.png",
-            "rightFaceResourceName": "assets\\StartingWall.png",
-            "topFaceResourceName": "assets\\StartingWall.png",
-            "bottomFaceResourceName": "assets\\StartingWall.png",
-            "frontFaceVisible": true,
-            "backFaceVisible": false,
-            "leftFaceVisible": true,
-            "rightFaceVisible": true,
-            "topFaceVisible": true,
-            "bottomFaceVisible": true,
-            "frontFaceResourceRepeat": true,
-            "backFaceResourceRepeat": false,
-            "leftFaceResourceRepeat": false,
-            "rightFaceResourceRepeat": false,
-            "topFaceResourceRepeat": false,
-            "bottomFaceResourceRepeat": false,
-            "materialType": "StandardWithoutMetalness",
-            "isCastingShadow": true,
-            "isReceivingShadow": true
-          }
-        },
         {
           "assetStoreId": "",
           "name": "Wall",
@@ -2583,7 +2608,7 @@
         },
         {
           "assetStoreId": "2f50c8526cc798caa1411e8e87103dfc71961a6c093f6db65389fa9b2ee3c792",
-          "name": "BlueBlock",
+          "name": "CameraPosition2",
           "persistentUuid": "39618280-ddd9-4646-b85b-6183c5992ce6",
           "type": "Scene3D::Cube3DObject",
           "variables": [],
@@ -2623,7 +2648,7 @@
         },
         {
           "assetStoreId": "71b278b32d4cfd95b7549df5e1ac57fc5140d0ab1b0b164eceb99eeda9419610",
-          "name": "CoralBlock",
+          "name": "CameraPosition1",
           "persistentUuid": "6defc994-76f1-498e-864c-04fcd4891721",
           "type": "Scene3D::Cube3DObject",
           "variables": [],
@@ -3029,6 +3054,114 @@
             "width": 100,
             "animations": []
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Tank",
+          "persistentUuid": "db976c6b-8cd4-44cb-9691-1f6d654389a3",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Physics3D",
+              "type": "Physics3D::Physics3DBehavior",
+              "object3D": "Object3D",
+              "bodyType": "Static",
+              "bullet": false,
+              "fixedRotation": false,
+              "shape": "Box",
+              "meshShapeResourceName": "",
+              "shapeOrientation": "Z",
+              "shapeDimensionA": 0,
+              "shapeDimensionB": 0,
+              "shapeDimensionC": 0,
+              "shapeOffsetX": 0,
+              "shapeOffsetY": 0,
+              "shapeOffsetZ": 0,
+              "massCenterOffsetX": 0,
+              "massCenterOffsetY": 0,
+              "massCenterOffsetZ": 0,
+              "massOverride": 0,
+              "density": 1,
+              "friction": 0.3,
+              "restitution": 0.1,
+              "linearDamping": 0.1,
+              "angularDamping": 0.1,
+              "gravityScale": 1,
+              "layers": 17,
+              "masks": 17
+            }
+          ],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": false,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "tankwtexture3.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "TankCeiling",
+          "persistentUuid": "09a0464a-df12-4ca5-b4ef-49bfa7906d74",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": false,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "ceilingwtexture4.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "SandPit",
+          "persistentUuid": "cf446994-286f-4f92-a506-78a97f193bb6",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "CenteredOnZ",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": false,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "sand3.glb",
+            "originLocation": "ModelOrigin",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -3038,16 +3171,13 @@
             "objectName": "Wall"
           },
           {
-            "objectName": "Ground"
-          },
-          {
             "objectName": "InventoryButton"
           },
           {
-            "objectName": "BlueBlock"
+            "objectName": "CameraPosition2"
           },
           {
-            "objectName": "CoralBlock"
+            "objectName": "CameraPosition1"
           },
           {
             "objectName": "cursor"
@@ -3078,6 +3208,15 @@
           },
           {
             "objectName": "BrokenTimerLidDisplay"
+          },
+          {
+            "objectName": "Tank"
+          },
+          {
+            "objectName": "TankCeiling"
+          },
+          {
+            "objectName": "SandPit"
           }
         ]
       },
@@ -3106,18 +3245,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "CenterCameraOnObject"
-                  },
-                  "parameters": [
-                    "",
-                    "BlueBlock",
-                    "no",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Scene3D::SetCameraRotationX"
                   },
                   "parameters": [
@@ -3125,7 +3252,7 @@
                     "=",
                     "90",
                     "",
-                    ""
+                    "1"
                   ]
                 },
                 {
@@ -3137,15 +3264,53 @@
                     "=",
                     "200",
                     "",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene3D::SetCameraFov"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "90",
+                    "",
                     ""
                   ]
                 },
                 {
                   "type": {
-                    "value": "HideCursor"
+                    "value": "SetCameraCenterX"
                   },
                   "parameters": [
-                    "cursor"
+                    "",
+                    "=",
+                    "CameraPosition2.CenterX()",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "CameraPosition2.CenterY()",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraFocused",
+                    "False",
+                    "="
                   ]
                 }
               ]
@@ -3165,6 +3330,32 @@
                     "=",
                     "CursorY(\"UI\")"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "HideCursor"
+                  },
+                  "parameters": [
+                    "cursor"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetCameraAngle"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "DefaultCameraPosition",
+                    "",
+                    ""
+                  ]
                 }
               ]
             }
@@ -3176,199 +3367,278 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "",
+          "name": "CAMERA CONTROLS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraFocused",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "DefaultCameraPosition",
+                        "+",
+                        "90"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Right\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "DefaultCameraPosition",
+                        "-",
+                        "90"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraFocused",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Down\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene3D::SetCameraRotationX"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "90",
+                        "",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Scene3D::SetCameraZ"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "200",
+                        "",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCameraCenterX"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "CameraPosition2.CenterX()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetCameraCenterY"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "CameraPosition2.CenterY()",
+                        "",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraFocused",
+                        "False",
+                        "="
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "OBJECT FOCUSING",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Raycaster3D::RaycastFromCameraCursor"
-              },
-              "parameters": [
-                "",
-                "Starfish1_CORRECT",
-                "\"UI\"",
-                "10000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "CenterCameraOnObject"
-              },
-              "parameters": [
-                "",
-                "Starfish1_CORRECT",
-                "no",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
-              },
-              "parameters": [
-                "",
-                "Starfish1_CORRECT.CenterX()",
-                "Starfish1_CORRECT.CenterY()",
-                "Starfish1_CORRECT.Object3D::UpZ()",
-                "200",
-                "180",
-                "90",
-                "",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "MouseButtonFromTextReleased"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Raycaster3D::RaycastFromCameraCursor"
-              },
-              "parameters": [
-                "",
-                "BlueBlock",
-                "\"UI\"",
-                "10000",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "CenterCameraOnObject"
-              },
-              "parameters": [
-                "",
-                "BlueBlock",
-                "no",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene3D::SetCameraRotationX"
-              },
-              "parameters": [
-                "",
-                "=",
-                "40",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene3D::SetCameraRotationY"
-              },
-              "parameters": [
-                "",
-                "=",
-                "0",
-                "",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextJustPressed"
-              },
-              "parameters": [
-                "",
-                "\"Left\""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Raycaster3D::RaycastFromCameraCursor"
+                  },
+                  "parameters": [
+                    "",
+                    "Starfish1_CORRECT",
+                    "\"UI\"",
+                    "10000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "LastSavedCameraPosition.Starfish",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "CenterCameraOnObject"
+                  },
+                  "parameters": [
+                    "",
+                    "Starfish1_CORRECT",
+                    "no",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                  },
+                  "parameters": [
+                    "",
+                    "Starfish1_CORRECT.CenterX()",
+                    "Starfish1_CORRECT.CenterY()",
+                    "Starfish1_CORRECT.Object3D::UpZ()",
+                    "200",
+                    "180",
+                    "90",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "LastSavedCameraPosition.Starfish",
+                    "True",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraFocused",
+                    "True",
+                    "="
+                  ]
+                }
               ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetCameraAngle"
-              },
-              "parameters": [
-                "",
-                "+",
-                "90",
-                "",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "KeyFromTextJustPressed"
-              },
-              "parameters": [
-                "",
-                "\"Right\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetCameraAngle"
-              },
-              "parameters": [
-                "",
-                "-",
-                "90",
-                "",
-                ""
-              ]
-            }
-          ]
+          "parameters": []
         }
       ],
       "layers": [
