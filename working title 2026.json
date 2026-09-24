@@ -2514,12 +2514,44 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.37734833747124535,
+        "zoomFactor": 0.7968414409354947,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
       },
-      "objectsGroups": [],
+      "objectsGroups": [
+        {
+          "name": "OxygenPump",
+          "objects": [
+            {
+              "name": "OxygenPumpBase"
+            },
+            {
+              "name": "OxygenPumpCase"
+            },
+            {
+              "name": "StarfishLock"
+            }
+          ]
+        },
+        {
+          "name": "TrapdoorLockGROUP",
+          "objects": [
+            {
+              "name": "TrapdoorLock"
+            },
+            {
+              "name": "TrapdoorLockDial1"
+            },
+            {
+              "name": "TrapdoorLockDial2"
+            },
+            {
+              "name": "TrapdoorLockDial3"
+            }
+          ]
+        }
+      ],
       "variables": [
         {
           "name": "ControlKind",
@@ -2591,18 +2623,36 @@
           "type": "structure",
           "children": [
             {
-              "name": "Starfish",
+              "name": "OxygenPump",
               "persistentUuid": "647aab2d-0dc3-442d-8c14-0497f4090ffd",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "TrapdoorLock",
+              "persistentUuid": "2e9fe172-bdcb-4549-bcba-488f312ad149",
               "type": "boolean",
               "value": false
             }
           ]
         },
         {
+          "name": "TrapdoorlockView",
+          "persistentUuid": "ae577618-92cb-452c-971d-fd34a1e57ee0",
+          "type": "number",
+          "value": 0
+        },
+        {
           "name": "CameraFocused",
           "persistentUuid": "03d07b78-480d-4bed-8fb2-2957bec36f17",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "LockCombinationNOTE__",
+          "persistentUuid": "57bc28c9-a5d5-4109-84e1-cf72745e4a1a",
+          "type": "string",
+          "value": "Tail, Conch, Shell (1,2,3)"
         }
       ],
       "instances": [
@@ -2701,34 +2751,34 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 165,
-          "height": 405,
+          "depth": 122.22222222222223,
+          "height": 300,
           "keepRatio": true,
           "layer": "",
           "name": "BrokenTimerBase",
           "persistentUuid": "cbdbe62b-9620-4b7d-a042-9641d2fab564",
-          "width": 81,
+          "width": 60,
           "x": -452,
-          "y": 1187,
-          "z": 305,
+          "y": 1363,
+          "z": 384,
           "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": 180,
+          "angle": 0,
           "customSize": true,
-          "depth": 168,
-          "height": 405,
+          "depth": 124.44444444444444,
+          "height": 300,
           "keepRatio": true,
           "layer": "",
           "name": "BrokenTimerLidDisplay",
           "persistentUuid": "804eb63b-8f74-461d-a496-49b48cec2329",
-          "width": 39,
-          "x": -427,
-          "y": 1418,
-          "z": 306,
+          "width": 28.888888888888893,
+          "x": -409,
+          "y": 1363,
+          "z": 384,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -2860,7 +2910,6 @@
           "name": "NewSpotLight",
           "persistentUuid": "968c6c36-fd74-4342-a710-8fe2593a3b91",
           "rotationY": 88,
-          "sealed": true,
           "width": 120,
           "x": 1526,
           "y": 531,
@@ -2919,8 +2968,10 @@
           "height": 200,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "BlueCoral1",
           "persistentUuid": "4f2a6822-c2c1-44d3-9742-a88c3795055b",
+          "sealed": true,
           "width": 758,
           "x": 9,
           "y": 215,
@@ -2937,9 +2988,11 @@
           "height": 344,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "BlueCoral2",
           "persistentUuid": "f3dd7258-d564-4cc2-abbd-60a8df3cdf77",
           "rotationX": 4,
+          "sealed": true,
           "width": 916,
           "x": 857,
           "y": 261,
@@ -2956,8 +3009,10 @@
           "height": 358,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "OrangeCoral1",
           "persistentUuid": "d6ef3fa5-e40a-476d-970b-230318805bd3",
+          "sealed": true,
           "width": 740,
           "x": 1514,
           "y": 1559,
@@ -2974,8 +3029,10 @@
           "height": 241,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "OrangeCoral2",
           "persistentUuid": "54bafb57-0677-4e09-a0a9-d29899761cb5",
+          "sealed": true,
           "width": 553,
           "x": 975,
           "y": 1549,
@@ -2992,8 +3049,10 @@
           "height": 493,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "PinkCoral1",
           "persistentUuid": "74cf11c4-82f7-440d-8416-3cbab44f2488",
+          "sealed": true,
           "width": 359,
           "x": 1089,
           "y": 424,
@@ -3010,9 +3069,11 @@
           "height": 347,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "PinkCoral2",
           "persistentUuid": "34218786-89fc-4085-912f-f43af4a17a29",
           "rotationY": 355,
+          "sealed": true,
           "width": 310,
           "x": 1075,
           "y": 1353,
@@ -3029,8 +3090,10 @@
           "height": 263,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "PinkCoral3",
           "persistentUuid": "573a7d0c-06a6-45f3-9fc6-df134ddcdc0c",
+          "sealed": true,
           "width": 258,
           "x": 1549,
           "y": 1328,
@@ -3047,9 +3110,11 @@
           "height": 194,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "PurpYellowCoral1",
           "persistentUuid": "edb97397-86ba-466f-8724-6361ed3a78ef",
           "rotationY": 357,
+          "sealed": true,
           "width": 291,
           "x": -38,
           "y": 423,
@@ -3066,8 +3131,10 @@
           "height": 276,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "PurpYellowCoral2",
           "persistentUuid": "2f6c44ed-c2a0-4f29-af78-7497b7783f3a",
+          "sealed": true,
           "width": 423,
           "x": 354,
           "y": 505,
@@ -3083,8 +3150,10 @@
           "depth": 398,
           "height": 118,
           "layer": "",
+          "locked": true,
           "name": "Seaweed2",
           "persistentUuid": "15475c2a-b274-431a-9243-8931bf0ce613",
+          "sealed": true,
           "width": 201,
           "x": 276,
           "y": 312,
@@ -3100,8 +3169,10 @@
           "depth": 438,
           "height": 136,
           "layer": "",
+          "locked": true,
           "name": "Seaweed3",
           "persistentUuid": "13183e8b-d038-4a45-baf2-6a40954752c1",
+          "sealed": true,
           "width": 228,
           "x": 1706,
           "y": 195,
@@ -3117,8 +3188,10 @@
           "depth": 619,
           "height": 198,
           "layer": "",
+          "locked": true,
           "name": "Seaweed4",
           "persistentUuid": "6ba1c1a9-c31d-40b7-bcc0-7318e5badc37",
+          "sealed": true,
           "width": 372,
           "x": 1860,
           "y": 1541,
@@ -3134,8 +3207,10 @@
           "depth": 415,
           "height": 147,
           "layer": "",
+          "locked": true,
           "name": "Seaweed5",
           "persistentUuid": "7db3f5fc-3e48-40c4-b356-9d6fa28fabfe",
+          "sealed": true,
           "width": 397,
           "x": 291,
           "y": 1512,
@@ -3151,8 +3226,10 @@
           "depth": 89,
           "height": 116,
           "layer": "",
+          "locked": true,
           "name": "Rock1",
           "persistentUuid": "8817649d-c573-4902-80de-3b55f97db6b0",
+          "sealed": true,
           "width": 214,
           "x": 1795,
           "y": 1405,
@@ -3168,9 +3245,11 @@
           "depth": 61,
           "height": 64,
           "layer": "",
+          "locked": true,
           "name": "Rock2",
           "persistentUuid": "9b78579c-fe3f-4c3c-b68a-42adcdc683d4",
           "rotationY": 8,
+          "sealed": true,
           "width": 109,
           "x": 1686,
           "y": 1422,
@@ -3186,9 +3265,11 @@
           "depth": 112,
           "height": 103,
           "layer": "",
+          "locked": true,
           "name": "Rock3",
           "persistentUuid": "ccf47824-e1a4-4aab-935a-03dbb6a8795f",
           "rotationY": 343,
+          "sealed": true,
           "width": 211,
           "x": 215,
           "y": 333,
@@ -3204,10 +3285,12 @@
           "depth": 162,
           "height": 149,
           "layer": "",
+          "locked": true,
           "name": "Rock3",
           "persistentUuid": "a9b7298d-4b50-4f09-ab67-8e7d0a1ee03d",
           "rotationX": 5,
           "rotationY": 338,
+          "sealed": true,
           "width": 305,
           "x": -267,
           "y": 140,
@@ -3223,8 +3306,10 @@
           "depth": 281,
           "height": 259,
           "layer": "",
+          "locked": true,
           "name": "Rock3",
           "persistentUuid": "3a2e7564-8a0e-4f41-a975-f8ef945633e6",
+          "sealed": true,
           "width": 529,
           "x": -112,
           "y": 1489,
@@ -3241,8 +3326,10 @@
           "height": 263,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "PinkCoral3",
           "persistentUuid": "a2b9da4b-58d4-40fc-b389-db21d18cf95a",
+          "sealed": true,
           "width": 258,
           "x": 827,
           "y": 1311,
@@ -3258,8 +3345,10 @@
           "depth": 539,
           "height": 160,
           "layer": "",
+          "locked": true,
           "name": "Seaweed2",
           "persistentUuid": "a41babf5-c8e4-447c-92c3-e67720a6e3f7",
+          "sealed": true,
           "width": 272,
           "x": -274,
           "y": 1640,
@@ -3275,8 +3364,10 @@
           "depth": 477,
           "height": 140,
           "layer": "",
+          "locked": true,
           "name": "Seaweed5",
           "persistentUuid": "5810cfde-f0e4-448c-9e6b-fbffbf3402cf",
+          "sealed": true,
           "width": 406,
           "x": 1886,
           "y": 1365,
@@ -3293,10 +3384,12 @@
           "height": 178,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "PurpYellowCoral1",
           "persistentUuid": "c428976c-6656-429b-b036-0c14bd73f1b1",
           "rotationX": 357,
           "rotationY": 6,
+          "sealed": true,
           "width": 267,
           "x": 1793,
           "y": 1165,
@@ -3312,8 +3405,10 @@
           "depth": 89,
           "height": 116,
           "layer": "",
+          "locked": true,
           "name": "Rock1",
           "persistentUuid": "64751454-a6fb-4887-abf7-bfbc50d22866",
+          "sealed": true,
           "width": 214,
           "x": 1547,
           "y": 230,
@@ -3393,25 +3488,26 @@
           "name": "TrapdoorLock",
           "persistentUuid": "4aba54db-e12a-42b0-9bb1-369a037b0812",
           "width": 223,
-          "x": 2017,
+          "x": 2015,
           "y": 1368,
-          "z": 507,
+          "z": 573,
           "zOrder": 51,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 74,
           "customSize": false,
           "height": 97.28625398684369,
           "layer": "",
           "name": "Starfish2",
           "persistentUuid": "e3626d50-46a3-4224-91c9-f39b79d9fd93",
-          "rotationX": 325,
+          "rotationX": 313,
+          "rotationY": 324,
           "width": 100,
-          "x": 287,
-          "y": 413,
+          "x": 120,
+          "y": 331,
           "z": -288,
           "zOrder": 0,
           "numberProperties": [],
@@ -3423,9 +3519,11 @@
           "customSize": true,
           "height": 48.39005187194781,
           "layer": "",
+          "locked": true,
           "name": "Starfish3",
           "persistentUuid": "5793ab31-ed9f-4ac3-b093-f1744810277e",
           "rotationY": 352,
+          "sealed": true,
           "width": 41,
           "x": 1776,
           "y": 1299,
@@ -3442,10 +3540,12 @@
           "height": 248,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "BlueCoral2",
           "persistentUuid": "5edb936a-47a3-48ba-b123-455ab1b6a212",
           "rotationX": 7,
           "rotationY": 4,
+          "sealed": true,
           "width": 660,
           "x": -289,
           "y": 555,
@@ -3462,8 +3562,10 @@
           "height": 276,
           "keepRatio": true,
           "layer": "",
+          "locked": true,
           "name": "PurpYellowCoral2",
           "persistentUuid": "82dc8733-2978-45b8-8000-f49beae4b71d",
+          "sealed": true,
           "width": 423,
           "x": -132,
           "y": 584,
@@ -3479,8 +3581,10 @@
           "depth": 477,
           "height": 140,
           "layer": "",
+          "locked": true,
           "name": "Seaweed5",
           "persistentUuid": "fe7d20cc-8751-49da-8453-88803d123002",
+          "sealed": true,
           "width": 406,
           "x": -317,
           "y": 934,
@@ -3582,9 +3686,9 @@
           "rotationX": 89,
           "rotationY": 357,
           "width": 23,
-          "x": -434,
-          "y": 1059,
-          "z": 239,
+          "x": -448,
+          "y": 1266,
+          "z": 335,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -3616,15 +3720,87 @@
           "height": 115,
           "keepRatio": true,
           "layer": "",
-          "locked": true,
           "name": "NewSpotLight",
           "persistentUuid": "444ad839-84e6-4e1b-a722-504638e6ffb1",
-          "rotationY": 88,
-          "sealed": true,
+          "rotationY": 79,
           "width": 120,
           "x": 1182,
-          "y": 265,
-          "z": 871,
+          "y": 315,
+          "z": 951,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 62,
+          "height": 61,
+          "layer": "",
+          "name": "TrapdoorLockDial1",
+          "persistentUuid": "dbc07cea-ac29-4a38-ad60-f57cb1c64562",
+          "width": 50,
+          "x": 2016,
+          "y": 1313,
+          "z": 565,
+          "zOrder": 52,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 62,
+          "height": 61,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TrapdoorLockDial2",
+          "persistentUuid": "e695727b-fc44-4ae5-9544-ae7c9a492247",
+          "width": 50,
+          "x": 2016,
+          "y": 1369,
+          "z": 565,
+          "zOrder": 53,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 62,
+          "height": 61,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TrapdoorLockDial3",
+          "persistentUuid": "a97165c7-9a66-416e-b680-68002aac1541",
+          "width": 50,
+          "x": 2016,
+          "y": 1424,
+          "z": 565,
+          "zOrder": 54,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 2017,
+          "height": 2017,
+          "keepRatio": true,
+          "layer": "",
+          "locked": true,
+          "name": "NewSpotLight",
+          "persistentUuid": "d832bac5-efbe-4d27-8e3a-8e450f4a75b0",
+          "rotationY": 31,
+          "sealed": true,
+          "width": 2017,
+          "x": 1080,
+          "y": 1379,
+          "z": 766,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -4757,6 +4933,7 @@
         {
           "assetStoreId": "",
           "name": "Shell1",
+          "persistentUuid": "089c220d-43ad-4d3c-852a-de636492ab63",
           "type": "Scene3D::Model3DObject",
           "variables": [],
           "effects": [],
@@ -4782,6 +4959,7 @@
         {
           "assetStoreId": "",
           "name": "Shell2",
+          "persistentUuid": "498a7788-8e87-4cb7-b01c-7661bfafd85d",
           "type": "Scene3D::Model3DObject",
           "variables": [],
           "effects": [],
@@ -4807,6 +4985,7 @@
         {
           "assetStoreId": "",
           "name": "Shell3",
+          "persistentUuid": "d5d88e07-0b04-44f2-9e06-f04f30ccb24d",
           "type": "Scene3D::Model3DObject",
           "variables": [],
           "effects": [],
@@ -4883,6 +5062,7 @@
         {
           "assetStoreId": "",
           "name": "TrapdoorLockDial1",
+          "persistentUuid": "e5094cc1-128e-433c-9afe-f1a3e52f6706",
           "type": "Scene3D::Model3DObject",
           "variables": [],
           "effects": [],
@@ -5143,6 +5323,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "GAME SETUP",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5168,6 +5349,36 @@
                     "CameraFocused",
                     "False",
                     "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "ObjectFocus.OxygenPump",
+                    "False",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "ObjectFocus.TrapdoorLock",
+                    "False",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "TrapdoorlockView",
+                    "=",
+                    "0"
                   ]
                 },
                 {
@@ -5219,7 +5430,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "170",
+                    "140",
                     "",
                     "1"
                   ]
@@ -5231,7 +5442,7 @@
                   "parameters": [
                     "",
                     "=",
-                    "95",
+                    "85",
                     "",
                     ""
                   ]
@@ -5291,23 +5502,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "colorB": 228,
-              "colorG": 176,
-              "colorR": 74,
-              "creationTime": 0,
-              "name": "LIGHTING",
-              "source": "",
-              "type": "BuiltinCommonInstructions::Group",
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": []
-                }
-              ],
-              "parameters": []
             }
           ],
           "parameters": []
@@ -5332,24 +5526,6 @@
                 "textR": 0
               },
               "comment": "changes camera position"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetCameraAngle"
-                  },
-                  "parameters": [
-                    "",
-                    "=",
-                    "CameraView[CameraViewNum]",
-                    "",
-                    ""
-                  ]
-                }
-              ]
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -5481,6 +5657,24 @@
               ],
               "actions": [],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetCameraAngle"
+                      },
+                      "parameters": [
+                        "",
+                        "=",
+                        "CameraView[CameraViewNum]",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
@@ -5793,6 +5987,36 @@
                         "value": "SetBooleanVariable"
                       },
                       "parameters": [
+                        "ObjectFocus.OxygenPump",
+                        "False",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "ObjectFocus.TrapdoorLock",
+                        "False",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "TrapdoorlockView",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
                         "CameraNum.Camera1",
                         "False",
                         "90"
@@ -6046,12 +6270,595 @@
                     "",
                     "Starfish1_CORRECT.CenterX()",
                     "Starfish1_CORRECT.CenterY()",
-                    "Starfish1_CORRECT.Object3D::UpZ()",
-                    "200",
-                    "180",
+                    "20",
+                    "10",
+                    "0",
                     "90",
                     "",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "oxygen pump"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Raycaster3D::RaycastFromCameraCursor"
+                  },
+                  "parameters": [
+                    "",
+                    "OxygenPump",
+                    "\"UI\"",
+                    "10000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraFocused",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera2",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "ObjectFocus.OxygenPump",
+                    "=",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraFocused",
+                    "True",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "ObjectFocus.OxygenPump",
+                    "True",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera1",
+                    "False",
+                    "90"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera2",
+                    "False",
+                    "90"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                  },
+                  "parameters": [
+                    "",
+                    "OxygenPump.CenterX()",
+                    "OxygenPump.CenterY()-100",
+                    "200",
+                    "400",
+                    "0",
+                    "0",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "ObjectFocus.OxygenPump",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                      },
+                      "parameters": [
+                        "",
+                        "OxygenPump.CenterX()",
+                        "OxygenPump.CenterY()",
+                        "200",
+                        "250",
+                        "90",
+                        "0",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Right\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                      },
+                      "parameters": [
+                        "",
+                        "OxygenPump.CenterX()+150",
+                        "OxygenPump.CenterY()",
+                        "200",
+                        "350",
+                        "0",
+                        "0",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "trapdoor lock"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MouseButtonFromTextReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Left\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Raycaster3D::RaycastFromCameraCursor"
+                  },
+                  "parameters": [
+                    "",
+                    "TrapdoorLockGROUP",
+                    "\"UI\"",
+                    "10000",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraFocused",
+                    "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera2",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "ObjectFocus.TrapdoorLock",
+                    "=",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraFocused",
+                    "True",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "ObjectFocus.TrapdoorLock",
+                    "True",
+                    "="
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera1",
+                    "False",
+                    "90"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "CameraNum.Camera2",
+                    "False",
+                    "90"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "ObjectFocus.TrapdoorLock",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "limits for diff camera perspectives"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "TrapdoorlockView",
+                        "<",
+                        "-1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "TrapdoorlockView",
+                        "=",
+                        "-1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "TrapdoorlockView",
+                        ">",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "TrapdoorlockView",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "key controls for camera switch perspectives"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "TrapdoorlockView",
+                        "+",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyFromTextJustPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Right\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "TrapdoorlockView",
+                        "-",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "TrapdoorlockView",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                      },
+                      "parameters": [
+                        "",
+                        "TrapdoorLockGROUP.CenterX()",
+                        "TrapdoorLockGROUP.CenterY()-100",
+                        "575",
+                        "200",
+                        "180",
+                        "-25",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "TrapdoorlockView",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                      },
+                      "parameters": [
+                        "",
+                        "TrapdoorLockGROUP.CenterX()",
+                        "TrapdoorLockGROUP.CenterY()-50",
+                        "550",
+                        "200",
+                        "90",
+                        "-25",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberVariable"
+                      },
+                      "parameters": [
+                        "TrapdoorlockView",
+                        "=",
+                        "-1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                      },
+                      "parameters": [
+                        "",
+                        "TrapdoorLockGROUP.CenterX()+25",
+                        "TrapdoorLockGROUP.CenterY()",
+                        "575",
+                        "180",
+                        "0",
+                        "-25",
+                        "",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -6083,7 +6890,16 @@
                 "cam1",
                 "Text",
                 "=",
-                "CameraViewNum"
+                "ToString(TrapdoorlockView)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "cam1",
+                "\"255;255;255\""
               ]
             }
           ]
@@ -6100,7 +6916,16 @@
                 "cam2",
                 "Text",
                 "=",
-                "CameraNum.Camera2"
+                "ToString(TrapdoorLockGROUP.CenterY())"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextObject::ChangeColor"
+              },
+              "parameters": [
+                "cam2",
+                "\"255;255;255\""
               ]
             }
           ]
