@@ -866,6 +866,22 @@
         "metadata": "",
         "name": "trapdoorlockwbothkeyholes.glb",
         "userAdded": false
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/DialogueData.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\",\"localFilePath\":\"assets/DialogueData.json\"}",
+        "name": "DialogueData",
+        "userAdded": false
+      },
+      {
+        "file": "assets/default.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -898,7 +914,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5290357402156842,
+        "zoomFactor": 0.7130377630690401,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2514,14 +2530,14 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7968414409354947,
+        "zoomFactor": 0.5714359414182852,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
       },
       "objectsGroups": [
         {
-          "name": "OxygenPump",
+          "name": "OxygenPumpGROUP",
           "objects": [
             {
               "name": "OxygenPumpBase"
@@ -2550,6 +2566,17 @@
               "name": "TrapdoorLockDial3"
             }
           ]
+        },
+        {
+          "name": "BrokenTimerGROUP",
+          "objects": [
+            {
+              "name": "BrokenTimerBase"
+            },
+            {
+              "name": "BrokenTimerLidDisplay"
+            }
+          ]
         }
       ],
       "variables": [
@@ -2560,6 +2587,7 @@
           "value": "Keyboard"
         },
         {
+          "folded": true,
           "name": "CameraView",
           "persistentUuid": "6d605f90-ba98-4eb3-a8a6-93538629e9a6",
           "type": "array",
@@ -2593,6 +2621,7 @@
           "value": 0
         },
         {
+          "folded": true,
           "name": "CameraNum",
           "persistentUuid": "0326af9f-010b-4182-b033-15b78a1db59b",
           "type": "structure",
@@ -2618,10 +2647,17 @@
           ]
         },
         {
+          "folded": true,
           "name": "ObjectFocus",
           "persistentUuid": "9f6b3060-a337-4769-b4e9-4e65e20259ef",
           "type": "structure",
           "children": [
+            {
+              "name": "BrokenTimer",
+              "persistentUuid": "240f3dd6-6917-41c2-9002-def44a50ddc8",
+              "type": "boolean",
+              "value": false
+            },
             {
               "name": "OxygenPump",
               "persistentUuid": "647aab2d-0dc3-442d-8c14-0497f4090ffd",
@@ -2653,6 +2689,12 @@
           "persistentUuid": "57bc28c9-a5d5-4109-84e1-cf72745e4a1a",
           "type": "string",
           "value": "Tail, Conch, Shell (1,2,3)"
+        },
+        {
+          "name": "DialogueActive",
+          "persistentUuid": "c909fcb7-5547-4cc0-92de-44f22d496bda",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -2664,7 +2706,7 @@
           "keepRatio": true,
           "layer": "UI",
           "locked": true,
-          "name": "cursor",
+          "name": "Crosshair",
           "persistentUuid": "9b79c9f7-cc6e-4362-918f-7fdef865fc1e",
           "sealed": true,
           "width": 142,
@@ -2697,13 +2739,12 @@
         {
           "angle": 270,
           "customSize": true,
-          "depth": 307,
+          "depth": 306,
           "height": 280,
-          "keepRatio": true,
           "layer": "",
           "name": "OxygenPumpBase",
           "persistentUuid": "1f3b1b06-4b3f-4dc9-9865-de581f5791f4",
-          "width": 130,
+          "width": 129,
           "x": 1453,
           "y": 48,
           "z": 106,
@@ -2715,15 +2756,14 @@
         {
           "angle": 270,
           "customSize": true,
-          "depth": 280,
-          "height": 276,
-          "keepRatio": true,
+          "depth": 279,
+          "height": 280,
           "layer": "",
           "name": "OxygenPumpCase",
           "persistentUuid": "97e34b8e-b55b-4518-9f98-82f1775c32ea",
-          "width": 66,
-          "x": 1455,
-          "y": 144,
+          "width": 80,
+          "x": 1453,
+          "y": 152,
           "z": 120,
           "zOrder": 24,
           "numberProperties": [],
@@ -2907,7 +2947,7 @@
           "keepRatio": true,
           "layer": "",
           "locked": true,
-          "name": "NewSpotLight",
+          "name": "AquaLight",
           "persistentUuid": "968c6c36-fd74-4342-a710-8fe2593a3b91",
           "rotationY": 88,
           "width": 120,
@@ -2927,7 +2967,7 @@
           "keepRatio": true,
           "layer": "",
           "locked": true,
-          "name": "NewSpotLight",
+          "name": "AquaLight",
           "persistentUuid": "75f0d01b-7e0e-476f-93a3-6e28eac2a6cf",
           "rotationY": 88,
           "sealed": true,
@@ -2948,7 +2988,7 @@
           "keepRatio": true,
           "layer": "",
           "locked": true,
-          "name": "NewSpotLight",
+          "name": "AquaLight",
           "persistentUuid": "d301a56c-24de-40d9-ba23-970b1e685701",
           "rotationY": 88,
           "sealed": true,
@@ -3400,25 +3440,6 @@
           "initialVariables": []
         },
         {
-          "angle": 44,
-          "customSize": true,
-          "depth": 89,
-          "height": 116,
-          "layer": "",
-          "locked": true,
-          "name": "Rock1",
-          "persistentUuid": "64751454-a6fb-4887-abf7-bfbc50d22866",
-          "sealed": true,
-          "width": 214,
-          "x": 1547,
-          "y": 230,
-          "z": -316,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
           "angle": 329,
           "customSize": true,
           "depth": 23,
@@ -3497,18 +3518,18 @@
           "initialVariables": []
         },
         {
-          "angle": 74,
+          "angle": 53,
           "customSize": false,
           "height": 97.28625398684369,
           "layer": "",
           "name": "Starfish2",
           "persistentUuid": "e3626d50-46a3-4224-91c9-f39b79d9fd93",
-          "rotationX": 313,
-          "rotationY": 324,
+          "rotationX": 2,
+          "rotationY": 347,
           "width": 100,
-          "x": 120,
-          "y": 331,
-          "z": -288,
+          "x": 7,
+          "y": 247,
+          "z": -331,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -3602,7 +3623,7 @@
           "keepRatio": true,
           "layer": "",
           "locked": true,
-          "name": "NewSpotLight",
+          "name": "AquaLight",
           "persistentUuid": "8067c308-aecd-4977-816a-713316551d34",
           "rotationY": 88,
           "sealed": true,
@@ -3623,7 +3644,7 @@
           "keepRatio": true,
           "layer": "",
           "locked": true,
-          "name": "NewSpotLight",
+          "name": "AquaLight",
           "persistentUuid": "ef26ba64-239f-442a-a7c0-479a24af5490",
           "rotationY": 88,
           "sealed": true,
@@ -3667,7 +3688,7 @@
           "persistentUuid": "1fff2451-ccfb-49f8-9217-aaf63172b669",
           "sealed": true,
           "width": 2631,
-          "x": 809,
+          "x": 3809,
           "y": 713,
           "z": -344,
           "zOrder": 0,
@@ -3720,9 +3741,11 @@
           "height": 115,
           "keepRatio": true,
           "layer": "",
-          "name": "NewSpotLight",
+          "locked": true,
+          "name": "AquaLight",
           "persistentUuid": "444ad839-84e6-4e1b-a722-504638e6ffb1",
           "rotationY": 79,
+          "sealed": true,
           "width": 120,
           "x": 1182,
           "y": 315,
@@ -3758,6 +3781,7 @@
           "layer": "",
           "name": "TrapdoorLockDial2",
           "persistentUuid": "e695727b-fc44-4ae5-9544-ae7c9a492247",
+          "rotationX": 130,
           "width": 50,
           "x": 2016,
           "y": 1369,
@@ -3776,6 +3800,7 @@
           "layer": "",
           "name": "TrapdoorLockDial3",
           "persistentUuid": "a97165c7-9a66-416e-b680-68002aac1541",
+          "rotationX": 260,
           "width": 50,
           "x": 2016,
           "y": 1424,
@@ -3788,20 +3813,71 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 2017,
-          "height": 2017,
+          "depth": 119.99999999999999,
+          "height": 119.99999999999999,
           "keepRatio": true,
           "layer": "",
           "locked": true,
-          "name": "NewSpotLight",
+          "name": "AquaLight",
           "persistentUuid": "d832bac5-efbe-4d27-8e3a-8e450f4a75b0",
           "rotationY": 31,
           "sealed": true,
-          "width": 2017,
-          "x": 1080,
+          "width": 120,
+          "x": 902,
           "y": 1379,
-          "z": 766,
+          "z": 992,
           "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 44,
+          "customSize": true,
+          "depth": 89,
+          "height": 116,
+          "layer": "",
+          "name": "Rock4",
+          "persistentUuid": "8e1f09fc-4846-4383-b584-dd2fdf51ea27",
+          "width": 214,
+          "x": 1547,
+          "y": 230,
+          "z": -314,
+          "zOrder": 55,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 210,
+          "keepRatio": true,
+          "layer": "Dialogue",
+          "name": "DialogueBox",
+          "persistentUuid": "4d99905a-5e23-4bb1-99bd-99274074a543",
+          "width": 1220,
+          "x": 35,
+          "y": 475,
+          "zOrder": 56,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 156,
+          "keepRatio": true,
+          "layer": "Dialogue",
+          "name": "DialogueText",
+          "persistentUuid": "ae200bd2-02bc-4b8c-9c57-2ba12d387301",
+          "width": 1154,
+          "x": 65,
+          "y": 502,
+          "zOrder": 57,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3891,7 +3967,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "cursor",
+          "name": "Crosshair",
           "persistentUuid": "6bd75412-abb1-4d80-9eb5-8060719be87f",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -4022,32 +4098,6 @@
               ]
             }
           ]
-        },
-        {
-          "assetStoreId": "",
-          "name": "NormalTimer",
-          "persistentUuid": "07e8b4d9-aebb-4061-b24c-dc062ee0ecc9",
-          "type": "Scene3D::Model3DObject",
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "content": {
-            "centerLocation": "ObjectCenter",
-            "crossfadeDuration": 0.10000000149011612,
-            "depth": 100,
-            "height": 100,
-            "isCastingShadow": true,
-            "isReceivingShadow": true,
-            "keepAspectRatio": true,
-            "materialType": "StandardWithoutMetalness",
-            "modelResourceName": "normal_timer.glb",
-            "originLocation": "ObjectCenter",
-            "rotationX": 90,
-            "rotationY": 0,
-            "rotationZ": 90,
-            "width": 100,
-            "animations": []
-          }
         },
         {
           "assetStoreId": "",
@@ -4455,7 +4505,7 @@
         },
         {
           "assetStoreId": "",
-          "name": "NewSpotLight",
+          "name": "AquaLight",
           "persistentUuid": "b2282578-51c8-477a-b1f1-31f37b708624",
           "type": "Light3D::SpotLight3D",
           "variant": "",
@@ -4727,6 +4777,7 @@
         {
           "assetStoreId": "",
           "name": "Rock1",
+          "persistentUuid": "4465ebc6-ddf5-4526-b2aa-db1b44300bae",
           "type": "Scene3D::Model3DObject",
           "variables": [],
           "effects": [],
@@ -5162,14 +5213,156 @@
             "width": 100,
             "animations": []
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "Rock4",
+          "persistentUuid": "14d65d9f-0017-4d86-800c-da43e9ab37df",
+          "type": "Scene3D::Model3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "centerLocation": "ObjectCenter",
+            "crossfadeDuration": 0.10000000149011612,
+            "depth": 100,
+            "height": 100,
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "keepAspectRatio": true,
+            "materialType": "StandardWithoutMetalness",
+            "modelResourceName": "rock1.glb",
+            "originLocation": "ObjectCenter",
+            "rotationX": 90,
+            "rotationY": 0,
+            "rotationZ": 90,
+            "width": 100,
+            "animations": []
+          }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "DialogueBox",
+          "persistentUuid": "3555a361-93f6-4cce-9761-c0a015831842",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "default",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 568,
+                            "y": 0
+                          },
+                          {
+                            "x": 568,
+                            "y": 120
+                          },
+                          {
+                            "x": 0,
+                            "y": 120
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "DialogueText",
+          "persistentUuid": "f172468c-e71b-4acd-9c3b-77f63eb9989c",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "[size=30]test[/size] \n\n\n[b]bold[/b] \n[i]italic[/i] \n[size=15]smaller[/size] \n[font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] \n[shadow=red]DropShadow[/shadow] ",
+            "opacity": 255,
+            "fontSize": 20,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "Arial",
+            "align": "left",
+            "verticalTextAlignment": "top"
+          }
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
+            "objectName": "CameraPosition1"
+          },
+          {
+            "objectName": "CameraPosition2"
+          },
+          {
+            "folderName": "screen",
+            "children": [
+              {
+                "objectName": "InventoryButton"
+              },
+              {
+                "objectName": "Crosshair"
+              },
+              {
+                "objectName": "cam1"
+              },
+              {
+                "objectName": "cam2"
+              }
+            ]
+          },
+          {
             "folderName": "environment",
             "children": [
+              {
+                "objectName": "AquaLight"
+              },
+              {
+                "objectName": "Tank"
+              },
+              {
+                "objectName": "TankCeiling"
+              },
+              {
+                "objectName": "SandPit"
+              },
               {
                 "objectName": "BlueCoral1"
               },
@@ -5227,104 +5420,257 @@
             ]
           },
           {
-            "objectName": "NewSpotLight"
-          },
-          {
-            "folderName": "screen",
+            "folderName": "interactable",
             "children": [
               {
-                "objectName": "InventoryButton"
+                "folderName": "puzzle 1 -- crown key",
+                "children": [
+                  {
+                    "objectName": "OxygenPumpBase"
+                  },
+                  {
+                    "objectName": "OxygenPumpCase"
+                  },
+                  {
+                    "objectName": "StarfishLock"
+                  },
+                  {
+                    "objectName": "Starfish1_CORRECT"
+                  },
+                  {
+                    "objectName": "Starfish2"
+                  },
+                  {
+                    "objectName": "Starfish3"
+                  },
+                  {
+                    "objectName": "CrownKey"
+                  }
+                ]
               },
               {
-                "objectName": "cursor"
+                "folderName": "puzzle 2 -- trident key",
+                "children": [
+                  {
+                    "objectName": "BrokenTimerBase"
+                  },
+                  {
+                    "objectName": "BrokenTimerLidDisplay"
+                  },
+                  {
+                    "objectName": "Rock4"
+                  },
+                  {
+                    "objectName": "TridentKey"
+                  }
+                ]
               },
               {
-                "objectName": "cam1"
-              },
-              {
-                "objectName": "cam2"
+                "folderName": "puzzle 3 -- final lock",
+                "children": [
+                  {
+                    "objectName": "Shell1"
+                  },
+                  {
+                    "objectName": "Shell2"
+                  },
+                  {
+                    "objectName": "Shell3"
+                  },
+                  {
+                    "objectName": "TrapdoorLock"
+                  },
+                  {
+                    "objectName": "TrapdoorLockDial1"
+                  },
+                  {
+                    "objectName": "TrapdoorLockDial2"
+                  },
+                  {
+                    "objectName": "TrapdoorLockDial3"
+                  }
+                ]
               }
             ]
           },
           {
-            "objectName": "CameraPosition2"
+            "objectName": "DialogueBox"
           },
           {
-            "objectName": "CameraPosition1"
-          },
-          {
-            "objectName": "NormalTimer"
-          },
-          {
-            "objectName": "OxygenPumpBase"
-          },
-          {
-            "objectName": "OxygenPumpCase"
-          },
-          {
-            "objectName": "Starfish1_CORRECT"
-          },
-          {
-            "objectName": "Starfish2"
-          },
-          {
-            "objectName": "Starfish3"
-          },
-          {
-            "objectName": "StarfishLock"
-          },
-          {
-            "objectName": "BrokenTimerBase"
-          },
-          {
-            "objectName": "BrokenTimerLidDisplay"
-          },
-          {
-            "objectName": "Tank"
-          },
-          {
-            "objectName": "TankCeiling"
-          },
-          {
-            "objectName": "SandPit"
-          },
-          {
-            "objectName": "Shell1"
-          },
-          {
-            "objectName": "Shell2"
-          },
-          {
-            "objectName": "Shell3"
-          },
-          {
-            "objectName": "CrownKey"
-          },
-          {
-            "objectName": "TridentKey"
-          },
-          {
-            "objectName": "TrapdoorLock"
-          },
-          {
-            "objectName": "TrapdoorLockDial1"
-          },
-          {
-            "objectName": "TrapdoorLockDial2"
-          },
-          {
-            "objectName": "TrapdoorLockDial3"
+            "objectName": "DialogueText"
           }
         ]
       },
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "CameraFocused",
+                "False",
+                "="
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ObjectFocus.BrokenTimer",
+                "False",
+                "="
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ObjectFocus.OxygenPump",
+                "False",
+                "="
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ObjectFocus.TrapdoorLock",
+                "False",
+                "="
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "TrapdoorlockView",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "CameraNum.Camera1",
+                "True",
+                "="
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "CameraNum.Camera2",
+                "False",
+                "="
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CameraViewNum",
+                "=",
+                "2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene3D::SetCameraRotationX"
+              },
+              "parameters": [
+                "",
+                "=",
+                "90",
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene3D::SetCameraZ"
+              },
+              "parameters": [
+                "",
+                "=",
+                "130",
+                "",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene3D::SetCameraFov"
+              },
+              "parameters": [
+                "",
+                "=",
+                "85",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "CameraPosition1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "CameraPosition2"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "DialogueBox"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "DialogueText"
+              ]
+            }
+          ]
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
-          "name": "GAME SETUP",
+          "name": "CROSSHAIR",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -5333,172 +5679,90 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SceneJustBegins"
+                    "value": "BooleanVariable"
                   },
                   "parameters": [
+                    "DialogueActive",
+                    "True",
                     ""
                   ]
                 }
               ],
-              "actions": [
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraFocused",
-                    "False",
-                    "="
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "ObjectFocus.OxygenPump",
-                    "False",
-                    "="
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "ObjectFocus.TrapdoorLock",
-                    "False",
-                    "="
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "TrapdoorlockView",
-                    "=",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraNum.Camera1",
-                    "True",
-                    "="
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraNum.Camera2",
-                    "False",
-                    "="
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetNumberVariable"
-                  },
-                  "parameters": [
-                    "CameraViewNum",
-                    "=",
-                    "2"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene3D::SetCameraRotationX"
-                  },
-                  "parameters": [
-                    "",
-                    "=",
-                    "90",
-                    "",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene3D::SetCameraZ"
-                  },
-                  "parameters": [
-                    "",
-                    "=",
-                    "140",
-                    "",
-                    "1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Scene3D::SetCameraFov"
-                  },
-                  "parameters": [
-                    "",
-                    "=",
-                    "85",
-                    "",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Hide"
-                  },
-                  "parameters": [
-                    "CameraPosition1"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Hide"
-                  },
-                  "parameters": [
-                    "CameraPosition2"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "Crosshair"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "HideCursor"
+                      },
+                      "parameters": [
+                        "cursor"
+                      ]
+                    }
                   ]
                 }
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "crosshair"
-            },
-            {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [
+              "conditions": [
                 {
                   "type": {
-                    "value": "SetCenter"
+                    "value": "BooleanVariable"
                   },
                   "parameters": [
-                    "cursor",
-                    "=",
-                    "CursorX(\"UI\")",
-                    "=",
-                    "CursorY(\"UI\")"
+                    "DialogueActive",
+                    "False",
+                    ""
                   ]
-                },
+                }
+              ],
+              "actions": [],
+              "events": [
                 {
-                  "type": {
-                    "value": "HideCursor"
-                  },
-                  "parameters": [
-                    "cursor"
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "Crosshair",
+                        "=",
+                        "CursorX(\"UI\")",
+                        "=",
+                        "CursorY(\"UI\")"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Show"
+                      },
+                      "parameters": [
+                        "Crosshair",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "HideCursor"
+                      },
+                      "parameters": [
+                        "cursor"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -5511,6 +5775,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "CAMERA",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -5518,9 +5783,9 @@
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
+                "b": 194,
+                "g": 227,
+                "r": 80,
                 "textB": 0,
                 "textG": 0,
                 "textR": 0
@@ -5632,9 +5897,9 @@
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
+                "b": 194,
+                "g": 227,
+                "r": 80,
                 "textB": 0,
                 "textG": 0,
                 "textR": 0
@@ -5744,184 +6009,214 @@
                 {
                   "type": "BuiltinCommonInstructions::Comment",
                   "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
+                    "b": 27,
+                    "g": 2,
+                    "r": 208,
                     "textB": 0,
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "key controls for camera"
+                  "comment": "ONLY ACTIVE IF NO DIALOGUE IS CURRENTLY ONGOING"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyFromTextJustPressed"
+                        "value": "BooleanVariable"
                       },
                       "parameters": [
-                        "",
-                        "\"Left\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "CameraViewNum",
-                        "+",
-                        "1"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextJustPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Right\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "CameraViewNum",
-                        "-",
-                        "1"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
-                  },
-                  "comment": "checks current camera position & switches to other camera if applicable"
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextJustPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Up\""
+                        "DialogueActive",
+                        "False",
+                        ""
                       ]
                     }
                   ],
                   "actions": [],
                   "events": [
                     {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "key controls for camera"
+                    },
+                    {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "BooleanVariable"
+                            "value": "KeyFromTextJustPressed"
                           },
                           "parameters": [
-                            "CameraNum.Camera1",
-                            "True",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "CameraViewNum",
-                            "=",
-                            "2"
+                            "",
+                            "\"Left\""
                           ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "value": "SetBooleanVariable"
+                            "value": "SetNumberVariable"
                           },
                           "parameters": [
-                            "CameraNum.Camera1",
-                            "False",
-                            "90"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "SetBooleanVariable"
-                          },
-                          "parameters": [
-                            "CameraNum.Camera2",
-                            "True",
-                            "90"
+                            "CameraViewNum",
+                            "+",
+                            "1"
                           ]
                         }
                       ]
                     },
                     {
-                      "type": "BuiltinCommonInstructions::Else",
+                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "BooleanVariable"
+                            "value": "KeyFromTextJustPressed"
                           },
                           "parameters": [
-                            "CameraNum.Camera2",
-                            "True",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "NumberVariable"
-                          },
-                          "parameters": [
-                            "CameraViewNum",
-                            "=",
-                            "0"
+                            "",
+                            "\"Right\""
                           ]
                         }
                       ],
                       "actions": [
                         {
                           "type": {
-                            "value": "SetBooleanVariable"
+                            "value": "SetNumberVariable"
                           },
                           "parameters": [
-                            "CameraNum.Camera1",
-                            "True",
-                            "90"
+                            "CameraViewNum",
+                            "-",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "checks current camera position & switches to other camera if applicable"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextJustPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Up\""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BooleanVariable"
+                              },
+                              "parameters": [
+                                "CameraNum.Camera1",
+                                "True",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "CameraViewNum",
+                                "=",
+                                "2"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "CameraNum.Camera1",
+                                "False",
+                                "90"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "CameraNum.Camera2",
+                                "True",
+                                "90"
+                              ]
+                            }
                           ]
                         },
                         {
-                          "type": {
-                            "value": "SetBooleanVariable"
-                          },
-                          "parameters": [
-                            "CameraNum.Camera2",
-                            "False",
-                            "90"
+                          "type": "BuiltinCommonInstructions::Else",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BooleanVariable"
+                              },
+                              "parameters": [
+                                "CameraNum.Camera2",
+                                "True",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "NumberVariable"
+                              },
+                              "parameters": [
+                                "CameraViewNum",
+                                "=",
+                                "0"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "CameraNum.Camera1",
+                                "True",
+                                "90"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "SetBooleanVariable"
+                              },
+                              "parameters": [
+                                "CameraNum.Camera2",
+                                "False",
+                                "90"
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -5933,9 +6228,9 @@
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
+                "b": 194,
+                "g": 227,
+                "r": 80,
                 "textB": 0,
                 "textG": 0,
                 "textR": 0
@@ -5959,6 +6254,18 @@
               "actions": [],
               "events": [
                 {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 27,
+                    "g": 2,
+                    "r": 208,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "ONLY ACTIVE IF NO DIALOGUE IS CURRENTLY ONGOING"
+                },
+                {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -5969,6 +6276,16 @@
                         "",
                         "\"Down\""
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "DialogueActive",
+                        "False",
+                        ""
+                      ]
                     }
                   ],
                   "actions": [
@@ -5978,6 +6295,16 @@
                       },
                       "parameters": [
                         "CameraFocused",
+                        "False",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "ObjectFocus.BrokenTimer",
                         "False",
                         "="
                       ]
@@ -6014,26 +6341,6 @@
                     },
                     {
                       "type": {
-                        "value": "SetBooleanVariable"
-                      },
-                      "parameters": [
-                        "CameraNum.Camera1",
-                        "False",
-                        "90"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetBooleanVariable"
-                      },
-                      "parameters": [
-                        "CameraNum.Camera2",
-                        "False",
-                        "90"
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "Scene3D::SetCameraRotationX"
                       },
                       "parameters": [
@@ -6051,33 +6358,9 @@
                       "parameters": [
                         "",
                         "=",
-                        "200",
+                        "130",
                         "",
                         "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetCameraCenterX"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "CameraPosition2.CenterX()",
-                        "",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetCameraCenterY"
-                      },
-                      "parameters": [
-                        "",
-                        "=",
-                        "CameraPosition2.CenterY()",
-                        "",
-                        ""
                       ]
                     }
                   ],
@@ -6132,7 +6415,7 @@
                       ]
                     },
                     {
-                      "type": "BuiltinCommonInstructions::Standard",
+                      "type": "BuiltinCommonInstructions::Else",
                       "conditions": [
                         {
                           "type": {
@@ -6187,16 +6470,17 @@
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
+                "b": 194,
+                "g": 227,
+                "r": 80,
                 "textB": 0,
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "starfish"
+              "comment": "starfish -- TEMPLATE"
             },
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -6281,208 +6565,993 @@
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Comment",
-              "color": {
-                "b": 109,
-                "g": 230,
-                "r": 255,
-                "textB": 0,
-                "textG": 0,
-                "textR": 0
-              },
-              "comment": "oxygen pump"
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "MouseButtonFromTextReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Left\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Raycaster3D::RaycastFromCameraCursor"
-                  },
-                  "parameters": [
-                    "",
-                    "OxygenPump",
-                    "\"UI\"",
-                    "10000",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraFocused",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraNum.Camera2",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "ObjectFocus.OxygenPump",
-                    "=",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraFocused",
-                    "True",
-                    "="
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "ObjectFocus.OxygenPump",
-                    "True",
-                    "="
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraNum.Camera1",
-                    "False",
-                    "90"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraNum.Camera2",
-                    "False",
-                    "90"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
-                  },
-                  "parameters": [
-                    "",
-                    "OxygenPump.CenterX()",
-                    "OxygenPump.CenterY()-100",
-                    "200",
-                    "400",
-                    "0",
-                    "0",
-                    "",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "ObjectFocus.OxygenPump",
-                    "True",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [],
+              "colorB": 254,
+              "colorG": 19,
+              "colorR": 144,
+              "creationTime": 0,
+              "folded": true,
+              "name": "broken timer",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
               "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
-                        "value": "KeyFromTextJustPressed"
+                        "value": "MouseButtonFromTextReleased"
                       },
                       "parameters": [
                         "",
                         "\"Left\""
                       ]
-                    }
-                  ],
-                  "actions": [
+                    },
                     {
                       "type": {
-                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                        "value": "Raycaster3D::RaycastFromCameraCursor"
                       },
                       "parameters": [
                         "",
-                        "OxygenPump.CenterX()",
-                        "OxygenPump.CenterY()",
-                        "200",
-                        "250",
-                        "90",
-                        "0",
-                        "",
+                        "BrokenTimerGROUP",
+                        "\"UI\"",
+                        "10000",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraFocused",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera1",
+                        "True",
                         ""
                       ]
                     }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextJustPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Right\""
-                      ]
-                    }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraFocused",
+                        "True",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "ObjectFocus.BrokenTimer",
+                        "True",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera1",
+                        "False",
+                        "90"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera2",
+                        "False",
+                        "90"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
                       },
                       "parameters": [
                         "",
-                        "OxygenPump.CenterX()+150",
-                        "OxygenPump.CenterY()",
-                        "200",
+                        "BrokenTimerGROUP.CenterX()",
+                        "BrokenTimerGROUP.CenterY()",
+                        "400",
                         "350",
+                        "270",
+                        "-15",
+                        "",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 254,
+              "colorG": 19,
+              "colorR": 144,
+              "creationTime": 0,
+              "folded": true,
+              "name": "oxygen pump",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                      },
+                      "parameters": [
+                        "",
+                        "OxygenPumpGROUP",
+                        "\"UI\"",
+                        "10000",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraFocused",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "ObjectFocus.OxygenPump",
+                        "=",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera2",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraFocused",
+                        "True",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "ObjectFocus.OxygenPump",
+                        "True",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera1",
+                        "False",
+                        "90"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera2",
+                        "False",
+                        "90"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                      },
+                      "parameters": [
+                        "",
+                        "OxygenPumpGROUP.CenterX()",
+                        "OxygenPumpGROUP.CenterY() - 100",
+                        "200",
+                        "400",
                         "0",
                         "0",
                         "",
                         ""
                       ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "ObjectFocus.OxygenPump",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextJustPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Left\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                          },
+                          "parameters": [
+                            "",
+                            "OxygenPumpGROUP.CenterX()",
+                            "OxygenPumpGROUP.CenterY()",
+                            "200",
+                            "250",
+                            "90",
+                            "0",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextJustPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Right\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                          },
+                          "parameters": [
+                            "",
+                            "OxygenPumpGROUP.CenterX() + 150",
+                            "OxygenPumpGROUP.CenterY()",
+                            "200",
+                            "350",
+                            "0",
+                            "0",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 254,
+              "colorG": 19,
+              "colorR": 144,
+              "creationTime": 0,
+              "folded": true,
+              "name": "trapdoor lock",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                      },
+                      "parameters": [
+                        "",
+                        "TrapdoorLockGROUP",
+                        "\"UI\"",
+                        "10000",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraFocused",
+                        "False",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "ObjectFocus.TrapdoorLock",
+                        "=",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera2",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraFocused",
+                        "True",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "ObjectFocus.TrapdoorLock",
+                        "True",
+                        "="
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera1",
+                        "False",
+                        "90"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "CameraNum.Camera2",
+                        "False",
+                        "90"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BooleanVariable"
+                      },
+                      "parameters": [
+                        "ObjectFocus.TrapdoorLock",
+                        "True",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "limits for diff camera perspectives"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "TrapdoorlockView",
+                            "<",
+                            "-1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "TrapdoorlockView",
+                            "=",
+                            "-1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "TrapdoorlockView",
+                            ">",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "TrapdoorlockView",
+                            "=",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "key controls for camera switch perspectives"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextJustPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Left\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "TrapdoorlockView",
+                            "+",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextJustPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "\"Right\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetNumberVariable"
+                          },
+                          "parameters": [
+                            "TrapdoorlockView",
+                            "-",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "TrapdoorlockView",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                          },
+                          "parameters": [
+                            "",
+                            "TrapdoorLockGROUP.CenterX()",
+                            "TrapdoorLockGROUP.CenterY()-100",
+                            "575",
+                            "200",
+                            "180",
+                            "-25",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "TrapdoorlockView",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                          },
+                          "parameters": [
+                            "",
+                            "TrapdoorLockGROUP.CenterX()",
+                            "TrapdoorLockGROUP.CenterY()-50",
+                            "550",
+                            "200",
+                            "90",
+                            "-25",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "NumberVariable"
+                          },
+                          "parameters": [
+                            "TrapdoorlockView",
+                            "=",
+                            "-1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                          },
+                          "parameters": [
+                            "",
+                            "TrapdoorLockGROUP.CenterX()+25",
+                            "TrapdoorLockGROUP.CenterY()",
+                            "575",
+                            "180",
+                            "0",
+                            "-25",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "DIALOGUE",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneJustBegins"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "DialogueActive",
+                    "False",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"START\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DialogueTree::LoadDialogueFromJsonFile"
+                  },
+                  "parameters": [
+                    "",
+                    "DialogueData"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "DialogueActive",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "DialogueBox",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "DialogueText",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "DialogueActive",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "DialogueBox"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Hide"
+                  },
+                  "parameters": [
+                    "DialogueText"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::IsDialogueLineType"
+                  },
+                  "parameters": [
+                    "\"text\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "DialogueText",
+                    "=",
+                    "DialogueTree::ClippedLineText()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetFontSize"
+                  },
+                  "parameters": [
+                    "DialogueText",
+                    "=",
+                    "30"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CompareTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"typewriter\"",
+                        ">=",
+                        "0.03"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"typewriter\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::ScrollClippedText"
+                      },
+                      "parameters": []
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "DialogueTree::CompleteClippedTextScrolling"
+                      },
+                      "parameters": []
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Else",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "DialogueTree::GoToNextLine"
+                      },
+                      "parameters": []
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "MouseButtonFromTextReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Left\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::CompareDialogueStateBooleanVariable"
+                      },
+                      "parameters": [
+                        "\"dialogueEnd\"",
+                        "True"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetBooleanVariable"
+                      },
+                      "parameters": [
+                        "DialogueActive",
+                        "False",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "DialogueTree::StopRunningDialogue"
+                      },
+                      "parameters": []
                     }
                   ]
                 }
@@ -6498,60 +7567,20 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "trapdoor lock"
+              "comment": "BEGINNING"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "MouseButtonFromTextReleased"
+                    "value": "CompareTimer"
                   },
                   "parameters": [
                     "",
-                    "\"Left\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Raycaster3D::RaycastFromCameraCursor"
-                  },
-                  "parameters": [
-                    "",
-                    "TrapdoorLockGROUP",
-                    "\"UI\"",
-                    "10000",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraFocused",
-                    "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "CameraNum.Camera2",
-                    "True",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "ObjectFocus.TrapdoorLock",
-                    "=",
-                    ""
+                    "\"START\"",
+                    ">=",
+                    "2"
                   ]
                 }
               ],
@@ -6561,39 +7590,35 @@
                     "value": "SetBooleanVariable"
                   },
                   "parameters": [
-                    "CameraFocused",
+                    "DialogueActive",
                     "True",
-                    "="
+                    "2"
                   ]
                 },
                 {
                   "type": {
-                    "value": "SetBooleanVariable"
+                    "value": "RemoveTimer"
                   },
                   "parameters": [
-                    "ObjectFocus.TrapdoorLock",
-                    "True",
-                    "="
+                    "",
+                    "\"START\""
                   ]
                 },
                 {
                   "type": {
-                    "value": "SetBooleanVariable"
+                    "value": "ResetTimer"
                   },
                   "parameters": [
-                    "CameraNum.Camera1",
-                    "False",
-                    "90"
+                    "",
+                    "\"typewriter\""
                   ]
                 },
                 {
                   "type": {
-                    "value": "SetBooleanVariable"
+                    "value": "DialogueTree::StartDialogueFromBranch"
                   },
                   "parameters": [
-                    "CameraNum.Camera2",
-                    "False",
-                    "90"
+                    "\"Beginning\""
                   ]
                 }
               ]
@@ -6603,262 +7628,49 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "BooleanVariable"
+                    "value": "DialogueTree::CompareDialogueStateBooleanVariable"
                   },
                   "parameters": [
-                    "ObjectFocus.TrapdoorLock",
-                    "True",
-                    ""
+                    "\"dialogueEnd\"",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "DialogueTree::CompareDialogueStateBooleanVariable"
+                  },
+                  "parameters": [
+                    "\"tutorialInvestigate\"",
+                    "True"
                   ]
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                  "type": {
+                    "value": "SetBooleanVariable"
                   },
-                  "comment": "limits for diff camera perspectives"
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "TrapdoorlockView",
-                        "<",
-                        "-1"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "TrapdoorlockView",
-                        "=",
-                        "-1"
-                      ]
-                    }
+                  "parameters": [
+                    "DialogueActive",
+                    "True",
+                    "2"
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "TrapdoorlockView",
-                        ">",
-                        "1"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "TrapdoorlockView",
-                        "=",
-                        "1"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Comment",
-                  "color": {
-                    "b": 109,
-                    "g": 230,
-                    "r": 255,
-                    "textB": 0,
-                    "textG": 0,
-                    "textR": 0
+                  "type": {
+                    "value": "ResetTimer"
                   },
-                  "comment": "key controls for camera switch perspectives"
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextJustPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Left\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "TrapdoorlockView",
-                        "+",
-                        "1"
-                      ]
-                    }
+                  "parameters": [
+                    "",
+                    "\"typewriter\""
                   ]
                 },
                 {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "KeyFromTextJustPressed"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Right\""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "TrapdoorlockView",
-                        "-",
-                        "1"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "TrapdoorlockView",
-                        "=",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
-                      },
-                      "parameters": [
-                        "",
-                        "TrapdoorLockGROUP.CenterX()",
-                        "TrapdoorLockGROUP.CenterY()-100",
-                        "575",
-                        "200",
-                        "180",
-                        "-25",
-                        "",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "TrapdoorlockView",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
-                      },
-                      "parameters": [
-                        "",
-                        "TrapdoorLockGROUP.CenterX()",
-                        "TrapdoorLockGROUP.CenterY()-50",
-                        "550",
-                        "200",
-                        "90",
-                        "-25",
-                        "",
-                        ""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberVariable"
-                      },
-                      "parameters": [
-                        "TrapdoorlockView",
-                        "=",
-                        "-1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
-                      },
-                      "parameters": [
-                        "",
-                        "TrapdoorLockGROUP.CenterX()+25",
-                        "TrapdoorLockGROUP.CenterY()",
-                        "575",
-                        "180",
-                        "0",
-                        "-25",
-                        "",
-                        ""
-                      ]
-                    }
+                  "type": {
+                    "value": "DialogueTree::StartDialogueFromBranch"
+                  },
+                  "parameters": [
+                    "\"Tutorial - Investigate\""
                   ]
                 }
               ]
@@ -6869,9 +7681,9 @@
         {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
-            "b": 109,
-            "g": 230,
-            "r": 255,
+            "b": 254,
+            "g": 19,
+            "r": 144,
             "textB": 0,
             "textG": 0,
             "textR": 0
@@ -6890,7 +7702,7 @@
                 "cam1",
                 "Text",
                 "=",
-                "ToString(TrapdoorlockView)"
+                "\"yay\""
               ]
             },
             {
@@ -7026,6 +7838,60 @@
           "name": "Inventory",
           "renderingType": "",
           "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Ambient Hemisphere Light",
+              "doubleParameters": {
+                "elevation": 40,
+                "intensity": 0.33,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "groundColor": "127;127;127",
+                "skyColor": "255;255;255",
+                "top": "Z+"
+              },
+              "booleanParameters": {}
+            },
+            {
+              "effectType": "Scene3D::DirectionalLight",
+              "name": "3D Sun Light",
+              "doubleParameters": {
+                "distanceFromCamera": 1500,
+                "elevation": 40,
+                "frustumSize": 4000,
+                "intensity": 0.75,
+                "minimumShadowBias": 0,
+                "rotation": 300
+              },
+              "stringParameters": {
+                "color": "255;255;255",
+                "shadowQuality": "medium",
+                "top": "Z+"
+              },
+              "booleanParameters": {
+                "isCastingShadow": true
+              }
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera2DPlaneMaxDrawingDistance": 5000,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Dialogue",
+          "renderingType": "",
+          "visibility": true,
           "cameras": [],
           "effects": [
             {

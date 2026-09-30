@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Beginning",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n<<set $tutorialInvestigate to false >>\n\"…\"\n\"………\"\n[i]BZZT–![/i]\nA loud, unfamiliar alarm jolted me awake, my eyes blinking to adjust to the dimness.\nSLOWLY UNFADING BLACK\n“What was that alar—\"\n\"...Huh?”\nI look around, dumbfounded.\nCAMERA PANS AROUND THE SPACE\n“Just where the hell am I…”\n“This is so not where I last remember falling asleep.”\n“Urgh–!”\nI put a hand to my head, the beginnings of a headache forming.\n“What… is going on..?”\nPanic sets in, my heart racing.\nI was just at home a minute ago, wasn’t I?\nAt my desk, writing this godforsaken report on myths of mermaids, sirens more specifically, and I just. Took a nap.\nAnd now I’m here, wherever “here” is.\n“O-Oh god, am I kidnapped?”\nI looked around at my surroundings again, but it only left me in a daze as confusion began to replace panic.\nThis space… Certainly doesn’t feel like where you would keep a hostage.\nRather it feels more like a very large fish tank?\n“No, regardless… I need to get out of here.”\nI have no idea who brought me here, and why, but from my long history of watching mystery anime, there’s always a reason for everything.\n...Aaaand the reason I’m here now probably isn’t good.\n“Ugh… Escape first, think later!!!”\n<<set $dialogueEnd to true >>\n<<set $tutorialInvestigate to true >>",
+		"position": {
+			"x": -133,
+			"y": 40
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Tutorial (Investigate)",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\nHi. Congratulations, YOU need to figure out how to escape.\nTo do so, turn around by using the [b]left and right arrow keys[/b].\nSince this is a very limited and cramped space, you can only go forward a little, using the [b]up arrow key[/b], to more closely inspect the area.\nTo inspect anything of interest, [b]hover[/b] over the object with the [b]cursor[/b] and [b]click to interact[/b].\n<<set $dialogueEnd to true >>\n<<set $tutorialInvestigate to false>>",
+		"position": {
+			"x": 98,
+			"y": 42
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Blue Coral",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\nSome blue coral. It looks kind of spiky.\nWhat if I broke off a part and sharpened it like a pickaxe, and dug my way out of here…\n“...Yeah, that’s probably wishful thinking.”\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": 330,
+			"y": 37
+		},
+		"colorID": 0
+	}
+]
