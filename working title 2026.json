@@ -1018,6 +1018,14 @@
         "name": "1000030952.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -3046,7 +3054,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7130377630690884,
+        "zoomFactor": 0.5843784410741332,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -3222,6 +3230,7 @@
         },
         {
           "name": "IntroTutorialEnd",
+          "persistentUuid": "c1a997b4-a9c2-40ea-8b5d-a7a024a92eb8",
           "type": "boolean",
           "value": false
         },
@@ -3240,10 +3249,8 @@
           "height": 37,
           "keepRatio": true,
           "layer": "UI",
-          "locked": true,
           "name": "Crosshair",
           "persistentUuid": "9b79c9f7-cc6e-4362-918f-7fdef865fc1e",
-          "sealed": true,
           "width": 37,
           "x": 604,
           "y": 312,
@@ -4369,9 +4376,11 @@
           "depth": 1,
           "height": 720,
           "layer": "Dialogue",
+          "locked": true,
           "name": "DialogueBoxBackground",
           "opacity": 153,
           "persistentUuid": "4d99905a-5e23-4bb1-99bd-99274074a543",
+          "sealed": true,
           "width": 1280,
           "x": 0,
           "y": 0,
@@ -4403,7 +4412,7 @@
           "depth": 0,
           "height": 100,
           "keepRatio": true,
-          "layer": "UI",
+          "layer": "Inventory",
           "name": "Inventory",
           "persistentUuid": "6b26e465-0c98-4504-9fce-7e389bd40713",
           "width": 100,
@@ -4429,6 +4438,25 @@
           "x": 0,
           "y": 0,
           "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 768,
+          "keepRatio": true,
+          "layer": "Dialogue",
+          "locked": true,
+          "name": "FadeBlack",
+          "persistentUuid": "42174bcc-d52b-4817-906d-c193cffbb83a",
+          "sealed": true,
+          "width": 1329,
+          "x": -29,
+          "y": -20,
+          "zOrder": -10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4523,18 +4551,7 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [
-            {
-              "effectType": "BlendingMode",
-              "name": "Effect",
-              "doubleParameters": {
-                "blendmode": 1,
-                "opacity": 1
-              },
-              "stringParameters": {},
-              "booleanParameters": {}
-            }
-          ],
+          "effects": [],
           "behaviors": [],
           "animations": [
             {
@@ -5870,12 +5887,26 @@
           "persistentUuid": "f172468c-e71b-4acd-9c3b-77f63eb9989c",
           "type": "BBText::BBText",
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "disabled": true,
+              "effectType": "Outline",
+              "name": "TutorialOutline",
+              "doubleParameters": {
+                "padding": 0,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "color": "80;227;194"
+              },
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [],
           "content": {
-            "text": "[size=30]test[/size] \n\n\n[b]bold[/b] \n[i]italic[/i] \n[size=15]smaller[/size] \n[font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] \n[shadow=red]DropShadow[/shadow] ",
+            "text": "Normal Text\n[outline=#081AAB]Tutorial[/outline]\n[spacing=5]Sound Effects[/spacing]\n\n\n[b]bold[/b] \n[i]italic[/i] \n[size=15]smaller[/size] \n[font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] \n[shadow=red]DropShadow[/shadow] ",
             "opacity": 255,
-            "fontSize": 20,
+            "fontSize": 30,
             "visible": true,
             "color": "80;227;194",
             "fontFamily": "Arial",
@@ -5996,6 +6027,73 @@
                           {
                             "x": 152,
                             "y": 1370
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "FadeBlack",
+          "persistentUuid": "d85c8821-2ef1-4753-a606-965ebd4ae33a",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
                           }
                         ]
                       ]
@@ -6189,6 +6287,9 @@
           },
           {
             "objectName": "DialogueBoxOutline"
+          },
+          {
+            "objectName": "FadeBlack"
           }
         ]
       },
@@ -6353,6 +6454,50 @@
               "parameters": [
                 "DialogueText"
               ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Inventory\""
+              ]
+            },
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"UI\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "IntroTutorialEnd",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ShowLayer"
+              },
+              "parameters": [
+                "",
+                "\"UI\""
+              ]
             }
           ]
         },
@@ -6415,16 +6560,6 @@
                   "parameters": [
                     "DialogueActive",
                     "False",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "IntroTutorialEnd",
-                    "True",
                     ""
                   ]
                 }
@@ -8029,6 +8164,17 @@
                     "",
                     "DialogueData"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "OpacityCapability::OpacityBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "FadeBlack",
+                    "Opacity",
+                    "=",
+                    "255"
+                  ]
                 }
               ]
             },
@@ -8096,6 +8242,26 @@
                   },
                   "parameters": [
                     "DialogueText"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "DialogueText",
+                    "\"80;227;194\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "DialogueText",
+                    "Effect",
+                    "\"TutorialOutline\"",
+                    "no"
                   ]
                 }
               ]
@@ -8342,6 +8508,37 @@
                     "value": "DialogueTree::CompareDialogueStateBooleanVariable"
                   },
                   "parameters": [
+                    "\"unfadeBlack\"",
+                    "True"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween3"
+                  },
+                  "parameters": [
+                    "FadeBlack",
+                    "Tween",
+                    "Opacity",
+                    "\"wakingup\"",
+                    "0",
+                    "\"linear\"",
+                    "2",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "DialogueTree::CompareDialogueStateBooleanVariable"
+                  },
+                  "parameters": [
                     "\"dialogueEnd\"",
                     "True"
                   ]
@@ -8364,19 +8561,15 @@
                     "False",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "DialogueActive",
-                    "True",
-                    "2"
-                  ]
-                },
                 {
                   "type": {
                     "value": "ResetTimer"
@@ -8404,6 +8597,16 @@
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "DialogueActive",
+                    "True",
+                    "2"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetBooleanVariable"
@@ -8439,6 +8642,26 @@
                     "",
                     "\"typewriter\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "DialogueText",
+                    "\"8;26;171\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "DialogueText",
+                    "Effect",
+                    "\"TutorialOutline\"",
+                    "yes"
+                  ]
                 }
               ]
             }
@@ -8463,13 +8686,36 @@
           "actions": [
             {
               "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "cam1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "cam2"
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
                 "cam1",
                 "Text",
                 "=",
-                "DialogueActive"
+                "ToString(TimerElapsedTime(\"TUTORIAL\"))"
               ]
             },
             {
@@ -8484,6 +8730,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
@@ -8495,7 +8742,7 @@
                 "cam2",
                 "Text",
                 "=",
-                "DialogueTree::VariableString(\"dialogueEnd\")"
+                "DialogueTree::VariableString(\"unfadeBlack\")"
               ]
             },
             {
@@ -8522,7 +8769,7 @@
           "cameraType": "",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": false,
+          "isLocked": true,
           "name": "",
           "renderingType": "",
           "visibility": true,
@@ -8714,43 +8961,7 @@
           "renderingType": "",
           "visibility": true,
           "cameras": [],
-          "effects": [
-            {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Ambient Hemisphere Light",
-              "doubleParameters": {
-                "elevation": 40,
-                "intensity": 0.33,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "groundColor": "127;127;127",
-                "skyColor": "255;255;255",
-                "top": "Z+"
-              },
-              "booleanParameters": {}
-            },
-            {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
-              "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
-              },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
-            }
-          ]
+          "effects": []
         }
       ],
       "behaviorsSharedData": [
@@ -8797,6 +9008,10 @@
         {
           "name": "Text",
           "type": "TextContainerCapability::TextContainerBehavior"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
         }
       ]
     }
