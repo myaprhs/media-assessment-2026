@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 282,
+    "build": 283,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "starting-first-person",
     "version": "1.0.0",
-    "name": "working title 2026",
+    "name": "Vivarium",
     "description": "",
     "author": "",
     "windowWidth": 1280,
@@ -65,7 +65,7 @@
       "logoAndProgressFadeInDuration": 0.2,
       "logoAndProgressLogoFadeInDelay": 0,
       "minDuration": 1.5,
-      "progressBarColor": 16777215,
+      "progressBarColor": 5301186,
       "progressBarHeight": 20,
       "progressBarMaxWidth": 200,
       "progressBarMinWidth": 40,
@@ -882,6 +882,142 @@
         "name": "default",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "1000030832.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1000030832.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "1000030833.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1000030833.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "1000030834.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1000030834.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Normal2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Normal2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Hovered3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Hovered3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "../Downloads/1000030834.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../Downloads/1000030834.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "1000030835.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1000030835.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/default2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "default2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "1000030932.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1000030932.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/NewSprite2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "1000030911.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1000030911.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1000030911.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1000030911",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "1000030914.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1000030914.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Normal3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Normal3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "1000030912.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1000030912.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1000030912.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "1000030912",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "1000030952.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1000030952.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -914,7 +1050,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7130377630690401,
+        "zoomFactor": 0.7130377630690429,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -928,7 +1064,7 @@
           "depth": 1,
           "height": 749,
           "keepRatio": true,
-          "layer": "",
+          "layer": "Placeholder",
           "name": "Background",
           "persistentUuid": "46aed166-595e-46d9-a0d2-48fb6f88f064",
           "width": 2087,
@@ -945,8 +1081,8 @@
           "depth": 1,
           "height": 100,
           "keepRatio": true,
-          "layer": "Title",
-          "name": "Start_Button",
+          "layer": "Placeholder",
+          "name": "StartButtonTemp",
           "persistentUuid": "a510f956-1558-4b9c-9efb-b8fa526f3565",
           "width": 483,
           "x": 750,
@@ -962,8 +1098,8 @@
           "depth": 1,
           "height": 117,
           "keepRatio": true,
-          "layer": "Title",
-          "name": "Settings_Button",
+          "layer": "Placeholder",
+          "name": "SettingsButtonTemp",
           "persistentUuid": "3e90c43c-9931-4f3c-83c9-339bfec35c9a",
           "width": 688,
           "x": 553,
@@ -976,28 +1112,11 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 4,
-          "height": 216,
-          "keepRatio": true,
-          "layer": "Title",
-          "name": "Game_Title",
-          "persistentUuid": "e774d269-aacc-42e3-971f-4f85e99edeb3",
-          "width": 403,
-          "x": 827,
-          "y": 126,
-          "zOrder": 4,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "depth": 1,
           "height": 110,
           "keepRatio": true,
-          "layer": "Settings",
-          "name": "Music_Placeholder",
+          "layer": "Placeholder",
+          "name": "MusicPlaceholder",
           "persistentUuid": "90994c6d-f783-4bc1-994e-5afca769f960",
           "width": 573,
           "x": 54,
@@ -1012,8 +1131,8 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Settings",
-          "name": "Back_Button",
+          "layer": "Placeholder",
+          "name": "BackButton",
           "persistentUuid": "d14d5820-b605-4105-9626-90bb5b661c1c",
           "width": 0,
           "x": 1141,
@@ -1028,8 +1147,8 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Settings",
-          "name": "Brightness_PlaceHolder",
+          "layer": "Placeholder",
+          "name": "BrightnessPlaceHolder",
           "persistentUuid": "a73a76ad-3787-4b21-82ee-4466451b6ec2",
           "width": 0,
           "x": 51,
@@ -1044,13 +1163,64 @@
           "customSize": false,
           "height": 0,
           "keepRatio": true,
-          "layer": "Settings",
-          "name": "Settings_Title",
+          "layer": "Placeholder",
+          "name": "SettingsTitle",
           "persistentUuid": "d5d5b0ce-f5e2-4fee-843c-97ef79814a4e",
           "width": 0,
           "x": 63,
           "y": 59,
           "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 720,
+          "keepRatio": true,
+          "layer": "Title",
+          "name": "StartScreen",
+          "persistentUuid": "72e2c430-7419-4713-8f90-0b2e86a04bf9",
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 54,
+          "keepRatio": true,
+          "layer": "Title",
+          "name": "StartButton",
+          "persistentUuid": "05daadcc-09bc-4996-83a7-9213dda08ecc",
+          "width": 241,
+          "x": 989,
+          "y": 619,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 49,
+          "keepRatio": true,
+          "layer": "Title",
+          "name": "StartButtonIndicator",
+          "persistentUuid": "db20a111-53dd-4f2f-8af4-981cf79dcce8",
+          "width": 40,
+          "x": 932,
+          "y": 623,
+          "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1127,7 +1297,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Start_Button",
+          "name": "StartButtonTemp",
           "persistentUuid": "de575b68-0234-436c-9c69-5df9bc011ffa",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1249,7 +1419,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Settings_Button",
+          "name": "SettingsButtonTemp",
           "persistentUuid": "a7dd6f78-90c4-4315-9759-39bf3219226e",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1369,53 +1539,9 @@
           ]
         },
         {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "Game_Title",
-          "persistentUuid": "784e3446-eaac-4823-a336-95d7fdda36d6",
-          "smoothed": true,
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "TITLE YOLO",
-          "font": "",
-          "textAlignment": "right",
-          "characterSize": 100,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          },
-          "content": {
-            "bold": false,
-            "isOutlineEnabled": false,
-            "isShadowEnabled": false,
-            "italic": false,
-            "outlineColor": "255;255;255",
-            "outlineThickness": 2,
-            "shadowAngle": 90,
-            "shadowBlurRadius": 2,
-            "shadowColor": "0;0;0",
-            "shadowDistance": 4,
-            "shadowOpacity": 127,
-            "smoothed": true,
-            "underlined": false,
-            "text": "TITLE YOLO",
-            "font": "",
-            "textAlignment": "right",
-            "verticalTextAlignment": "top",
-            "characterSize": 100,
-            "lineHeight": 0,
-            "color": "0;0;0"
-          }
-        },
-        {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Back_Button",
+          "name": "BackButton",
           "persistentUuid": "aa966ae8-a495-462a-bd5e-b72e74ed8aa4",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1537,7 +1663,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Brightness_PlaceHolder",
+          "name": "BrightnessPlaceHolder",
           "persistentUuid": "089a9551-bc7a-453b-99fb-6b1136b03190",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1598,7 +1724,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "Music_Placeholder",
+          "name": "MusicPlaceholder",
           "persistentUuid": "e5b4c073-4d39-4fa5-97cd-676233b85197",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -1660,7 +1786,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "Settings_Title",
+          "name": "SettingsTitle",
           "persistentUuid": "2362f8ea-ca7a-4655-bfbb-378b753891a9",
           "smoothed": true,
           "type": "TextObject::Text",
@@ -1699,34 +1825,295 @@
             "lineHeight": 0,
             "color": "0;0;0"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "StartScreen",
+          "persistentUuid": "99b112e0-1bc8-4ccf-9727-c254c3520e9a",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "1000030832.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 2560,
+                            "y": 0
+                          },
+                          {
+                            "x": 2560,
+                            "y": 1440
+                          },
+                          {
+                            "x": 0,
+                            "y": 1440
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "StartButton",
+          "persistentUuid": "58490cc8-bdfa-4eca-931a-12588ac97545",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "ButtonFSM",
+              "type": "ButtonStates::ButtonFSM",
+              "ShouldCheckHovering": true,
+              "State": "Idle",
+              "TouchId": 0,
+              "TouchIsInside": false,
+              "MouseIsInside": false,
+              "Index": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "Normal",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Normal2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 483,
+                            "y": 0
+                          },
+                          {
+                            "x": 483,
+                            "y": 107
+                          },
+                          {
+                            "x": 1,
+                            "y": 107
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Hovered",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Hovered3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 483,
+                            "y": 0
+                          },
+                          {
+                            "x": 483,
+                            "y": 107
+                          },
+                          {
+                            "x": 1,
+                            "y": 107
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "StartButtonIndicator",
+          "persistentUuid": "aaa707b2-033c-4665-8646-5fa02fbee855",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Tween",
+              "type": "Tween::TweenBehavior"
+            }
+          ],
+          "animations": [
+            {
+              "name": "default",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "default2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 1
+                          },
+                          {
+                            "x": 78,
+                            "y": 1
+                          },
+                          {
+                            "x": 78,
+                            "y": 97
+                          },
+                          {
+                            "x": 1,
+                            "y": 97
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
         "folderName": "__ROOT",
         "children": [
           {
-            "objectName": "Background"
+            "folderName": "Placeholder - Layout",
+            "children": [
+              {
+                "objectName": "Background"
+              },
+              {
+                "objectName": "SettingsButtonTemp"
+              },
+              {
+                "objectName": "StartButtonTemp"
+              },
+              {
+                "objectName": "SettingsTitle"
+              },
+              {
+                "objectName": "BackButton"
+              },
+              {
+                "objectName": "BrightnessPlaceHolder"
+              },
+              {
+                "objectName": "MusicPlaceholder"
+              }
+            ]
           },
           {
-            "objectName": "Settings_Button"
+            "objectName": "StartScreen"
           },
           {
-            "objectName": "Start_Button"
+            "objectName": "StartButton"
           },
           {
-            "objectName": "Game_Title"
-          },
-          {
-            "objectName": "Settings_Title"
-          },
-          {
-            "objectName": "Back_Button"
-          },
-          {
-            "objectName": "Brightness_PlaceHolder"
-          },
-          {
-            "objectName": "Music_Placeholder"
+            "objectName": "StartButtonIndicator"
           }
         ]
       },
@@ -1755,61 +2142,81 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetXY"
+                    "value": "ShowLayer"
                   },
                   "parameters": [
-                    "Background",
-                    "=",
-                    "334",
-                    "=",
-                    "-14"
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Title\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "HideLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Placeholder\""
                   ]
                 }
               ],
               "events": [
                 {
+                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
                     {
                       "type": {
-                        "value": "ShowLayer"
+                        "value": "ChangeBlendMode"
                       },
                       "parameters": [
-                        "",
-                        ""
+                        "StartButtonIndicator",
+                        "1"
                       ]
                     },
                     {
                       "type": {
-                        "value": "HideLayer"
+                        "value": "ResetObjectTimer"
                       },
                       "parameters": [
-                        "",
-                        "\"Settings\""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "ShowLayer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"Title\""
+                        "StartButtonIndicator",
+                        "\"Indicating\""
                       ]
                     }
                   ]
                 },
                 {
+                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
                     {
                       "type": {
+                        "value": "SetXY"
+                      },
+                      "parameters": [
+                        "Background",
+                        "=",
+                        "334",
+                        "=",
+                        "-14"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
-                        "Start_Button",
+                        "StartButtonTemp",
                         "ButtonFSM",
                         "yes"
                       ]
@@ -1819,7 +2226,7 @@
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
-                        "Settings_Button",
+                        "SettingsButtonTemp",
                         "ButtonFSM",
                         "yes"
                       ]
@@ -1829,7 +2236,7 @@
                         "value": "ActivateBehavior"
                       },
                       "parameters": [
-                        "Back_Button",
+                        "BackButton",
                         "ButtonFSM",
                         "no"
                       ]
@@ -1859,7 +2266,7 @@
                     "value": "ButtonStates::ButtonFSM::IsHovered"
                   },
                   "parameters": [
-                    "Start_Button",
+                    "StartButton",
                     "ButtonFSM",
                     ""
                   ]
@@ -1871,7 +2278,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Start_Button",
+                    "StartButton",
                     "Animation",
                     "=",
                     "\"Normal\""
@@ -1887,7 +2294,7 @@
                     "value": "ButtonStates::ButtonFSM::IsHovered"
                   },
                   "parameters": [
-                    "Start_Button",
+                    "StartButton",
                     "ButtonFSM",
                     ""
                   ]
@@ -1899,7 +2306,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Start_Button",
+                    "StartButton",
                     "Animation",
                     "=",
                     "\"Hovered\""
@@ -1915,7 +2322,7 @@
                     "value": "ButtonStates::ButtonFSM::IsPressed"
                   },
                   "parameters": [
-                    "Start_Button",
+                    "StartButton",
                     "ButtonFSM",
                     ""
                   ]
@@ -1933,6 +2340,117 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneJustBegins"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "StartButtonIndicator",
+                    "Tween",
+                    "\"Out\"",
+                    "922",
+                    "\"easeInOutCubic\"",
+                    "1",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "StartButtonIndicator",
+                    "Tween",
+                    "\"Out\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "StartButtonIndicator",
+                    "Tween",
+                    "\"In\"",
+                    "932",
+                    "\"easeInOutCubic\"",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "StartButtonIndicator",
+                    "Tween",
+                    "\"Out\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Else",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Tween::HasFinished"
+                  },
+                  "parameters": [
+                    "StartButtonIndicator",
+                    "Tween",
+                    "\"In\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "StartButtonIndicator",
+                    "Tween",
+                    "\"Out\"",
+                    "922",
+                    "\"easeInOutCubic\"",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::RemoveTween"
+                  },
+                  "parameters": [
+                    "StartButtonIndicator",
+                    "Tween",
+                    "\"In\""
+                  ]
+                }
+              ]
             }
           ],
           "parameters": []
@@ -1942,6 +2460,8 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "disabled": true,
+          "folded": true,
           "name": "Settings Button",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1955,7 +2475,7 @@
                     "value": "ButtonStates::ButtonFSM::IsHovered"
                   },
                   "parameters": [
-                    "Settings_Button",
+                    "SettingsButtonTemp",
                     "ButtonFSM",
                     ""
                   ]
@@ -1967,7 +2487,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Settings_Button",
+                    "SettingsButtonTemp",
                     "Animation",
                     "=",
                     "\"Normal\""
@@ -1983,7 +2503,7 @@
                     "value": "ButtonStates::ButtonFSM::IsHovered"
                   },
                   "parameters": [
-                    "Settings_Button",
+                    "SettingsButtonTemp",
                     "ButtonFSM",
                     ""
                   ]
@@ -1995,7 +2515,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Settings_Button",
+                    "SettingsButtonTemp",
                     "Animation",
                     "=",
                     "\"Hovered\""
@@ -2011,7 +2531,7 @@
                     "value": "ButtonStates::ButtonFSM::IsPressed"
                   },
                   "parameters": [
-                    "Settings_Button",
+                    "SettingsButtonTemp",
                     "ButtonFSM",
                     ""
                   ]
@@ -2077,7 +2597,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Settings\""
+                    "\"Placeholder\""
                   ]
                 },
                 {
@@ -2085,7 +2605,7 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "Start_Button",
+                    "StartButtonTemp",
                     "ButtonFSM",
                     ""
                   ]
@@ -2095,7 +2615,7 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "Settings_Button",
+                    "SettingsButtonTemp",
                     "ButtonFSM",
                     ""
                   ]
@@ -2105,7 +2625,7 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "Back_Button",
+                    "BackButton",
                     "ButtonFSM",
                     "yes"
                   ]
@@ -2120,6 +2640,8 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "disabled": true,
+          "folded": true,
           "name": "Back Button",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2133,7 +2655,7 @@
                     "value": "ButtonStates::ButtonFSM::IsHovered"
                   },
                   "parameters": [
-                    "Back_Button",
+                    "BackButton",
                     "ButtonFSM",
                     ""
                   ]
@@ -2145,7 +2667,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Back_Button",
+                    "BackButton",
                     "Animation",
                     "=",
                     "\"Normal\""
@@ -2161,7 +2683,7 @@
                     "value": "ButtonStates::ButtonFSM::IsHovered"
                   },
                   "parameters": [
-                    "Back_Button",
+                    "BackButton",
                     "ButtonFSM",
                     ""
                   ]
@@ -2173,7 +2695,7 @@
                     "value": "AnimatableCapability::AnimatableBehavior::SetName"
                   },
                   "parameters": [
-                    "Back_Button",
+                    "BackButton",
                     "Animation",
                     "=",
                     "\"Hovered\""
@@ -2189,7 +2711,7 @@
                     "value": "ButtonStates::ButtonFSM::IsPressed"
                   },
                   "parameters": [
-                    "Back_Button",
+                    "BackButton",
                     "ButtonFSM",
                     ""
                   ]
@@ -2208,7 +2730,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"Settings\""
+                    "\"Placeholder\""
                   ]
                 },
                 {
@@ -2263,7 +2785,7 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "Start_Button",
+                    "StartButtonTemp",
                     "ButtonFSM",
                     "yes"
                   ]
@@ -2273,7 +2795,7 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "Settings_Button",
+                    "SettingsButtonTemp",
                     "ButtonFSM",
                     "yes"
                   ]
@@ -2283,7 +2805,7 @@
                     "value": "ActivateBehavior"
                   },
                   "parameters": [
-                    "Back_Button",
+                    "BackButton",
                     "ButtonFSM",
                     "no"
                   ]
@@ -2378,39 +2900,33 @@
           "cameras": [],
           "effects": [
             {
-              "effectType": "Scene3D::HemisphereLight",
-              "name": "3D Ambient Hemisphere Light",
+              "disabled": true,
+              "effectType": "TiltShift",
+              "name": "Effect2",
               "doubleParameters": {
-                "elevation": 40,
-                "intensity": 0.33,
-                "rotation": 300
+                "blur": 50,
+                "gradientBlur": 1900
               },
-              "stringParameters": {
-                "groundColor": "127;127;127",
-                "skyColor": "255;255;255",
-                "top": "Z+"
-              },
+              "stringParameters": {},
               "booleanParameters": {}
             },
             {
-              "effectType": "Scene3D::DirectionalLight",
-              "name": "3D Sun Light",
+              "effectType": "OldFilm",
+              "name": "Effect3",
               "doubleParameters": {
-                "distanceFromCamera": 1500,
-                "elevation": 40,
-                "frustumSize": 4000,
-                "intensity": 0.75,
-                "minimumShadowBias": 0,
-                "rotation": 300
+                "animationFrequency": 20,
+                "noise": 0.2,
+                "noiseSize": 1,
+                "scratch": 0.3,
+                "scratchDensity": 0.3,
+                "scratchWidth": 1,
+                "sepia": 0,
+                "vignetting": 0.2,
+                "vignettingAlpha": 1,
+                "vignettingBlur": 0.3
               },
-              "stringParameters": {
-                "color": "255;255;255",
-                "shadowQuality": "medium",
-                "top": "Z+"
-              },
-              "booleanParameters": {
-                "isCastingShadow": true
-              }
+              "stringParameters": {},
+              "booleanParameters": {}
             }
           ]
         },
@@ -2426,9 +2942,9 @@
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
           "isLocked": false,
-          "name": "Settings",
+          "name": "Placeholder",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
@@ -2530,7 +3046,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5714359414182852,
+        "zoomFactor": 0.7130377630690884,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -2575,6 +3091,20 @@
             },
             {
               "name": "BrokenTimerLidDisplay"
+            }
+          ]
+        },
+        {
+          "name": "DialogueBox",
+          "objects": [
+            {
+              "name": "DialogueBoxOutline"
+            },
+            {
+              "name": "DialogueBoxBackground"
+            },
+            {
+              "name": "DialogueIndicator"
             }
           ]
         }
@@ -2685,53 +3215,39 @@
           "value": false
         },
         {
-          "name": "LockCombinationNOTE__",
-          "persistentUuid": "57bc28c9-a5d5-4109-84e1-cf72745e4a1a",
-          "type": "string",
-          "value": "Tail, Conch, Shell (1,2,3)"
-        },
-        {
           "name": "DialogueActive",
           "persistentUuid": "c909fcb7-5547-4cc0-92de-44f22d496bda",
           "type": "boolean",
           "value": false
+        },
+        {
+          "name": "IntroTutorialEnd",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "LockCombinationNOTE__",
+          "persistentUuid": "57bc28c9-a5d5-4109-84e1-cf72745e4a1a",
+          "type": "string",
+          "value": "Tail, Conch, Shell (1,2,3)"
         }
       ],
       "instances": [
         {
           "angle": 0,
           "customSize": true,
-          "depth": 1,
-          "height": 136,
+          "depth": 0.7254901960784313,
+          "height": 37,
           "keepRatio": true,
           "layer": "UI",
           "locked": true,
           "name": "Crosshair",
           "persistentUuid": "9b79c9f7-cc6e-4362-918f-7fdef865fc1e",
           "sealed": true,
-          "width": 142,
-          "x": 547,
-          "y": 409,
+          "width": 37,
+          "x": 604,
+          "y": 312,
           "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 3,
-          "height": 108,
-          "keepRatio": true,
-          "layer": "Inventory",
-          "locked": true,
-          "name": "InventoryButton",
-          "persistentUuid": "95c36dac-8120-4101-9250-3d0c026bb1e6",
-          "sealed": true,
-          "width": 109,
-          "x": 33,
-          "y": 593,
-          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2946,7 +3462,6 @@
           "height": 120,
           "keepRatio": true,
           "layer": "",
-          "locked": true,
           "name": "AquaLight",
           "persistentUuid": "968c6c36-fd74-4342-a710-8fe2593a3b91",
           "rotationY": 88,
@@ -3688,7 +4203,7 @@
           "persistentUuid": "1fff2451-ccfb-49f8-9217-aaf63172b669",
           "sealed": true,
           "width": 2631,
-          "x": 3809,
+          "x": 809,
           "y": 713,
           "z": -344,
           "zOrder": 0,
@@ -3852,15 +4367,15 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 210,
-          "keepRatio": true,
+          "height": 720,
           "layer": "Dialogue",
-          "name": "DialogueBox",
+          "name": "DialogueBoxBackground",
+          "opacity": 153,
           "persistentUuid": "4d99905a-5e23-4bb1-99bd-99274074a543",
-          "width": 1220,
-          "x": 35,
-          "y": 475,
-          "zOrder": 56,
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3869,15 +4384,51 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 156,
+          "height": 152,
           "keepRatio": true,
           "layer": "Dialogue",
           "name": "DialogueText",
           "persistentUuid": "ae200bd2-02bc-4b8c-9c57-2ba12d387301",
-          "width": 1154,
-          "x": 65,
-          "y": 502,
+          "width": 1111,
+          "x": 89,
+          "y": 520,
           "zOrder": 57,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 100,
+          "keepRatio": true,
+          "layer": "UI",
+          "name": "Inventory",
+          "persistentUuid": "6b26e465-0c98-4504-9fce-7e389bd40713",
+          "width": 100,
+          "x": 36,
+          "y": 587,
+          "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 720,
+          "keepRatio": true,
+          "layer": "Dialogue",
+          "locked": true,
+          "name": "DialogueBoxOutline",
+          "persistentUuid": "62cea5ef-0ab5-479f-9024-beb2059f196b",
+          "sealed": true,
+          "width": 1280,
+          "x": 0,
+          "y": 0,
+          "zOrder": 59,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3972,7 +4523,18 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "effects": [],
+          "effects": [
+            {
+              "effectType": "BlendingMode",
+              "name": "Effect",
+              "doubleParameters": {
+                "blendmode": 1,
+                "opacity": 1
+              },
+              "stringParameters": {},
+              "booleanParameters": {}
+            }
+          ],
           "behaviors": [],
           "animations": [
             {
@@ -3986,7 +4548,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite",
+                      "image": "NewSprite2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4002,20 +4564,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 14,
-                            "y": 10
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 52,
-                            "y": 10
+                            "x": 51,
+                            "y": 0
                           },
                           {
-                            "x": 52,
-                            "y": 46
+                            "x": 51,
+                            "y": 51
                           },
                           {
-                            "x": 14,
-                            "y": 46
+                            "x": 0,
+                            "y": 51
                           }
                         ]
                       ]
@@ -4029,7 +4591,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "InventoryButton",
+          "name": "Inventory",
           "persistentUuid": "213c484d-d605-4974-8a1c-d8d9cf73dd2f",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -4059,7 +4621,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Screen Shot 2026-08-20 at 10.20.05 AM.png",
+                      "image": "Normal3",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4075,20 +4637,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 5,
-                            "y": 3
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 82,
-                            "y": 3
+                            "x": 271,
+                            "y": 0
                           },
                           {
-                            "x": 82,
-                            "y": 82
+                            "x": 271,
+                            "y": 270
                           },
                           {
-                            "x": 5,
-                            "y": 82
+                            "x": 0,
+                            "y": 270
                           }
                         ]
                       ]
@@ -5243,7 +5805,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "DialogueBox",
+          "name": "DialogueBoxBackground",
           "persistentUuid": "3555a361-93f6-4cce-9761-c0a015831842",
           "type": "Sprite",
           "updateIfNotVisible": false,
@@ -5252,7 +5814,7 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "default",
+              "name": "1000030911",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -5262,7 +5824,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "default",
+                      "image": "1000030911.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5278,20 +5840,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 152,
+                            "y": 1016
                           },
                           {
-                            "x": 568,
-                            "y": 0
+                            "x": 2428,
+                            "y": 1016
                           },
                           {
-                            "x": 568,
-                            "y": 120
+                            "x": 2428,
+                            "y": 1370
                           },
                           {
-                            "x": 0,
-                            "y": 120
+                            "x": 152,
+                            "y": 1370
                           }
                         ]
                       ]
@@ -5315,11 +5877,134 @@
             "opacity": 255,
             "fontSize": 20,
             "visible": true,
-            "color": "0;0;0",
+            "color": "80;227;194",
             "fontFamily": "Arial",
             "align": "left",
             "verticalTextAlignment": "top"
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "DialogueIndicator",
+          "persistentUuid": "25de7821-dfb2-4632-a4ca-0a0a305ce7a0",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "1000030912",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "1000030912",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 3,
+                            "y": 3
+                          },
+                          {
+                            "x": 88,
+                            "y": 3
+                          },
+                          {
+                            "x": 88,
+                            "y": 57
+                          },
+                          {
+                            "x": 3,
+                            "y": 57
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "DialogueBoxOutline",
+          "persistentUuid": "95147fa0-eb2a-490b-8871-1db1a8684c62",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "1000030952.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 152,
+                            "y": 1016
+                          },
+                          {
+                            "x": 2428,
+                            "y": 1016
+                          },
+                          {
+                            "x": 2428,
+                            "y": 1370
+                          },
+                          {
+                            "x": 152,
+                            "y": 1370
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -5335,7 +6020,7 @@
             "folderName": "screen",
             "children": [
               {
-                "objectName": "InventoryButton"
+                "objectName": "Inventory"
               },
               {
                 "objectName": "Crosshair"
@@ -5494,10 +6179,16 @@
             ]
           },
           {
-            "objectName": "DialogueBox"
+            "objectName": "DialogueText"
           },
           {
-            "objectName": "DialogueText"
+            "objectName": "DialogueIndicator"
+          },
+          {
+            "objectName": "DialogueBoxBackground"
+          },
+          {
+            "objectName": "DialogueBoxOutline"
           }
         ]
       },
@@ -5652,7 +6343,7 @@
                 "value": "Hide"
               },
               "parameters": [
-                "DialogueBox"
+                "DialogueBoxBackground"
               ]
             },
             {
@@ -5724,6 +6415,16 @@
                   "parameters": [
                     "DialogueActive",
                     "False",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "IntroTutorialEnd",
+                    "True",
                     ""
                   ]
                 }
@@ -7303,6 +8004,16 @@
                 },
                 {
                   "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "IntroTutorialEnd",
+                    "False",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "ResetTimer"
                   },
                   "parameters": [
@@ -7580,7 +8291,7 @@
                     "",
                     "\"START\"",
                     ">=",
-                    "2"
+                    "1"
                   ]
                 }
               ],
@@ -7643,6 +8354,16 @@
                     "\"tutorialInvestigate\"",
                     "True"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "DialogueActive",
+                    "False",
+                    ""
+                  ]
                 }
               ],
               "actions": [
@@ -7662,7 +8383,35 @@
                   },
                   "parameters": [
                     "",
-                    "\"typewriter\""
+                    "\"TUTORIAL\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"TUTORIAL\"",
+                    ">=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "IntroTutorialEnd",
+                    "True",
+                    "2"
                   ]
                 },
                 {
@@ -7670,7 +8419,25 @@
                     "value": "DialogueTree::StartDialogueFromBranch"
                   },
                   "parameters": [
-                    "\"Tutorial - Investigate\""
+                    "\"Tutorial/Investigate\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "RemoveTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"TUTORIAL\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"typewriter\""
                   ]
                 }
               ]
@@ -7702,7 +8469,7 @@
                 "cam1",
                 "Text",
                 "=",
-                "\"yay\""
+                "DialogueActive"
               ]
             },
             {
@@ -7728,7 +8495,7 @@
                 "cam2",
                 "Text",
                 "=",
-                "ToString(TrapdoorLockGROUP.CenterY())"
+                "DialogueTree::VariableString(\"dialogueEnd\")"
               ]
             },
             {
@@ -7837,7 +8604,7 @@
           "isLocked": false,
           "name": "Inventory",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
