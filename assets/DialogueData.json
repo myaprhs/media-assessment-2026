@@ -4,29 +4,79 @@
 		"tags": "",
 		"body": "<<set $dialogueEnd to false >>\n<<set $tutorialInvestigate to false >>\n<<set $unfadeBlack to false >>\n\"…\"\n\"………\"\n[spacing=5]BZZT–![/spacing]\n[i]A loud, unfamiliar alarm jolted me awake, my eyes blinking to adjust to the dimness.[/i]\n<<set $unfadeBlack to true >>\n“What was that alar—\"\n\"...Huh?”\n[i]I look around, dumbfounded.[/i]\n“Just where the hell am I…”\n“This is so not where I last remember falling asleep.”\n“Urgh–!”\n[i]I put a hand to my head, the beginnings of a headache forming.[/i]\n“What… is going on..?”\n[i]Panic sets in, my heart racing.[/i]\n[i]I was just at home a minute ago, wasn’t I?[/i]\n[i]At my desk, writing this godforsaken report on myths of mermaids, sirens more specifically, and I just. Took a nap.[/i]\n[i]And now I’m here, wherever “here” is.[/i]\n“O-Oh god, am I kidnapped?”\n[i]I looked around at my surroundings again, but it only left me in a daze as confusion began to replace panic.[/i]\n[i]This space… Certainly doesn’t feel like where you would keep a hostage.[/i]\n[i]Rather it feels more like a very large fish tank?[/i]\n“Either way… I need to get out of here.”\n[i]I have no idea who brought me here, and why, but from my long history of watching mystery anime, there’s always a reason for everything.[/i]\n[i]...Aaaand the reason I’m here now probably isn’t good.[/i]\n“Ugh… Escape first, think later!!!”\nspacerrrrrr\n<<set $dialogueEnd to true >>\n<<set $tutorialInvestigate to true >>",
 		"position": {
-			"x": -133,
-			"y": 40
+			"x": -1121,
+			"y": -929
 		},
-		"colorID": 0
+		"colorID": 1
 	},
 	{
 		"title": "Tutorial/Investigate",
 		"tags": "",
-		"body": "<<set $dialogueEnd to false >>\n[b]Hi. Congratulations, [i]YOU[/i] need to figure out how to escape.[/b]\n[b]To do so, turn around by using the [i]left and right arrow keys[/i].[/b]\n[b]Since this is a very limited and cramped space, you can only go forward a little, using the [i]up arrow key[/i], to more closely inspect the area.[/b]\n[b]To inspect anything of interest, [i]hover[/i] over the object with the [i]cursor[/i] and [i]click to interact[/i].[/b]\n[b]Some objects you can [i]focus[/i] on more closely, and you can use the [i]left and right arrow keys[/i] to turn around and inspect it.[/b]\n[b]To exit [i]focus[/i], use the [i]down arrow key[/i].[/b]\nTutorial over, good luck!\nspacerrr\n<<set $dialogueEnd to true >>\n<<set $tutorialInvestigate to false>>",
+		"body": "<<set $dialogueEnd to false >>\nHi. Congratulations, [b]YOU[/b] need to figure out how to escape.\nTo do so, turn around by using the [b]left and right arrow keys[/b].\nSince this is a very limited and cramped space, you can only go forward a little, using the [b]up arrow key[/b], to more closely inspect the area.\nTo inspect anything of interest, [b]hover[/b] over the object with the [b]cursor[/b] and [b]click to interact[/b].\nSome objects you can [b]focus[/b] on more closely, and you can use the [b]left and right arrow keys[/b] to turn around and inspect it.\nTo exit [b]focus[/b], use the [b]down arrow key[/b].\nTutorial over, good luck!\nspacerrr\n<<set $dialogueEnd to true >>\n<<set $tutorialInvestigate to false>>",
 		"position": {
-			"x": 98,
-			"y": 42
+			"x": -883,
+			"y": -929
+		},
+		"colorID": 1
+	},
+	{
+		"title": "BlueCoral",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]Some blue coral. It looks kind of spiky.[/i]\n[i]What if I broke off a part and sharpened it like a pickaxe, and dug my way out of here…[/i]\n“...Yeah, that’s probably wishful thinking.”\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -883,
+			"y": -679
 		},
 		"colorID": 0
 	},
 	{
-		"title": "Blue Coral",
+		"title": "OrangeCoral",
 		"tags": "",
-		"body": "<<set $dialogueEnd to false >>\nSome blue coral. It looks kind of spiky.\nWhat if I broke off a part and sharpened it like a pickaxe, and dug my way out of here…\n“...Yeah, that’s probably wishful thinking.”\n<<set $dialogueEnd to true >>",
+		"body": "<<set $dialogueEnd to false >>\n[i]Some orange coral. If it was thinner, denser, maybe it would have looked like instant noodles before it was cooked…[/i]\n[i]...Am I just hungry?[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
 		"position": {
-			"x": 330,
-			"y": 37
+			"x": -1121,
+			"y": -679
 		},
 		"colorID": 0
+	},
+	{
+		"title": "Seaweed1",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]These seaweed are straight upright… They’re probably fake.[/i]\n[i]I cautiously reach out to touch it.[/i]\n“...”\n[i]Ew— it feels a bit slimy, but definitely rubbery. And fake.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -654,
+			"y": -679
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Seaweed2",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]These seaweed plants look sturdy enough. Maybe it can be used as rope???[/i]\n[i]Uh, rope for what though.[/i]\n[i]Mysteriously shrunken boy from hit mystery anime, you’re failing me here.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -427,
+			"y": -679
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Rock",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n“Rocks, huh, reminds me of my lost pet rock, Rocky…”\n[i]…Hang on, that’s irrelevant right now.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -184,
+			"y": -679
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TrapdoorLock/FirstInteraction",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n“Wait, that’s—!”\nFOCUS ONTO THE LOCK\n[i]It looks like a combination lock.[/i]\n“And where there’s a lock, there’s something important…”\nGLANCE AROUND, AND SEE THE TRAPDOOR\n“Is this the exit?”\n[i]I glance at it suspiciously, and mull over it.[/i]\n“Why is the lock placed here so intentionally… Almost whoever brought and trapped me here wants me to get out?”\n[i]I shake my head.[/i]\n“Ugh, I can figure out their intentions after I leave here.”\n[i]Let’s try examining that lock again.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -1121,
+			"y": -436
+		},
+		"colorID": 2
 	}
 ]
