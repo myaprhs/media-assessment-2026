@@ -7,7 +7,7 @@
 			"x": -1121,
 			"y": -929
 		},
-		"colorID": 1
+		"colorID": 0
 	},
 	{
 		"title": "Tutorial/Investigate",
@@ -17,7 +17,7 @@
 			"x": -883,
 			"y": -929
 		},
-		"colorID": 1
+		"colorID": 0
 	},
 	{
 		"title": "BlueCoral",
@@ -60,23 +60,113 @@
 		"colorID": 0
 	},
 	{
-		"title": "Rock",
+		"title": "Rocks/BeforeTimer",
 		"tags": "",
 		"body": "<<set $dialogueEnd to false >>\n“Rocks, huh, reminds me of my lost pet rock, Rocky…”\n[i]…Hang on, that’s irrelevant right now.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
 		"position": {
-			"x": -184,
-			"y": -679
+			"x": -1115,
+			"y": 248
 		},
 		"colorID": 0
 	},
 	{
-		"title": "TrapdoorLock/FirstInteraction",
+		"title": "TrapdoorLock/Inspection",
 		"tags": "",
-		"body": "<<set $dialogueEnd to false >>\n“Wait, that’s—!”\nFOCUS ONTO THE LOCK\n[i]It looks like a combination lock.[/i]\n“And where there’s a lock, there’s something important…”\nGLANCE AROUND, AND SEE THE TRAPDOOR\n“Is this the exit?”\n[i]I glance at it suspiciously, and mull over it.[/i]\n“Why is the lock placed here so intentionally… Almost whoever brought and trapped me here wants me to get out?”\n[i]I shake my head.[/i]\n“Ugh, I can figure out their intentions after I leave here.”\n[i]Let’s try examining that lock again.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"body": "<<set $dialogueEnd to false >>\n<<set $cameraFocus to true >>\n<<set $lockFocus to false >>\n<<set $trapdoorFocus to false >>\n“Wait, that’s—!”\n<<set $lockFocus to true >>\n[i]It looks like a combination lock.[/i]\n“And where there’s a lock, there’s something important…”\n<<set $trapdoorFocus to true>>\n“Is this the exit?”\n[i]I glance at it suspiciously, and mull over it.[/i]\n“Why is the lock placed here so intentionally… Almost whoever brought and trapped me here wants me to get out?”\n[i]I shake my head.[/i]\n“Ugh, I can figure out their intentions after I leave here.”\n[i]Let’s try examining that lock again.[/i]\nspacerrr\n<<set $cameraFocus to false >>\n<<set $dialogueEnd to true >>",
 		"position": {
 			"x": -1121,
 			"y": -436
 		},
 		"colorID": 2
+	},
+	{
+		"title": "BrokenTimer/NoRock",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n“Is this a digital timer? What’s this doing here?”\n[i]It looks like… it’s broken.[/i]\n“But then why is it here…”\n[i]I examine the random timer, trying to see if I can take it off the wall.[/i]\n“Ugh!—”\n[i]No dice. The timer is screwed tightly to the wall, but the display lid seems a bit loose.[/i]\n“No matter how random, everything has a purpose… Let’s break this open!”\n[i]Uhh… With what, though. Maybe I could find a heavy object to smash it open somewhere?[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -1119,
+			"y": -211
+		},
+		"colorID": 1
+	},
+	{
+		"title": "BrokenTimer/YesRock",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n\"It's open!\"\n\"Wait, what is that?\"\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -886,
+			"y": -212
+		},
+		"colorID": 1
+	},
+	{
+		"title": "OxygenPump/Front",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]…What the heck is this?[/i]\n[i]It looks like a container or a case of some sorts.[/i]\n“If we’re going with a fish tank theme, could this be an oxygen pump box?”\n[i]Since I haven’t died due to a lack of oxygen while unconscious, maybe this is why?[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -1117,
+			"y": 15
+		},
+		"colorID": 3
+	},
+	{
+		"title": "OxygenPump/Side",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]There seems to be a starshaped imprint here.[/i]\n“This reminds me of those high tech fancy hand imprint locks…”\nspacerr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -882,
+			"y": 17
+		},
+		"colorID": 3
+	},
+	{
+		"title": "Rock1.2/AfterTimer",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]This rock is too small.[/i]\nspacerr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -879,
+			"y": 251
+		},
+		"colorID": 4
+	},
+	{
+		"title": "Rock3/AfterTimer",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n“..?”\n[i]This rock isn’t budging!![/i]\n[i]Has it been mysteriously superglued down or something?[/i]\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -655,
+			"y": 250
+		},
+		"colorID": 4
+	},
+	{
+		"title": "Rock4/AfterTimer",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]This rock seems just right for smashing the timer open![/i]\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -430,
+			"y": 250
+		},
+		"colorID": 4
+	},
+	{
+		"title": "Tutorial/Inventory",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\nOh, I forgot to tell you!\nWith the cursor, some useful objects can be picked up by clicking on them.\nThey will be stored in your inventory, which you can access by pressing the key 'X'. \nTry pressing 'X' to open your inventory.\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -649,
+			"y": -930
+		},
+		"colorID": 5
+	},
+	{
+		"title": "Tutorial/InventorySelect",
+		"tags": "",
+		"body": "This is your inventory!\nYou can see the objects you have picked up.\nIf you have multiple collected items, use the up and down arrow keys to switch between them.\n\nAt the bottom left corner, you can see which item you have in hand.\nIf you have an item in hand, you can use it by clicking where you want to use it on.",
+		"position": {
+			"x": -414,
+			"y": -930
+		},
+		"colorID": 0
 	}
 ]
