@@ -70,14 +70,14 @@
 		"colorID": 0
 	},
 	{
-		"title": "TrapdoorLock/Inspection",
+		"title": "TrapdoorLock/Inspection1",
 		"tags": "",
-		"body": "<<set $dialogueEnd to false >>\n<<set $cameraFocus to true >>\n<<set $lockFocus to false >>\n<<set $trapdoorFocus to false >>\n“Wait, that’s—!”\n<<set $lockFocus to true >>\n[i]It looks like a combination lock.[/i]\n“And where there’s a lock, there’s something important…”\n<<set $trapdoorFocus to true>>\n“Is this the exit?”\n[i]I glance at it suspiciously, and mull over it.[/i]\n“Why is the lock placed here so intentionally… Almost whoever brought and trapped me here wants me to get out?”\n[i]I shake my head.[/i]\n“Ugh, I can figure out their intentions after I leave here.”\n[i]Let’s try examining that lock again.[/i]\nspacerrr\n<<set $cameraFocus to false >>\n<<set $dialogueEnd to true >>",
+		"body": "<<set $dialogueEnd to false >>\n<<set $lockFocus to false >>\n<<set $trapdoorFocus to false >>\n<<set $inspectionEnd to false >>\n“Wait, that’s—!”\nspacerr\n<<set $lockFocus to true >>",
 		"position": {
-			"x": -1121,
-			"y": -436
+			"x": -1588,
+			"y": -443
 		},
-		"colorID": 2
+		"colorID": 0
 	},
 	{
 		"title": "BrokenTimer/NoRock",
@@ -87,7 +87,7 @@
 			"x": -1119,
 			"y": -211
 		},
-		"colorID": 1
+		"colorID": 0
 	},
 	{
 		"title": "BrokenTimer/YesRock",
@@ -107,7 +107,7 @@
 			"x": -1117,
 			"y": 15
 		},
-		"colorID": 3
+		"colorID": 0
 	},
 	{
 		"title": "OxygenPump/Side",
@@ -117,7 +117,7 @@
 			"x": -882,
 			"y": 17
 		},
-		"colorID": 3
+		"colorID": 0
 	},
 	{
 		"title": "Rock1.2/AfterTimer",
@@ -127,27 +127,27 @@
 			"x": -879,
 			"y": 251
 		},
-		"colorID": 4
+		"colorID": 0
 	},
 	{
 		"title": "Rock3/AfterTimer",
 		"tags": "",
-		"body": "<<set $dialogueEnd to false >>\n“..?”\n[i]This rock isn’t budging!![/i]\n[i]Has it been mysteriously superglued down or something?[/i]\n<<set $dialogueEnd to true >>",
+		"body": "<<set $dialogueEnd to false >>\n“..?”\n[i]This rock isn’t budging!![/i]\n[i]Has it been mysteriously superglued down or something?[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
 		"position": {
 			"x": -655,
 			"y": 250
 		},
-		"colorID": 4
+		"colorID": 0
 	},
 	{
 		"title": "Rock4/AfterTimer",
 		"tags": "",
-		"body": "<<set $dialogueEnd to false >>\n[i]This rock seems just right for smashing the timer open![/i]\n<<set $dialogueEnd to true >>",
+		"body": "<<set $dialogueEnd to false >>\n[i]This rock seems just right for smashing the timer open![/i]\nspacerr\n<<set $dialogueEnd to true >>",
 		"position": {
 			"x": -430,
 			"y": 250
 		},
-		"colorID": 4
+		"colorID": 0
 	},
 	{
 		"title": "Tutorial/Inventory",
@@ -166,6 +166,86 @@
 		"position": {
 			"x": -414,
 			"y": -930
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Starfish/BeforeOxygenPump",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]Ooo starfishes.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -1118,
+			"y": 486
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Starfish/AfterOxygenPump",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]Hm... Could this be a part of a puzzle?[/i]\n\"Let's keep it handy for now...\"\nspaccerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -876,
+			"y": 486
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TrapdoorLock/Dials",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n“There’s dials with symbols on them, so it’s a combination lock?”\n[i]I attempt to turn them, but the dials don’t budge.[/i]\n“..? A combination lock with dials that don’t move… How useful…”\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -890,
+			"y": -444
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TrapdoorLock/Locks",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]Is this another lock? It has a weird design for a lock…[/i]\n“Hm… there’s a rectangular hole here. Maybe a key could be inserted?”\n[i]Rectangular keyholes are a bit unusual though...[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -652,
+			"y": -440
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TrapdoorLock/SummaryInspection",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]So, there’s dials that probably form a combination, and there’s two locks that need keys on top of that.[/i]\n[i]The keys probably unlock the restriction on the dials.[/i]\n“Just who created this lock…”\n[i]If I want to escape and leave I have to find the keys first and then figure out the combination. [/i]\n[i]…Based on my escape room experiences, the keys are probably hidden somewhere in this space.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -418,
+			"y": -439
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TrapdoorLock/Inspection2",
+		"tags": "",
+		"body": "<<set $lockFocus to false >>\n[i]It looks like a combination lock.[/i]\n“And where there’s a lock, there’s something important…”\nspacerrr\n<<set $trapdoorFocus to true >>",
+		"position": {
+			"x": -1356,
+			"y": -441
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TrapdoorLock/Inspection3",
+		"tags": "",
+		"body": "<<set $trapdoorFocus to false >>\n“Is this the exit?”\n[i]I glance at it suspiciously, and mull over it.[/i]\n“Why is the lock placed here so intentionally… Almost whoever brought and trapped me here wants me to get out?”\n[i]I shake my head.[/i]\n“Ugh, I can figure out their intentions after I leave here.”\n[i]Let’s try examining that lock again.[/i]\nspacerrr\n<<set $inspectionEnd to true >>\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -1129,
+			"y": -442
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Shells",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n\"A shell?\"\n[i]Suspicious, I picked it up.[/i]\n[i]...There's something on the back of it! I should take a look closer at it.[/i]\nspaccerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -1116,
+			"y": 722
 		},
 		"colorID": 0
 	}

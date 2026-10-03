@@ -1474,6 +1474,18 @@
         "name": "1000030981",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/yellow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "yellow.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/3D Cubes/01-Placeholders/fd58a1645d5f178d8dddefd4f0cdad86051b60cb144faa13488052a7a2ffa30b_yellow.png",
+          "name": "yellow.png"
+        }
       }
     ]
   },
@@ -3595,7 +3607,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.4502297135265457,
+        "zoomFactor": 1.7070919670575688,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -3726,7 +3738,6 @@
           ]
         },
         {
-          "folded": true,
           "name": "ObjectFocus",
           "persistentUuid": "9f6b3060-a337-4769-b4e9-4e65e20259ef",
           "type": "structure",
@@ -3750,6 +3761,37 @@
               "value": false
             }
           ]
+        },
+        {
+          "name": "FirstInteraction",
+          "persistentUuid": "02862d58-7b00-42e5-ae9e-bd6dba3aacb8",
+          "type": "structure",
+          "children": [
+            {
+              "name": "BrokenTimer",
+              "persistentUuid": "6dc42125-4b9f-4b06-a921-468ade5c9957",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "OxygenPump",
+              "persistentUuid": "4e0e9ac9-266b-4940-9417-886e41481d56",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "TrapdoorLock",
+              "persistentUuid": "dabbef82-1537-4d14-aae0-1c5429beaecd",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        },
+        {
+          "name": "TrapdoorInspectionSummary",
+          "persistentUuid": "8e7d5734-dc16-43d4-9fd1-092aa279bb03",
+          "type": "boolean",
+          "value": false
         },
         {
           "name": "TrapdoorlockView",
@@ -4622,7 +4664,7 @@
           "initialVariables": []
         },
         {
-          "angle": 72,
+          "angle": 59,
           "customSize": true,
           "depth": 13,
           "height": 91,
@@ -4631,11 +4673,11 @@
           "name": "Shell3",
           "persistentUuid": "2509f544-e3db-4644-8db0-bac3669890a9",
           "rotationX": 180,
-          "rotationY": 40,
+          "rotationY": 18,
           "width": 80,
-          "x": 1631,
+          "x": 1750,
           "y": 302,
-          "z": -311,
+          "z": -309,
           "zOrder": 50,
           "numberProperties": [],
           "stringProperties": [],
@@ -4678,19 +4720,19 @@
           "initialVariables": []
         },
         {
-          "angle": 0,
+          "angle": 352,
           "customSize": true,
-          "height": 48.39005187194781,
+          "depth": 11,
+          "height": 42,
           "layer": "",
-          "locked": true,
           "name": "Starfish3",
           "persistentUuid": "5793ab31-ed9f-4ac3-b093-f1744810277e",
-          "rotationY": 352,
-          "sealed": true,
+          "rotationX": 14,
+          "rotationY": 22,
           "width": 41,
-          "x": 1776,
-          "y": 1299,
-          "z": -310,
+          "x": 1783,
+          "y": 1409,
+          "z": -263,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -5664,6 +5706,53 @@
           "x": 132,
           "y": 522,
           "zOrder": 93,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 32,
+          "layer": "",
+          "name": "",
+          "persistentUuid": "7eea752a-aad4-47f3-9a07-fd2fdcd4fc2a",
+          "width": 32,
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 32,
+          "layer": "",
+          "name": "",
+          "persistentUuid": "d48dd99c-0b89-461c-a6d9-ccd12b7d8fa2",
+          "width": 32,
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "TrapdoorFocus",
+          "persistentUuid": "58e88bd3-a286-45d5-861b-03d39fdb6cb2",
+          "width": 0,
+          "x": 1916,
+          "y": 858,
+          "z": 521,
+          "zOrder": 94,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -11151,6 +11240,46 @@
             "align": "left",
             "verticalTextAlignment": "top"
           }
+        },
+        {
+          "assetStoreId": "70fb9339df42571c20c49459dc03bfb360e4c6d1f4117ff448d24faf8fb6e961",
+          "name": "TrapdoorFocus",
+          "persistentUuid": "b16179f5-d62f-466e-8066-3725aa271b3a",
+          "type": "Scene3D::Cube3DObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "width": 100,
+            "height": 100,
+            "depth": 100,
+            "enableTextureTransparency": false,
+            "facesOrientation": "Y",
+            "frontFaceResourceName": "yellow.png",
+            "backFaceResourceName": "yellow.png",
+            "backFaceUpThroughWhichAxisRotation": "X",
+            "leftFaceResourceName": "yellow.png",
+            "rightFaceResourceName": "yellow.png",
+            "topFaceResourceName": "yellow.png",
+            "bottomFaceResourceName": "yellow.png",
+            "frontFaceVisible": true,
+            "backFaceVisible": true,
+            "leftFaceVisible": true,
+            "rightFaceVisible": true,
+            "topFaceVisible": true,
+            "bottomFaceVisible": true,
+            "frontFaceResourceRepeat": true,
+            "backFaceResourceRepeat": true,
+            "leftFaceResourceRepeat": true,
+            "rightFaceResourceRepeat": true,
+            "topFaceResourceRepeat": true,
+            "bottomFaceResourceRepeat": true,
+            "tileScale": 0.78,
+            "materialType": "StandardWithoutMetalness",
+            "isCastingShadow": true,
+            "isReceivingShadow": true,
+            "tint": "255;255;255"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -11246,6 +11375,9 @@
           },
           {
             "objectName": "CameraPosition2"
+          },
+          {
+            "objectName": "TrapdoorFocus"
           },
           {
             "folderName": "dialogue",
@@ -11579,6 +11711,14 @@
             },
             {
               "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "TrapdoorFocus"
+              ]
+            },
+            {
+              "type": {
                 "value": "PlayMusicOnChannel"
               },
               "parameters": [
@@ -11733,6 +11873,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "CROSSHAIR",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11838,7 +11979,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "CAMERA",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -11970,6 +12110,7 @@
               "comment": "if camera isnt focused on an obj"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12301,6 +12442,7 @@
               "comment": "if camera is focused on an obj"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12582,103 +12724,6 @@
                       "type": "BuiltinCommonInstructions::Group",
                       "events": [
                         {
-                          "type": "BuiltinCommonInstructions::Comment",
-                          "color": {
-                            "b": 194,
-                            "g": 227,
-                            "r": 80,
-                            "textB": 0,
-                            "textG": 0,
-                            "textR": 0
-                          },
-                          "comment": "starfish -- TEMPLATE"
-                        },
-                        {
-                          "disabled": true,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "MouseButtonFromTextReleased"
-                              },
-                              "parameters": [
-                                "",
-                                "\"Left\""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Raycaster3D::RaycastFromCameraCursor"
-                              },
-                              "parameters": [
-                                "",
-                                "Starfish1_CORRECT",
-                                "\"UI\"",
-                                "10000",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "BooleanVariable"
-                              },
-                              "parameters": [
-                                "CameraFocused",
-                                "False",
-                                ""
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "SetBooleanVariable"
-                              },
-                              "parameters": [
-                                "CameraFocused",
-                                "True",
-                                "="
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetBooleanVariable"
-                              },
-                              "parameters": [
-                                "CameraNum.Camera1",
-                                "False",
-                                "90"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "SetBooleanVariable"
-                              },
-                              "parameters": [
-                                "CameraNum.Camera2",
-                                "False",
-                                "90"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
-                              },
-                              "parameters": [
-                                "",
-                                "Starfish1_CORRECT.CenterX()",
-                                "Starfish1_CORRECT.CenterY()",
-                                "20",
-                                "10",
-                                "0",
-                                "90",
-                                "",
-                                ""
-                              ]
-                            }
-                          ]
-                        },
-                        {
                           "colorB": 254,
                           "colorG": 19,
                           "colorR": 144,
@@ -12788,6 +12833,51 @@
                                     "-15",
                                     "",
                                     ""
+                                  ]
+                                }
+                              ],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::StartDialogueFromBranch"
+                                      },
+                                      "parameters": [
+                                        "\"BrokenTimer/NoRock\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetTimer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"typewriter\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "FirstInteraction.BrokenTimer",
+                                        "True",
+                                        "2"
+                                      ]
+                                    }
                                   ]
                                 }
                               ]
@@ -12903,13 +12993,23 @@
                                 },
                                 {
                                   "type": {
+                                    "value": "SetBooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "FirstInteraction.OxygenPump",
+                                    "True",
+                                    "2"
+                                  ]
+                                },
+                                {
+                                  "type": {
                                     "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
                                   },
                                   "parameters": [
                                     "",
                                     "OxygenPumpGROUP.CenterX()",
                                     "OxygenPumpGROUP.CenterY() - 100",
-                                    "200",
+                                    "150",
                                     "400",
                                     "0",
                                     "0",
@@ -12957,7 +13057,7 @@
                                         "",
                                         "OxygenPumpGROUP.CenterX()",
                                         "OxygenPumpGROUP.CenterY()",
-                                        "200",
+                                        "150",
                                         "250",
                                         "90",
                                         "0",
@@ -12987,14 +13087,124 @@
                                       },
                                       "parameters": [
                                         "",
-                                        "OxygenPumpGROUP.CenterX() + 150",
+                                        "OxygenPumpGROUP.CenterX()+150",
                                         "OxygenPumpGROUP.CenterY()",
-                                        "200",
-                                        "350",
+                                        "150",
+                                        "400",
                                         "0",
                                         "0",
                                         "",
                                         ""
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "MouseButtonFromTextReleased"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"Left\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "OxygenPumpBase",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::StartDialogueFromBranch"
+                                      },
+                                      "parameters": [
+                                        "\"OxygenPump/Front\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetTimer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"typewriter\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "MouseButtonFromTextReleased"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"Left\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "StarfishLock",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::StartDialogueFromBranch"
+                                      },
+                                      "parameters": [
+                                        "\"OxygenPump/Side\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetTimer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"typewriter\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
                                       ]
                                     }
                                   ]
@@ -13015,116 +13225,7 @@
                           "type": "BuiltinCommonInstructions::Group",
                           "events": [
                             {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "MouseButtonFromTextReleased"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "\"Left\""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "Raycaster3D::RaycastFromCameraCursor"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "TrapdoorLockGROUP",
-                                    "\"UI\"",
-                                    "10000",
-                                    ""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "BooleanVariable"
-                                  },
-                                  "parameters": [
-                                    "CameraFocused",
-                                    "False",
-                                    ""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "BooleanVariable"
-                                  },
-                                  "parameters": [
-                                    "ObjectFocus.TrapdoorLock",
-                                    "=",
-                                    ""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "BooleanVariable"
-                                  },
-                                  "parameters": [
-                                    "CameraNum.Camera2",
-                                    "True",
-                                    ""
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "SetBooleanVariable"
-                                  },
-                                  "parameters": [
-                                    "CameraFocused",
-                                    "True",
-                                    "="
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetBooleanVariable"
-                                  },
-                                  "parameters": [
-                                    "ObjectFocus.TrapdoorLock",
-                                    "True",
-                                    "="
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetBooleanVariable"
-                                  },
-                                  "parameters": [
-                                    "CameraNum.Camera1",
-                                    "False",
-                                    "90"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "SetBooleanVariable"
-                                  },
-                                  "parameters": [
-                                    "CameraNum.Camera2",
-                                    "False",
-                                    "90"
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Comment",
-                              "color": {
-                                "b": 109,
-                                "g": 230,
-                                "r": 255,
-                                "textB": 0,
-                                "textG": 0,
-                                "textR": 0
-                              },
-                              "comment": "switching perspectives of the lock"
-                            },
-                            {
+                              "folded": true,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -13132,8 +13233,8 @@
                                     "value": "BooleanVariable"
                                   },
                                   "parameters": [
-                                    "ObjectFocus.TrapdoorLock",
-                                    "True",
+                                    "FirstInteraction.TrapdoorLock",
+                                    "False",
                                     ""
                                   ]
                                 }
@@ -13150,58 +13251,265 @@
                                     "textG": 0,
                                     "textR": 0
                                   },
-                                  "comment": "limits for diff camera perspectives"
+                                  "comment": "basically the sequence / cutscene that triggers when the player first discovers the lock"
                                 },
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
                                   "conditions": [
                                     {
                                       "type": {
-                                        "value": "NumberVariable"
+                                        "value": "MouseButtonFromTextReleased"
                                       },
                                       "parameters": [
-                                        "TrapdoorlockView",
-                                        "<",
-                                        "-1"
+                                        "",
+                                        "\"Left\""
                                       ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "TrapdoorLockGROUP",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraNum.Camera2",
+                                        "True",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
                                     }
                                   ],
                                   "actions": [
                                     {
                                       "type": {
-                                        "value": "SetNumberVariable"
+                                        "value": "DialogueTree::StartDialogueFromBranch"
                                       },
                                       "parameters": [
-                                        "TrapdoorlockView",
-                                        "=",
-                                        "-1"
+                                        "\"TrapdoorLock/Inspection1\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetTimer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"typewriter\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraFocused",
+                                        "True",
+                                        "="
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraNum.Camera1",
+                                        "False",
+                                        "90"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraNum.Camera2",
+                                        "False",
+                                        "90"
                                       ]
                                     }
                                   ]
                                 },
                                 {
+                                  "folded": true,
                                   "type": "BuiltinCommonInstructions::Standard",
                                   "conditions": [
                                     {
                                       "type": {
-                                        "value": "NumberVariable"
+                                        "value": "DialogueTree::CompareDialogueStateBooleanVariable"
                                       },
                                       "parameters": [
-                                        "TrapdoorlockView",
-                                        ">",
-                                        "1"
+                                        "\"lockFocus\"",
+                                        "True"
                                       ]
                                     }
                                   ],
-                                  "actions": [
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "DialogueTree::StartDialogueFromBranch"
+                                          },
+                                          "parameters": [
+                                            "\"TrapdoorLock/Inspection2\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ResetTimer"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"typewriter\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "DialogueActive",
+                                            "True",
+                                            "2"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "TrapdoorLockGROUP.CenterX()",
+                                            "TrapdoorLockGROUP.CenterY()-50",
+                                            "550",
+                                            "200",
+                                            "90",
+                                            "-25",
+                                            "",
+                                            ""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "folded": true,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
                                     {
                                       "type": {
-                                        "value": "SetNumberVariable"
+                                        "value": "DialogueTree::CompareDialogueStateBooleanVariable"
                                       },
                                       "parameters": [
-                                        "TrapdoorlockView",
-                                        "=",
-                                        "1"
+                                        "\"trapdoorFocus\"",
+                                        "True"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "DialogueTree::StartDialogueFromBranch"
+                                          },
+                                          "parameters": [
+                                            "\"TrapdoorLock/Inspection3\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ResetTimer"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"typewriter\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "DialogueActive",
+                                            "True",
+                                            "2"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "TrapdoorFocus.CenterX()",
+                                            "TrapdoorFocus.CenterY()-50",
+                                            "400",
+                                            "300",
+                                            "90",
+                                            "-25",
+                                            "",
+                                            ""
+                                          ]
+                                        }
                                       ]
                                     }
                                   ]
@@ -13216,33 +13524,691 @@
                                     "textG": 0,
                                     "textR": 0
                                   },
-                                  "comment": "key controls for camera switch perspectives"
+                                  "comment": "switches it back to normal camera"
                                 },
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
                                   "conditions": [
                                     {
                                       "type": {
-                                        "value": "KeyFromTextJustPressed"
+                                        "value": "DialogueTree::CompareDialogueStateBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "\"inspectionEnd\"",
+                                        "True"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Scene3D::SetCameraRotationX"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "=",
+                                        "90",
+                                        "",
+                                        "1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Scene3D::SetCameraZ"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "=",
+                                        "130",
+                                        "",
+                                        "1"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "FirstInteraction.TrapdoorLock",
+                                        "True",
+                                        "="
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraFocused",
+                                        "False",
+                                        "="
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraNum.Camera1",
+                                        "False",
+                                        "90"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraNum.Camera2",
+                                        "True",
+                                        "90"
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "FirstInteraction.TrapdoorLock",
+                                    "True",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "MouseButtonFromTextReleased"
                                       },
                                       "parameters": [
                                         "",
                                         "\"Left\""
                                       ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "TrapdoorLockGROUP",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraFocused",
+                                        "False",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "ObjectFocus.TrapdoorLock",
+                                        "=",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraNum.Camera2",
+                                        "True",
+                                        ""
+                                      ]
                                     }
                                   ],
                                   "actions": [
                                     {
                                       "type": {
-                                        "value": "SetNumberVariable"
+                                        "value": "SetBooleanVariable"
                                       },
                                       "parameters": [
-                                        "TrapdoorlockView",
-                                        "+",
-                                        "1"
+                                        "CameraFocused",
+                                        "True",
+                                        "="
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "ObjectFocus.TrapdoorLock",
+                                        "True",
+                                        "="
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraNum.Camera1",
+                                        "False",
+                                        "90"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraNum.Camera2",
+                                        "False",
+                                        "90"
                                       ]
                                     }
                                   ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "switching perspectives of the lock"
+                                },
+                                {
+                                  "folded": true,
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "ObjectFocus.TrapdoorLock",
+                                        "True",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "limits for diff camera perspectives"
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "NumberVariable"
+                                          },
+                                          "parameters": [
+                                            "TrapdoorlockView",
+                                            "<",
+                                            "-1"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "SetNumberVariable"
+                                          },
+                                          "parameters": [
+                                            "TrapdoorlockView",
+                                            "=",
+                                            "-1"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "NumberVariable"
+                                          },
+                                          "parameters": [
+                                            "TrapdoorlockView",
+                                            ">",
+                                            "1"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "SetNumberVariable"
+                                          },
+                                          "parameters": [
+                                            "TrapdoorlockView",
+                                            "=",
+                                            "1"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "key controls for camera switch perspectives"
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "KeyFromTextJustPressed"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"Left\""
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "SetNumberVariable"
+                                          },
+                                          "parameters": [
+                                            "TrapdoorlockView",
+                                            "+",
+                                            "1"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "KeyFromTextJustPressed"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"Right\""
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "SetNumberVariable"
+                                          },
+                                          "parameters": [
+                                            "TrapdoorlockView",
+                                            "-",
+                                            "1"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "NumberVariable"
+                                          },
+                                          "parameters": [
+                                            "TrapdoorlockView",
+                                            "=",
+                                            "1"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "TrapdoorLockGROUP.CenterX()",
+                                            "TrapdoorLockGROUP.CenterY()-100",
+                                            "575",
+                                            "200",
+                                            "180",
+                                            "-25",
+                                            "",
+                                            ""
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "NumberVariable"
+                                          },
+                                          "parameters": [
+                                            "TrapdoorlockView",
+                                            "=",
+                                            "0"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "TrapdoorLockGROUP.CenterX()",
+                                            "TrapdoorLockGROUP.CenterY()-50",
+                                            "550",
+                                            "200",
+                                            "90",
+                                            "-25",
+                                            "",
+                                            ""
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "NumberVariable"
+                                          },
+                                          "parameters": [
+                                            "TrapdoorlockView",
+                                            "=",
+                                            "-1"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "TrapdoorLockGROUP.CenterX()+25",
+                                            "TrapdoorLockGROUP.CenterY()",
+                                            "575",
+                                            "180",
+                                            "0",
+                                            "-25",
+                                            "",
+                                            ""
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Comment",
+                                      "color": {
+                                        "b": 109,
+                                        "g": 230,
+                                        "r": 255,
+                                        "textB": 0,
+                                        "textG": 0,
+                                        "textR": 0
+                                      },
+                                      "comment": "if the user clicks on the trapdoor, this is the dialogue"
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "MouseButtonFromTextReleased"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"Left\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Raycaster3D::RaycastFromCameraCursor"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "TrapdoorLock",
+                                            "\"UI\"",
+                                            "10000",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Or"
+                                          },
+                                          "parameters": [],
+                                          "subInstructions": [
+                                            {
+                                              "type": {
+                                                "value": "NumberVariable"
+                                              },
+                                              "parameters": [
+                                                "TrapdoorlockView",
+                                                "=",
+                                                "1"
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "NumberVariable"
+                                              },
+                                              "parameters": [
+                                                "TrapdoorlockView",
+                                                "=",
+                                                "-1"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "DialogueTree::StartDialogueFromBranch"
+                                          },
+                                          "parameters": [
+                                            "\"TrapdoorLock/Locks\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ResetTimer"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"typewriter\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "DialogueActive",
+                                            "True",
+                                            "2"
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "MouseButtonFromTextReleased"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"Left\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Or"
+                                          },
+                                          "parameters": [],
+                                          "subInstructions": [
+                                            {
+                                              "type": {
+                                                "value": "Raycaster3D::RaycastFromCameraCursor"
+                                              },
+                                              "parameters": [
+                                                "",
+                                                "TrapdoorLockDial1",
+                                                "\"UI\"",
+                                                "10000",
+                                                ""
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "Raycaster3D::RaycastFromCameraCursor"
+                                              },
+                                              "parameters": [
+                                                "",
+                                                "TrapdoorLockDial2",
+                                                "\"UI\"",
+                                                "10000",
+                                                ""
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "Raycaster3D::RaycastFromCameraCursor"
+                                              },
+                                              "parameters": [
+                                                "",
+                                                "TrapdoorLockDial3",
+                                                "\"UI\"",
+                                                "10000",
+                                                ""
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "NumberVariable"
+                                          },
+                                          "parameters": [
+                                            "TrapdoorlockView",
+                                            "=",
+                                            "0"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "DialogueTree::StartDialogueFromBranch"
+                                          },
+                                          "parameters": [
+                                            "\"TrapdoorLock/Dials\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ResetTimer"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"typewriter\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "DialogueActive",
+                                            "True",
+                                            "2"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "summary of inspection dialogue"
                                 },
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
@@ -13253,34 +14219,27 @@
                                       },
                                       "parameters": [
                                         "",
-                                        "\"Right\""
+                                        "\"Down\""
                                       ]
-                                    }
-                                  ],
-                                  "actions": [
+                                    },
                                     {
                                       "type": {
-                                        "value": "SetNumberVariable"
+                                        "value": "BooleanVariable"
                                       },
                                       "parameters": [
-                                        "TrapdoorlockView",
-                                        "-",
-                                        "1"
+                                        "DialogueActive",
+                                        "False",
+                                        ""
                                       ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
+                                    },
                                     {
                                       "type": {
-                                        "value": "NumberVariable"
+                                        "value": "BooleanVariable"
                                       },
                                       "parameters": [
-                                        "TrapdoorlockView",
-                                        "=",
-                                        "1"
+                                        "TrapdoorInspectionSummary",
+                                        "False",
+                                        ""
                                       ]
                                     },
                                     {
@@ -13293,96 +14252,39 @@
                                   "actions": [
                                     {
                                       "type": {
-                                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                                        "value": "DialogueTree::StartDialogueFromBranch"
                                       },
                                       "parameters": [
-                                        "",
-                                        "TrapdoorLockGROUP.CenterX()",
-                                        "TrapdoorLockGROUP.CenterY()-100",
-                                        "575",
-                                        "200",
-                                        "180",
-                                        "-25",
-                                        "",
-                                        ""
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "value": "NumberVariable"
-                                      },
-                                      "parameters": [
-                                        "TrapdoorlockView",
-                                        "=",
-                                        "0"
+                                        "\"TrapdoorLock/SummaryInspection\""
                                       ]
                                     },
                                     {
                                       "type": {
-                                        "value": "BuiltinCommonInstructions::Once"
-                                      },
-                                      "parameters": []
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                                        "value": "ResetTimer"
                                       },
                                       "parameters": [
                                         "",
-                                        "TrapdoorLockGROUP.CenterX()",
-                                        "TrapdoorLockGROUP.CenterY()-50",
-                                        "550",
-                                        "200",
-                                        "90",
-                                        "-25",
-                                        "",
-                                        ""
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "value": "NumberVariable"
-                                      },
-                                      "parameters": [
-                                        "TrapdoorlockView",
-                                        "=",
-                                        "-1"
+                                        "\"typewriter\""
                                       ]
                                     },
                                     {
                                       "type": {
-                                        "value": "BuiltinCommonInstructions::Once"
-                                      },
-                                      "parameters": []
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "value": "ThirdPersonCamera::LookFromDistanceAtPosition3D"
+                                        "value": "SetBooleanVariable"
                                       },
                                       "parameters": [
-                                        "",
-                                        "TrapdoorLockGROUP.CenterX()+25",
-                                        "TrapdoorLockGROUP.CenterY()",
-                                        "575",
-                                        "180",
-                                        "0",
-                                        "-25",
-                                        "",
-                                        ""
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "TrapdoorInspectionSummary",
+                                        "True",
+                                        "2"
                                       ]
                                     }
                                   ]
@@ -13757,6 +14659,7 @@
                           "colorG": 19,
                           "colorR": 144,
                           "creationTime": 0,
+                          "folded": true,
                           "name": "rocks (before timer interaction)",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
@@ -13841,6 +14744,16 @@
                                 },
                                 {
                                   "type": {
+                                    "value": "BooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "FirstInteraction.BrokenTimer",
+                                    "=",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
                                     "value": "BuiltinCommonInstructions::Once"
                                   },
                                   "parameters": []
@@ -13884,7 +14797,8 @@
                           "colorG": 19,
                           "colorR": 144,
                           "creationTime": 0,
-                          "name": "starfish 1",
+                          "folded": true,
+                          "name": "starfishes (before oxygen pump interaction)",
                           "source": "",
                           "type": "BuiltinCommonInstructions::Group",
                           "events": [
@@ -13902,23 +14816,46 @@
                                 },
                                 {
                                   "type": {
-                                    "value": "Raycaster3D::RaycastFromCameraCursor"
+                                    "value": "BuiltinCommonInstructions::Or"
                                   },
-                                  "parameters": [
-                                    "",
-                                    "Starfish1_CORRECT",
-                                    "\"UI\"",
-                                    "10000",
-                                    ""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "Layer"
-                                  },
-                                  "parameters": [
-                                    "Starfish1_CORRECT",
-                                    ""
+                                  "parameters": [],
+                                  "subInstructions": [
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Starfish1_CORRECT",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Starfish2",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Starfish3",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    }
                                   ]
                                 },
                                 {
@@ -13933,6 +14870,16 @@
                                 },
                                 {
                                   "type": {
+                                    "value": "BooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "FirstInteraction.OxygenPump",
+                                    "=",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
                                     "value": "BuiltinCommonInstructions::Once"
                                   },
                                   "parameters": []
@@ -13941,11 +14888,19 @@
                               "actions": [
                                 {
                                   "type": {
-                                    "value": "Delete"
+                                    "value": "DialogueTree::StartDialogueFromBranch"
                                   },
                                   "parameters": [
-                                    "Starfish1_CORRECT",
-                                    ""
+                                    "\"Starfish/BeforeOxygenPump\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ResetTimer"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"typewriter\""
                                   ]
                                 },
                                 {
@@ -13953,24 +14908,94 @@
                                     "value": "SetBooleanVariable"
                                   },
                                   "parameters": [
-                                    "ObjectCollectionStatus.Starfish1",
+                                    "DialogueActive",
+                                    "True",
+                                    "2"
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "parameters": []
+                        },
+                        {
+                          "colorB": 35,
+                          "colorG": 166,
+                          "colorR": 245,
+                          "creationTime": 0,
+                          "folded": true,
+                          "name": "rocks (after timer interaction)",
+                          "source": "",
+                          "type": "BuiltinCommonInstructions::Group",
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "FirstInteraction.BrokenTimer",
                                     "True",
                                     ""
                                   ]
                                 }
                               ],
+                              "actions": [],
                               "events": [
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
                                   "conditions": [
                                     {
                                       "type": {
-                                        "value": "VariableChildCount"
+                                        "value": "MouseButtonFromTextReleased"
                                       },
                                       "parameters": [
-                                        "CurrentObjectCollection1",
-                                        "<",
-                                        "5"
+                                        "",
+                                        "\"Left\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Or"
+                                      },
+                                      "parameters": [],
+                                      "subInstructions": [
+                                        {
+                                          "type": {
+                                            "value": "Raycaster3D::RaycastFromCameraCursor"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Rock1",
+                                            "\"UI\"",
+                                            "10000",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Raycaster3D::RaycastFromCameraCursor"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Rock2",
+                                            "\"UI\"",
+                                            "10000",
+                                            ""
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraFocused",
+                                        "False",
+                                        ""
                                       ]
                                     },
                                     {
@@ -13983,26 +15008,65 @@
                                   "actions": [
                                     {
                                       "type": {
-                                        "value": "PushString"
+                                        "value": "DialogueTree::StartDialogueFromBranch"
                                       },
                                       "parameters": [
-                                        "CurrentObjectCollection1",
-                                        "\"Starfish1\""
+                                        "\"Rock1.2/AfterTimer\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetTimer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"typewriter\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
                                       ]
                                     }
                                   ]
                                 },
                                 {
-                                  "type": "BuiltinCommonInstructions::Else",
+                                  "type": "BuiltinCommonInstructions::Standard",
                                   "conditions": [
                                     {
                                       "type": {
-                                        "value": "VariableChildCount"
+                                        "value": "MouseButtonFromTextReleased"
                                       },
                                       "parameters": [
-                                        "CurrentObjectCollection1",
-                                        "=",
-                                        "5"
+                                        "",
+                                        "\"Left\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Rock3",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraFocused",
+                                        "False",
+                                        ""
                                       ]
                                     },
                                     {
@@ -14015,16 +15079,1383 @@
                                   "actions": [
                                     {
                                       "type": {
-                                        "value": "PushString"
+                                        "value": "DialogueTree::StartDialogueFromBranch"
                                       },
                                       "parameters": [
-                                        "CurrentObjectCollection2",
-                                        "\"Starfish1\""
+                                        "\"Rock3/AfterTimer\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetTimer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"typewriter\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Comment",
+                                  "color": {
+                                    "b": 109,
+                                    "g": 230,
+                                    "r": 255,
+                                    "textB": 0,
+                                    "textG": 0,
+                                    "textR": 0
+                                  },
+                                  "comment": "this is the one that is collectable"
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "MouseButtonFromTextReleased"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"Left\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Rock4",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraFocused",
+                                        "False",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::StartDialogueFromBranch"
+                                      },
+                                      "parameters": [
+                                        "\"Rock4/AfterTimer\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetTimer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"typewriter\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "Layer"
+                                          },
+                                          "parameters": [
+                                            "Rock4",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "Delete"
+                                          },
+                                          "parameters": [
+                                            "Rock4",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "ObjectCollectionStatus.Rock",
+                                            "True",
+                                            ""
+                                          ]
+                                        }
+                                      ],
+                                      "events": [
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "VariableChildCount"
+                                              },
+                                              "parameters": [
+                                                "CurrentObjectCollection1",
+                                                "<",
+                                                "5"
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "BuiltinCommonInstructions::Once"
+                                              },
+                                              "parameters": []
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "PushString"
+                                              },
+                                              "parameters": [
+                                                "CurrentObjectCollection1",
+                                                "\"Rock\""
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "BuiltinCommonInstructions::Else",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "VariableChildCount"
+                                              },
+                                              "parameters": [
+                                                "CurrentObjectCollection1",
+                                                "=",
+                                                "5"
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "BuiltinCommonInstructions::Once"
+                                              },
+                                              "parameters": []
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "PushString"
+                                              },
+                                              "parameters": [
+                                                "CurrentObjectCollection2",
+                                                "\"Rock\""
+                                              ]
+                                            }
+                                          ]
+                                        }
                                       ]
                                     }
                                   ]
                                 }
                               ]
+                            }
+                          ],
+                          "parameters": []
+                        },
+                        {
+                          "colorB": 35,
+                          "colorG": 166,
+                          "colorR": 245,
+                          "creationTime": 0,
+                          "folded": true,
+                          "name": "starfishes (after oxygen pump interaction)",
+                          "source": "",
+                          "type": "BuiltinCommonInstructions::Group",
+                          "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "BooleanVariable"
+                                  },
+                                  "parameters": [
+                                    "FirstInteraction.OxygenPump",
+                                    "True",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "colorB": 254,
+                                  "colorG": 19,
+                                  "colorR": 144,
+                                  "creationTime": 0,
+                                  "folded": true,
+                                  "name": "starfish 1",
+                                  "source": "",
+                                  "type": "BuiltinCommonInstructions::Group",
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "MouseButtonFromTextReleased"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"Left\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Raycaster3D::RaycastFromCameraCursor"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Starfish1_CORRECT",
+                                            "\"UI\"",
+                                            "10000",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "CameraFocused",
+                                            "False",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "DialogueTree::StartDialogueFromBranch"
+                                          },
+                                          "parameters": [
+                                            "\"Starfish/AfterOxygenPump\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ResetTimer"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"typewriter\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "DialogueActive",
+                                            "True",
+                                            "2"
+                                          ]
+                                        }
+                                      ],
+                                      "events": [
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "Layer"
+                                              },
+                                              "parameters": [
+                                                "Starfish1_CORRECT",
+                                                ""
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "BuiltinCommonInstructions::Once"
+                                              },
+                                              "parameters": []
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "Delete"
+                                              },
+                                              "parameters": [
+                                                "Starfish1_CORRECT",
+                                                ""
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "SetBooleanVariable"
+                                              },
+                                              "parameters": [
+                                                "ObjectCollectionStatus.Starfish1",
+                                                "True",
+                                                ""
+                                              ]
+                                            }
+                                          ],
+                                          "events": [
+                                            {
+                                              "type": "BuiltinCommonInstructions::Standard",
+                                              "conditions": [
+                                                {
+                                                  "type": {
+                                                    "value": "VariableChildCount"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection1",
+                                                    "<",
+                                                    "5"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": {
+                                                    "value": "BuiltinCommonInstructions::Once"
+                                                  },
+                                                  "parameters": []
+                                                }
+                                              ],
+                                              "actions": [
+                                                {
+                                                  "type": {
+                                                    "value": "PushString"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection1",
+                                                    "\"Starfish1\""
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "BuiltinCommonInstructions::Else",
+                                              "conditions": [
+                                                {
+                                                  "type": {
+                                                    "value": "VariableChildCount"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection1",
+                                                    "=",
+                                                    "5"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": {
+                                                    "value": "BuiltinCommonInstructions::Once"
+                                                  },
+                                                  "parameters": []
+                                                }
+                                              ],
+                                              "actions": [
+                                                {
+                                                  "type": {
+                                                    "value": "PushString"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection2",
+                                                    "\"Starfish1\""
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "parameters": []
+                                },
+                                {
+                                  "colorB": 254,
+                                  "colorG": 19,
+                                  "colorR": 144,
+                                  "creationTime": 0,
+                                  "folded": true,
+                                  "name": "starfish 2",
+                                  "source": "",
+                                  "type": "BuiltinCommonInstructions::Group",
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "MouseButtonFromTextReleased"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"Left\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Raycaster3D::RaycastFromCameraCursor"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Starfish2",
+                                            "\"UI\"",
+                                            "10000",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "CameraFocused",
+                                            "False",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "DialogueTree::StartDialogueFromBranch"
+                                          },
+                                          "parameters": [
+                                            "\"Starfish/AfterOxygenPump\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ResetTimer"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"typewriter\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "DialogueActive",
+                                            "True",
+                                            "2"
+                                          ]
+                                        }
+                                      ],
+                                      "events": [
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "Layer"
+                                              },
+                                              "parameters": [
+                                                "Starfish2",
+                                                ""
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "BuiltinCommonInstructions::Once"
+                                              },
+                                              "parameters": []
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "Delete"
+                                              },
+                                              "parameters": [
+                                                "Starfish2",
+                                                ""
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "SetBooleanVariable"
+                                              },
+                                              "parameters": [
+                                                "ObjectCollectionStatus.Starfish2",
+                                                "True",
+                                                ""
+                                              ]
+                                            }
+                                          ],
+                                          "events": [
+                                            {
+                                              "type": "BuiltinCommonInstructions::Standard",
+                                              "conditions": [
+                                                {
+                                                  "type": {
+                                                    "value": "VariableChildCount"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection1",
+                                                    "<",
+                                                    "5"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": {
+                                                    "value": "BuiltinCommonInstructions::Once"
+                                                  },
+                                                  "parameters": []
+                                                }
+                                              ],
+                                              "actions": [
+                                                {
+                                                  "type": {
+                                                    "value": "PushString"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection1",
+                                                    "\"Starfish2\""
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "BuiltinCommonInstructions::Else",
+                                              "conditions": [
+                                                {
+                                                  "type": {
+                                                    "value": "VariableChildCount"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection1",
+                                                    "=",
+                                                    "5"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": {
+                                                    "value": "BuiltinCommonInstructions::Once"
+                                                  },
+                                                  "parameters": []
+                                                }
+                                              ],
+                                              "actions": [
+                                                {
+                                                  "type": {
+                                                    "value": "PushString"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection2",
+                                                    "\"Starfish2\""
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "parameters": []
+                                },
+                                {
+                                  "colorB": 254,
+                                  "colorG": 19,
+                                  "colorR": 144,
+                                  "creationTime": 0,
+                                  "folded": true,
+                                  "name": "starfish 3",
+                                  "source": "",
+                                  "type": "BuiltinCommonInstructions::Group",
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "MouseButtonFromTextReleased"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"Left\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Raycaster3D::RaycastFromCameraCursor"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "Starfish3",
+                                            "\"UI\"",
+                                            "10000",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "CameraFocused",
+                                            "False",
+                                            ""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "DialogueTree::StartDialogueFromBranch"
+                                          },
+                                          "parameters": [
+                                            "\"Starfish/AfterOxygenPump\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "ResetTimer"
+                                          },
+                                          "parameters": [
+                                            "",
+                                            "\"typewriter\""
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "SetBooleanVariable"
+                                          },
+                                          "parameters": [
+                                            "DialogueActive",
+                                            "True",
+                                            "2"
+                                          ]
+                                        }
+                                      ],
+                                      "events": [
+                                        {
+                                          "type": "BuiltinCommonInstructions::Standard",
+                                          "conditions": [
+                                            {
+                                              "type": {
+                                                "value": "Layer"
+                                              },
+                                              "parameters": [
+                                                "Starfish3",
+                                                ""
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "BuiltinCommonInstructions::Once"
+                                              },
+                                              "parameters": []
+                                            }
+                                          ],
+                                          "actions": [
+                                            {
+                                              "type": {
+                                                "value": "Delete"
+                                              },
+                                              "parameters": [
+                                                "Starfish3",
+                                                ""
+                                              ]
+                                            },
+                                            {
+                                              "type": {
+                                                "value": "SetBooleanVariable"
+                                              },
+                                              "parameters": [
+                                                "ObjectCollectionStatus.Starfish3",
+                                                "True",
+                                                ""
+                                              ]
+                                            }
+                                          ],
+                                          "events": [
+                                            {
+                                              "type": "BuiltinCommonInstructions::Standard",
+                                              "conditions": [
+                                                {
+                                                  "type": {
+                                                    "value": "VariableChildCount"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection1",
+                                                    "<",
+                                                    "5"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": {
+                                                    "value": "BuiltinCommonInstructions::Once"
+                                                  },
+                                                  "parameters": []
+                                                }
+                                              ],
+                                              "actions": [
+                                                {
+                                                  "type": {
+                                                    "value": "PushString"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection1",
+                                                    "\"Starfish3\""
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "BuiltinCommonInstructions::Else",
+                                              "conditions": [
+                                                {
+                                                  "type": {
+                                                    "value": "VariableChildCount"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection1",
+                                                    "=",
+                                                    "5"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": {
+                                                    "value": "BuiltinCommonInstructions::Once"
+                                                  },
+                                                  "parameters": []
+                                                }
+                                              ],
+                                              "actions": [
+                                                {
+                                                  "type": {
+                                                    "value": "PushString"
+                                                  },
+                                                  "parameters": [
+                                                    "CurrentObjectCollection2",
+                                                    "\"Starfish3\""
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  "parameters": []
+                                }
+                              ]
+                            }
+                          ],
+                          "parameters": []
+                        },
+                        {
+                          "colorB": 35,
+                          "colorG": 166,
+                          "colorR": 245,
+                          "creationTime": 0,
+                          "folded": true,
+                          "name": "shells",
+                          "source": "",
+                          "type": "BuiltinCommonInstructions::Group",
+                          "events": [
+                            {
+                              "colorB": 254,
+                              "colorG": 19,
+                              "colorR": 144,
+                              "creationTime": 0,
+                              "folded": true,
+                              "name": "shell 1",
+                              "source": "",
+                              "type": "BuiltinCommonInstructions::Group",
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "MouseButtonFromTextReleased"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"Left\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Shell1",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Layer"
+                                      },
+                                      "parameters": [
+                                        "Shell1",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraFocused",
+                                        "False",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::StartDialogueFromBranch"
+                                      },
+                                      "parameters": [
+                                        "\"Shells\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetTimer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"typewriter\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Delete"
+                                      },
+                                      "parameters": [
+                                        "Shell1",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "ObjectCollectionStatus.Shell1",
+                                        "True",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "VariableChildCount"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection1",
+                                            "<",
+                                            "5"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "PushString"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection1",
+                                            "\"Shell1\""
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Else",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "VariableChildCount"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection1",
+                                            "=",
+                                            "5"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "PushString"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection2",
+                                            "\"Shell1\""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "parameters": []
+                            },
+                            {
+                              "colorB": 254,
+                              "colorG": 19,
+                              "colorR": 144,
+                              "creationTime": 0,
+                              "folded": true,
+                              "name": "shell 2",
+                              "source": "",
+                              "type": "BuiltinCommonInstructions::Group",
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "MouseButtonFromTextReleased"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"Left\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Shell2",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Layer"
+                                      },
+                                      "parameters": [
+                                        "Shell2",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraFocused",
+                                        "False",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::StartDialogueFromBranch"
+                                      },
+                                      "parameters": [
+                                        "\"Shells\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetTimer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"typewriter\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Delete"
+                                      },
+                                      "parameters": [
+                                        "Shell2",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "ObjectCollectionStatus.Shell2",
+                                        "True",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "VariableChildCount"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection1",
+                                            "<",
+                                            "5"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "PushString"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection1",
+                                            "\"Shell2\""
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Else",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "VariableChildCount"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection1",
+                                            "=",
+                                            "5"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "PushString"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection2",
+                                            "\"Shell2\""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "parameters": []
+                            },
+                            {
+                              "colorB": 254,
+                              "colorG": 19,
+                              "colorR": 144,
+                              "creationTime": 0,
+                              "folded": true,
+                              "name": "shell 3",
+                              "source": "",
+                              "type": "BuiltinCommonInstructions::Group",
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "MouseButtonFromTextReleased"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"Left\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Raycaster3D::RaycastFromCameraCursor"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Shell3",
+                                        "\"UI\"",
+                                        "10000",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Layer"
+                                      },
+                                      "parameters": [
+                                        "Shell3",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "CameraFocused",
+                                        "False",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::StartDialogueFromBranch"
+                                      },
+                                      "parameters": [
+                                        "\"Shells\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ResetTimer"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "\"typewriter\""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "DialogueActive",
+                                        "True",
+                                        "2"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Delete"
+                                      },
+                                      "parameters": [
+                                        "Shell3",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "SetBooleanVariable"
+                                      },
+                                      "parameters": [
+                                        "ObjectCollectionStatus.Shell3",
+                                        "True",
+                                        ""
+                                      ]
+                                    }
+                                  ],
+                                  "events": [
+                                    {
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "VariableChildCount"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection1",
+                                            "<",
+                                            "5"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "PushString"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection1",
+                                            "\"Shell3\""
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "BuiltinCommonInstructions::Else",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "VariableChildCount"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection1",
+                                            "=",
+                                            "5"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "BuiltinCommonInstructions::Once"
+                                          },
+                                          "parameters": []
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "PushString"
+                                          },
+                                          "parameters": [
+                                            "CurrentObjectCollection2",
+                                            "\"Shell3\""
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ],
+                              "parameters": []
                             }
                           ],
                           "parameters": []
@@ -14048,6 +16479,30 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 27,
+                "g": 2,
+                "r": 208,
+                "textB": 255,
+                "textG": 255,
+                "textR": 255
+              },
+              "comment": "intotutorialend should be FALSE!!"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 27,
+                "g": 2,
+                "r": 208,
+                "textB": 255,
+                "textG": 255,
+                "textR": 255
+              },
+              "comment": "fadeblack opacity should be 255!!"
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -14107,7 +16562,7 @@
                     "FadeBlack",
                     "Opacity",
                     "=",
-                    "255"
+                    "0"
                   ]
                 }
               ]
@@ -14349,11 +16804,37 @@
                         },
                         {
                           "type": {
-                            "value": "DialogueTree::CompareDialogueStateBooleanVariable"
+                            "value": "BuiltinCommonInstructions::Or"
                           },
-                          "parameters": [
-                            "\"dialogueEnd\"",
-                            "True"
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "DialogueTree::CompareDialogueStateBooleanVariable"
+                              },
+                              "parameters": [
+                                "\"dialogueEnd\"",
+                                "True"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "DialogueTree::CompareDialogueStateBooleanVariable"
+                              },
+                              "parameters": [
+                                "\"lockFocus\"",
+                                "True"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "DialogueTree::CompareDialogueStateBooleanVariable"
+                              },
+                              "parameters": [
+                                "\"trapdoorFocus\"",
+                                "True"
+                              ]
+                            }
                           ]
                         }
                       ],
@@ -14675,7 +17156,7 @@
                 "cam1",
                 "Text",
                 "=",
-                "ObjectCollectionStatus.Starfish1"
+                "ToString(VariableChildCount(CurrentObjectCollection1))"
               ]
             },
             {
@@ -14701,7 +17182,7 @@
                 "cam2",
                 "Text",
                 "=",
-                "ToString(VariableChildCount(CurrentObjectCollection1))"
+                "ToString(VariableChildCount(CurrentObjectCollection2))"
               ]
             },
             {
@@ -14930,7 +17411,7 @@
           "isLocked": false,
           "name": "Dialogue",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
