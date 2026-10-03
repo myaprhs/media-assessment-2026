@@ -152,7 +152,7 @@
 	{
 		"title": "Tutorial/Inventory",
 		"tags": "",
-		"body": "<<set $dialogueEnd to false >>\nOh, I forgot to tell you!\nWith the cursor, some useful objects can be picked up by clicking on them.\nThey will be stored in your inventory, which you can access by pressing the key 'X'. \nTry pressing 'X' to open your inventory.\n<<set $dialogueEnd to true >>",
+		"body": "<<set $dialogueEnd to false >>\nOh, I forgot to tell you!\nWith the cursor, some useful objects can be picked up by clicking on them.\nThey will be stored in your inventory, which you can access by pressing the [b]key 'X'[/b]. \nTry pressing [b]'X'[/b] now to open your inventory.\nspacerrr\n<<set $dialogueEnd to true >>",
 		"position": {
 			"x": -649,
 			"y": -930
@@ -162,12 +162,12 @@
 	{
 		"title": "Tutorial/InventorySelect",
 		"tags": "",
-		"body": "This is your inventory!\nYou can see the objects you have picked up.\nIf you have multiple collected items, use the up and down arrow keys to switch between them.\n\nAt the bottom left corner, you can see which item you have in hand.\nIf you have an item in hand, you can use it by clicking where you want to use it on.",
+		"body": "<<set $dialogueEnd to false >>\n<<set $inventoryTutorialHeldItems to false >>\nThis is your [b]inventory[/b]!\nYou can see all the objects you have picked up in here.\nIf you have multiple items, use the [b]up and down arrow keys[/b] to select an item on the right sidebar.\nYou can turn and rotate your selected item by clicking on the [b]left and right arrows[/b] to view different angles of it.\nTo inspect an item, [b]click[/b] on the item.\nTo quit your inventory, either press the [b]key 'X'[/b], or click the [b]exit button[/b] on the [b]top left[/b].\nspacerrrr\n<<set $inventoryTutorialHeldItems to true >>\n<<set $dialogueEnd to true >>",
 		"position": {
 			"x": -414,
 			"y": -930
 		},
-		"colorID": 0
+		"colorID": 5
 	},
 	{
 		"title": "Starfish/BeforeOxygenPump",
@@ -248,5 +248,35 @@
 			"y": 722
 		},
 		"colorID": 0
+	},
+	{
+		"title": "TridentKey",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]This is..![/i]\n\"A key...\"\n[i]It will definitely be handy for getting out of here, let's keep it for now.[/i]\nspaccerrrrrrrrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -1111,
+			"y": 954
+		},
+		"colorID": 0
+	},
+	{
+		"title": "CrownKey",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n\"..!\"\n[i]A key! It was locked behind this case, so it must be important. Let's keep it for now.[/i]\nspaccerrrrrrrrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -886,
+			"y": 956
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Tutorial/InventoryHeldItems",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\nOne last thing! At the top left corner, you can which item you have in hand.\nWhat you currently have in hand will be the [b]selected item inside your inventory[/b].\nSo, to [b]switch[/b] the item in your hand, [b]open your inventory[/b] and select another item.\nIf you have an item in hand, you can use it by [b]clicking[/b] where you want to use it on.\nThat's all, good luck!\nspacerrrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -185,
+			"y": -933
+		},
+		"colorID": 5
 	}
 ]
