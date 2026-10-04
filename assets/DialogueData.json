@@ -92,12 +92,12 @@
 	{
 		"title": "BrokenTimer/YesRock",
 		"tags": "",
-		"body": "<<set $dialogueEnd to false >>\n\"It's open!\"\n\"Wait, what is that?\"\n<<set $dialogueEnd to true >>",
+		"body": "<<set $dialogueEnd to false >>\n\"It's open!\"\n\"Wait, what is that?\"\nspacerrr\n<<set $dialogueEnd to true >>",
 		"position": {
-			"x": -886,
-			"y": -212
+			"x": 255,
+			"y": -452
 		},
-		"colorID": 1
+		"colorID": 0
 	},
 	{
 		"title": "OxygenPump/Front",
@@ -280,52 +280,52 @@
 		"colorID": 0
 	},
 	{
-		"title": "StarfishLock/Fail",
+		"title": "StarfishLock/Starfish1/1",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "<<set $dialogueEnd to false >>\n<<set $starfishPlaced to false >>\n[i]I try to put the starfish into the imprint...[/i]\nspacerrr\n<<set $starfishPlaced to true >>\n<<set $dialogueEnd to true >>",
 		"position": {
-			"x": -650,
-			"y": 16
+			"x": -152,
+			"y": -684
 		},
-		"colorID": 1
+		"colorID": 0
 	},
 	{
-		"title": "StarfishLock/Success",
+		"title": "StarfishLock/Starfish2",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "<<set $dialogueEnd to false >>\n[i]I try to put the starfish into the imprint...[/i]\n\"This starfish doesn't exactly fit.\"\nspacerrr\n<<set $dialogueEnd to true >>",
 		"position": {
-			"x": -425,
-			"y": 14
+			"x": 499,
+			"y": -692
 		},
-		"colorID": 1
+		"colorID": 0
 	},
 	{
-		"title": "TrapdoorLock/WrongKey",
+		"title": "TrapdoorLock/TridentKey/Wrong",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "<<set $dialogueEnd to false >>\n[i]Carefully, I tried slotting the trident key into the keyhole...[/i]\n[i]...and failed.[/i]\n\"I don't think it's this one...\"\nspacerrr\n<<set $dialogueEnd to true >>",
 		"position": {
-			"x": -186,
-			"y": -439
+			"x": 242,
+			"y": -1163
 		},
-		"colorID": 1
+		"colorID": 0
 	},
 	{
-		"title": "TrapdoorLock/RightKey",
+		"title": "TrapdoorLock/TridentKey/Correct",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "<<set $dialogueEnd to false >>\n[i]Carefully, I tried slotting the trident key into the keyhole...[/i]\n\"..! It worked!\"\nspacerrr\n<<set $dialogueEnd to true >>",
 		"position": {
-			"x": 43,
-			"y": -440
+			"x": 494,
+			"y": -1160
 		},
-		"colorID": 1
+		"colorID": 0
 	},
 	{
-		"title": "TrapdoorLock/RightCombination",
+		"title": "TrapdoorLock/BothKeys",
 		"tags": "",
-		"body": "Empty Text",
+		"body": "<<set $dialogueEnd to false >>\n<<set $gameEnd to false >>\n*click*\n\"..!\"\n[i]Both of the keys had turned.[/i]\n\"That has to mean it's correct, right..?\"\n<<set $gameEnd to true >>\n<<set $dialogueEnd to true >>",
 		"position": {
-			"x": -187,
-			"y": -212
+			"x": 747,
+			"y": -934
 		},
 		"colorID": 1
 	},
@@ -346,6 +346,86 @@
 		"position": {
 			"x": -1572,
 			"y": 12
+		},
+		"colorID": 0
+	},
+	{
+		"title": "StarfishLock/Starfish3",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]I try to put the starfish into the imprint...[/i]\n\"This one is way too small to fit.\"\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": 745,
+			"y": -691
+		},
+		"colorID": 0
+	},
+	{
+		"title": "FinalLock/EverythingCollected",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 257,
+			"y": -226
+		},
+		"colorID": 1
+	},
+	{
+		"title": "Miscellaneous",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]Err.. I don't think that will do anything.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": 505,
+			"y": -439
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TrapdoorLock/CrownKey/Wrong",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]Carefully, I tried slotting the crown key into the keyhole...[/i]\n[i]...and failed.[/i]\n\"I don't think it's this one...\"\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": 248,
+			"y": -934
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TrapdoorLock/CrownKey/Correct",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]Carefully, I tried slotting the crown key into the keyhole...[/i]\n\"..! It worked!\"\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": 493,
+			"y": -934
+		},
+		"colorID": 0
+	},
+	{
+		"title": "TrapdoorLock/Dials/NoKeys",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]The dials aren't moving. [/i]\n\"I think I need to insert the two keys on either side of the lock first...\"\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": 975,
+			"y": -933
+		},
+		"colorID": 1
+	},
+	{
+		"title": "StarfishLock/Starfish1/2",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n\"It's a perfect fit!\"\n[i]I grinned, but then suddenly the case began to--[/i]\nspacerr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": 78,
+			"y": -688
+		},
+		"colorID": 0
+	},
+	{
+		"title": "Node",
+		"tags": "",
+		"body": "[i]I look around warily, but nothing seems to be amiss, and let out a sigh of relief.[/i]\n[i]The keys probably unlocked just the dials and doesn't trigger anything else.[/i]\n\"The combination for the dials... I swear I've seen these symbols somewhere else before?\"\nspacerrr",
+		"position": {
+			"x": 802,
+			"y": -1170
 		},
 		"colorID": 0
 	}
