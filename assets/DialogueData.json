@@ -157,7 +157,7 @@
 			"x": -649,
 			"y": -930
 		},
-		"colorID": 5
+		"colorID": 0
 	},
 	{
 		"title": "Tutorial/InventorySelect",
@@ -167,7 +167,7 @@
 			"x": -414,
 			"y": -930
 		},
-		"colorID": 5
+		"colorID": 0
 	},
 	{
 		"title": "Starfish/BeforeOxygenPump",
@@ -277,6 +277,76 @@
 			"x": -185,
 			"y": -933
 		},
-		"colorID": 5
+		"colorID": 0
+	},
+	{
+		"title": "StarfishLock/Fail",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": -650,
+			"y": 16
+		},
+		"colorID": 1
+	},
+	{
+		"title": "StarfishLock/Success",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": -425,
+			"y": 14
+		},
+		"colorID": 1
+	},
+	{
+		"title": "TrapdoorLock/WrongKey",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": -186,
+			"y": -439
+		},
+		"colorID": 1
+	},
+	{
+		"title": "TrapdoorLock/RightKey",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": 43,
+			"y": -440
+		},
+		"colorID": 1
+	},
+	{
+		"title": "TrapdoorLock/RightCombination",
+		"tags": "",
+		"body": "Empty Text",
+		"position": {
+			"x": -187,
+			"y": -212
+		},
+		"colorID": 1
+	},
+	{
+		"title": "Dialogue/FarAway",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]...I can't see that thing clearly.[/i]\n[i]Let's get closer to inspect it.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -1350,
+			"y": 14
+		},
+		"colorID": 0
+	},
+	{
+		"title": "OxygenPump/FarAway",
+		"tags": "",
+		"body": "<<set $dialogueEnd to false >>\n[i]That thing is a bit far away.[/i]\n[i]Let's get closer to inspect it.[/i]\nspacerrr\n<<set $dialogueEnd to true >>",
+		"position": {
+			"x": -1572,
+			"y": 12
+		},
+		"colorID": 0
 	}
 ]
